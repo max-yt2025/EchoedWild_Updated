@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Keep private/internal pages out of search engines
+
+Disallow: /admin
+Disallow: /backup/
+Disallow: /SITE-Backup/
+Disallow: /UI-Remaking/
+
+# Error pages
+
+Disallow: /400
+Disallow: /404
+Disallow: /408
+Disallow: /429
+Disallow: /502
+Disallow: /503
+Disallow: /504
+
+# Sitemap
+
+Sitemap: https://echoedwild.com/sitemap.xml
