@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://echoedwild.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/animals</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/download</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/guidelines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/status</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://echoedwild.com/tos</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Downloads -->
+  <url>
+    <loc>https://echoedwild.com/download/apps/release</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Animals -->
+  <url><loc>https://echoedwild.com/animals/aardwolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/addax</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/addra-gazelle</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/african-forest-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/african-lion</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/african-penguin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/african-savanna-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/african-wild-dog</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/amur-leopard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/andean-mountain-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/arabian-orxy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/arctic-wolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/asian-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/asian-giant-hornet</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/asiatic-lion</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/axolotl</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/aye-aye</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/bactrian-camel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/ball-python</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/bay-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/black-backed-jackal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/black-footed-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/black-rhino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/blue-whale</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/bobcat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/bornean-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/brown-hyena</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/canadian-lynx</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/caracal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/cheetah</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/chimpanzee</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/clouded-leopard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/cougar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/coyote</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/cross-river-gorilla</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/dama-aazelle</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/dhole</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/ethiopian-wolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/eurasian-lynx</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/fishing-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/flat-headed-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/giant-panda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/giant-sable-antelope</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/golden-jackal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/great-hammerhead</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/greater-one-horned-rhino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/grey-wolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/hawksbill-turtle</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/hirola</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/iberian-lynx</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/indian-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/jaguar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/javan-rhino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/kakapo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/koala</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/lemur</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/leopard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/long-eared-jerboa</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/maned-wolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/marbled-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/margay</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/mexican-wolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/mountain-bongo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/mountain-gorilla</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/northern-bald-ibis</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/ocelot</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/orangutan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/pallass-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/pampas-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/pangolin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/philippine-eagle</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/pygmy-hippopotamus</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/red-panda</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/red-wolf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/rhinoceros</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/rusty-spotted-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sand-cat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/saola</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/scimitar-horned-oryx</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sea-otter</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/serval</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/side-striped-jackal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/snow-leopard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/spotted-hyena</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sri-lankan-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/striped-hyena</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sumatran-elephant</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sumatran-rhino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sumatran-tiger</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/sunda-clouded-leopard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/tiger</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/vancouver-island-marmot</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/vaquita</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/white-rhino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://echoedwild.com/animals/wild-bactrian-camel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+</urlset>
