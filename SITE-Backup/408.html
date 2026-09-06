@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoedWild | Request Timeout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f12711, #f5af19);
+      color: #fff8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.5em 0 2em;
+      max-width: 640px;
+    }
+    .button {
+      padding: 0.75em 1.5em;
+      background-color: #3742fa;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #2f3542;
+    }
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>Request Timeout</h1>
+  <p>Looks like the server waited a little too long for your request. The wild’s still here—just refresh or head home to rejoin the flow.</p>
+  <button class="button" onclick="goHome()">Return Home</button>
+
+  <footer>&copy; 2025 EchoedWild. Drifted but still connected.</footer>
+
+  <script>
+    function goHome() {
+      window.location.href = "/";
+    }
+
+    console.log("Request faded into the ether. Reconnecting to the EchoedWild realm...");
+  </script>
+</body>
+</html>

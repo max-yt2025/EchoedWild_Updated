@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoedWild | Gateway Timeout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fefefe;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.5em 0 2em;
+      max-width: 640px;
+    }
+    .button {
+      padding: 0.75em 1.5em;
+      background-color: #3498db;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #2980b9;
+    }
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Gateway Timeout</h1>
+  <p>The upstream server didn’t respond in time. EchoedWild might be experiencing a delay — please try again soon or head home.</p>
+  <button class="button" onclick="goHome()">Return Home</button>
+
+  <footer>&copy; 2025 EchoedWild. All rights reserved.</footer>
+
+  <script>
+    function goHome() {
+      window.location.href = "/";
+    }
+
+    console.log("EchoedWild timed out. Nature’s patience is powerful — hold tight 🌐⏳");
+  </script>
+</body>
+</html>

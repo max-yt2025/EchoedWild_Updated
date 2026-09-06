@@ -1,0 +1,2226 @@
+[
+  {
+    "name": "Giant Panda",
+    "status": "Vulnerable",
+    "region": "Asia",
+    "estimated": "~1,864",
+    "image": "images/giant-panda.png",
+    "link": "animals/giant-panda.html"
+  },
+  {
+    "name": "Sumatran Tiger",
+    "status": "Critically Endangered",
+    "region": "Asia",
+    "estimated": "~400",
+    "image": "images/sumatran-tiger.png",
+    "link": "animals/sumatran-tiger.html"
+  },
+  {
+    "name": "Black Rhino",
+    "status": "Critically Endangered",
+    "region": "Africa",
+    "estimated": "~5,500",
+    "image": "images/black-rhino.png",
+    "link": "animals/black-rhino.html"
+  },
+  {
+    "name": "African Elephant",
+    "status": "Vulnerable",
+    "region": "Africa",
+    "estimated": "~415,000",
+    "image": "images/african-elephant.png",
+    "link": "animals/african-elephant.html"
+  },
+  {
+    "name": "Vaquita",
+    "status": "Critically Endangered",
+    "region": "Americas",
+    "estimated": "<10",
+    "image": "images/vaquita.png",
+    "link": "animals/vaquita.html"
+  },
+  {
+    "name": "Amur Leopard",
+    "status": "Critically Endangered",
+    "region": "Asia",
+    "estimated": "~100",
+    "image": "images/amur-leopard.png",
+    "link": "animals/amur-leopard.html"
+  },
+  {
+    "name": "Koala",
+    "status": "Vulnerable",
+    "region": "Oceania",
+    "estimated": "~300,000",
+    "image": "images/koala.png",
+    "link": "animals/koala.html"
+  },
+  {
+    "name": "Mountain Gorilla",
+    "status": "Endangered",
+    "region": "Africa",
+    "estimated": "~1,063",
+    "image": "images/mountain-gorilla.png",
+    "link": "animals/mountain-gorilla.html"
+  },
+  {
+    "name": "Great Hammerhead",
+    "status": "Endangered",
+    "region": "Global",
+    "estimated": "~50,000 – 70,000",
+    "image": "images/great-hammerhead.png",
+    "link": "animals/great-hammerhead.html"
+  },
+  {
+    "name": "Snow Leopard",
+    "status": "Vulnerable",
+    "region": "Asia",
+    "estimated": "~4,000–6,500",
+    "image": "images/snow-leopard.png",
+    "link": "animals/snow-leopard.html"
+  },
+  {
+    "name": "Red Panda",
+    "status": "Endangered",
+    "region": "Asia",
+    "estimated": "~10,000",
+    "image": "images/red-panda.png",
+    "link": "animals/red-panda.html"
+  },
+  {
+    "name": "Saola",
+    "status": "Critically Endangered",
+    "region": "Asia",
+    "estimated": "<100",
+    "image": "images/saola.png",
+    "link": "animals/saola.html"
+  },
+  {
+    "name": "Northern Bald Ibis",
+    "status": "Endangered",
+    "region": "Europe, North Africa",
+    "estimated": "~1,000",
+    "image": "images/northern-bald-ibis.png",
+    "link": "animals/northern-bald-ibis.html"
+  },
+  {
+    "name": "Philippine Eagle",
+    "status": "Critically Endangered",
+    "region": "Asia",
+    "estimated": "~400",
+    "image": "images/philippine-eagle.png",
+    "link": "animals/philippine-eagle.html"
+  },
+  {
+    "name": "Axolotl",
+    "status": "Critically Endangered",
+    "region": "Americas",
+    "estimated": "Unknown (wild population extremely low)",
+    "image": "images/axolotl.png",
+    "link": "animals/axolotl.html"
+  },
+  {
+    "name": "Blue Whale",
+    "status": "Endangered",
+    "region": "Global",
+    "estimated": "10,000–25,000 individuals",
+    "image": "images/blue-whale.png",
+    "link": "animals/blue-whale.html"
+  },
+  {
+    "name": "Asian Giant Hornet",
+    "status": "Near Threatened",
+    "region": "East Asia",
+    "estimated": "Unknown",
+    "image": "images/asian-giant-hornet.png",
+    "link": "animals/asian-giant-hornet.html"
+  },
+  {
+    "name": "Ball Python",
+    "status": "Near Threatened",
+    "region": "West and Central Africa",
+    "estimated": "Stable but declining",
+    "image": "images/ball-python.png",
+    "link": "animals/ball-python.html"
+  },
+  {
+    "name": "Red Wolf",
+    "status": "Critically Endangered",
+    "region": "North Carolina",
+    "estimated": "28-31",
+    "image": "images/red-wolf.png",
+    "link": "animals/red-wolf.html"
+  },
+  {
+    "name": "Sea Otter",
+    "status": "Threatened",
+    "region": "North Pacific Coast",
+    "estimated": "~3,000 (Southern population)",
+    "image": "images/sea-otter.png",
+    "link": "animals/sea-otter.html"
+  },
+  {
+    "name": "Addax",
+    "status": "Critically Endangered",
+    "region": "Sahara Desert (Niger, Chad, Morocco)",
+    "estimated": "<100 in the wild",
+    "image": "images/addax.png",
+    "link": "animals/addax.html"
+  },
+  {
+    "name": "Pangolin",
+    "status": "Critically Endangered",
+    "region": "Asia & Africa (Forests, Grasslands, Savannas)",
+    "estimated": "Unknown (all 8 species declining)",
+    "image": "images/pangolin.png",
+    "link": "animals/pangolin.html"
+  },
+  {
+    "name": "Lemur",
+    "status": "Critically Endangered",
+    "region": "Madagascar (Rainforests, Spiny Forests, Dry Forests)",
+    "estimated": "98% of species endangered",
+    "image": "images/lemur.png",
+    "link": "animals/lemur.html"
+  },
+  {
+    "name": "Orangutan",
+    "status": "Critically Endangered",
+    "region": "Borneo & Sumatra (Tropical Rainforests)",
+    "estimated": "~50,000 (all species combined)",
+    "image": "images/orangutan.png",
+    "link": "animals/orangutan.html"
+  },
+  {
+    "name": "Tiger",
+    "status": "Endangered",
+    "region": "Asia (India, Russia, Indonesia, Nepal, Bhutan)",
+    "estimated": "~5,574 wild tigers",
+    "image": "images/tiger.png",
+    "link": "animals/tiger.html"
+  },
+  {
+    "name": "Rhinoceros",
+    "status": "Critically Endangered",
+    "region": "Africa & Asia (Savannas, Forests, Wetlands)",
+    "estimated": "<28,000 across all 5 species",
+    "image": "images/rhinoceros.png",
+    "link": "animals/rhinoceros.html"
+  },
+  {
+    "name": "Kakapo",
+    "status": "Critically Endangered",
+    "region": "New Zealand (Codfish Island, Anchor Island, Little Barrier Island)",
+    "estimated": "238 individuals",
+    "image": "images/kakapo.png",
+    "link": "animals/kakapo.html"
+  },
+  {
+    "name": "African Wild Dog",
+    "status": "Endangered",
+    "region": "Sub-Saharan Africa (Savannas, Woodlands, Plains)",
+    "estimated": "~6,600 individuals",
+    "image": "images/african-wild-dog.png",
+    "link": "animals/african-wild-dog.html"
+  },
+  {
+    "name": "Chimpanzee",
+    "status": "Endangered",
+    "region": "Central & West Africa (Rainforests, Savannas, Woodlands)",
+    "estimated": "172,700–299,700",
+    "image": "images/chimpanzee.png",
+    "link": "animals/chimpanzee.html"
+  },
+  {
+    "name": "Aye-Aye",
+    "status": "Endangered",
+    "region": "Madagascar (Rainforests, Deciduous Forests, Plantations)",
+    "estimated": "1,000–10,000",
+    "image": "images/aye-aye.png",
+    "link": "animals/aye-aye.html"
+  },
+  {
+    "name": "Long-eared Jerboa",
+    "status": "Least Concern",
+    "region": "Mongolia & China (Deserts, Sandy Valleys, High Plateaus)",
+    "estimated": "Unknown",
+    "image": "images/long-eared-jerboa.png",
+    "link": "animals/long-eared-jerboa.html"
+  },
+  {
+    "name": "Javan Rhino",
+    "status": "Critically Endangered",
+    "region": "Java, Indonesia",
+    "estimated": "~75",
+    "image": "images/javan-rhino.png",
+    "link": "animals/javan-rhino.html"
+  },
+  {
+    "name": "Cross River Gorilla",
+    "status": "Critically Endangered",
+    "region": "Nigeria and Cameroon",
+    "estimated": "200-300",
+    "image": "images/cross-river-gorilla.png",
+    "link": "animals/cross-river-gorilla.html"
+  },
+  {
+    "name": "Malayan Tiger",
+    "status": "Critically Endangered",
+    "region": "Malay Peninsula",
+    "estimated": "~200",
+    "image": "images/malayan-tiger.png",
+    "link": "animals/malayan-tiger.html"
+  },
+  {
+    "name": "Bengal Tiger",
+    "status": "Endangered",
+    "region": "India, Bangladesh, Nepal, Bhutan",
+    "estimated": "~2,500",
+    "image": "images/bengal-tiger.png",
+    "link": "animals/bengal-tiger.html"
+  },
+  {
+    "name": "Siberian Tiger",
+    "status": "Endangered",
+    "region": "Russian Far East, Northeast China",
+    "estimated": "~500",
+    "image": "images/siberian-tiger.png",
+    "link": "animals/siberian-tiger.html"
+  },
+  {
+    "name": "Indochinese Tiger",
+    "status": "Endangered",
+    "region": "Thailand, Myanmar, Laos, Vietnam, Cambodia",
+    "estimated": "~350",
+    "image": "images/indochinese-tiger.png",
+    "link": "animals/indochinese-tiger.html"
+  },
+  {
+    "name": "South China Tiger",
+    "status": "Critically Endangered",
+    "region": "China",
+    "estimated": "Extinct in the wild",
+    "image": "images/south-china-tiger.png",
+    "link": "animals/south-china-tiger.html"
+  },
+  {
+    "name": "Sumatran Elephant",
+    "status": "Critically Endangered",
+    "region": "Sumatra, Indonesia",
+    "estimated": "2,400-2,800",
+    "image": "images/sumatran-elephant.png",
+    "link": "animals/sumatran-elephant.html"
+  },
+  {
+    "name": "Bornean Elephant",
+    "status": "Endangered",
+    "region": "Borneo",
+    "estimated": "~1,500",
+    "image": "images/bornean-elephant.png",
+    "link": "animals/bornean-elephant.html"
+  },
+  {
+    "name": "Asian Elephant",
+    "status": "Endangered",
+    "region": "South and Southeast Asia",
+    "estimated": "~50,000",
+    "image": "images/asian-elephant.png",
+    "link": "animals/asian-elephant.html"
+  },
+  {
+    "name": "Sri Lankan Elephant",
+    "status": "Endangered",
+    "region": "Sri Lanka",
+    "estimated": "~7,500",
+    "image": "images/sri-lankan-elephant.png",
+    "link": "animals/sri-lankan-elephant.html"
+  },
+  {
+    "name": "Indian Elephant",
+    "status": "Endangered",
+    "region": "India, Nepal, Bangladesh, Bhutan",
+    "estimated": "~30,000",
+    "image": "images/indian-elephant.png",
+    "link": "animals/indian-elephant.html"
+  },
+  {
+    "name": "African Forest Elephant",
+    "status": "Critically Endangered",
+    "region": "Central and West Africa",
+    "estimated": "~100,000",
+    "image": "images/african-forest-elephant.png",
+    "link": "animals/african-forest-elephant.html"
+  },
+  {
+    "name": "African Savanna Elephant",
+    "status": "Endangered",
+    "region": "Sub-Saharan Africa",
+    "estimated": "~415,000",
+    "image": "images/african-savanna-elephant.png",
+    "link": "animals/african-savanna-elephant.html"
+  },
+  {
+    "name": "White Rhino",
+    "status": "Near Threatened",
+    "region": "Southern Africa",
+    "estimated": "~18,000",
+    "image": "images/white-rhino.png",
+    "link": "animals/white-rhino.html"
+  },
+  {
+    "name": "Greater One-Horned Rhino",
+    "status": "Vulnerable",
+    "region": "India and Nepal",
+    "estimated": "~4,000",
+    "image": "images/greater-one-horned-rhino.png",
+    "link": "animals/greater-one-horned-rhino.html"
+  },
+  {
+    "name": "Sumatran Rhino",
+    "status": "Critically Endangered",
+    "region": "Sumatra and Borneo",
+    "estimated": "<80",
+    "image": "images/sumatran-rhino.png",
+    "link": "animals/sumatran-rhino.html"
+  },
+  {
+    "name": "Mountain Bongo",
+    "status": "Critically Endangered",
+    "region": "Kenya",
+    "estimated": "~100",
+    "image": "images/mountain-bongo.png",
+    "link": "animals/mountain-bongo.html"
+  },
+  {
+    "name": "Giant Sable Antelope",
+    "status": "Critically Endangered",
+    "region": "Angola",
+    "estimated": "~100",
+    "image": "images/giant-sable-antelope.png",
+    "link": "animals/giant-sable-antelope.html"
+  },
+  {
+    "name": "Hirola",
+    "status": "Critically Endangered",
+    "region": "Kenya and Somalia",
+    "estimated": "~500",
+    "image": "images/hirola.png",
+    "link": "animals/hirola.html"
+  },
+  {
+    "name": "Addra Gazelle",
+    "status": "Critically Endangered",
+    "region": "Sahel region of Africa",
+    "estimated": "~300",
+    "image": "images/addra-gazelle.png",
+    "link": "animals/addra-gazelle.html"
+  },
+  {
+    "name": "Dama Gazelle",
+    "status": "Critically Endangered",
+    "region": "Sahara Desert",
+    "estimated": "~100",
+    "image": "images/dama-gazelle.png",
+    "link": "animals/dama-gazelle.html"
+  },
+  {
+    "name": "Scimitar-Horned Oryx",
+    "status": "Endangered",
+    "region": "North Africa",
+    "estimated": "Reintroduced populations",
+    "image": "images/scimitar-horned-oryx.png",
+    "link": "animals/scimitar-horned-oryx.html"
+  },
+  {
+    "name": "Arabian Oryx",
+    "status": "Vulnerable",
+    "region": "Arabian Peninsula",
+    "estimated": "~1,200",
+    "image": "images/arabian-oryx.png",
+    "link": "animals/arabian-oryx.html"
+  },
+  {
+    "name": "Bactrian Camel",
+    "status": "Critically Endangered",
+    "region": "Mongolia and China",
+    "estimated": "~1,000",
+    "image": "images/bactrian-camel.png",
+    "link": "animals/bactrian-camel.html"
+  },
+  {
+    "name": "Wild Bactrian Camel",
+    "status": "Critically Endangered",
+    "region": "Mongolia and China",
+    "estimated": "~1,000",
+    "image": "images/wild-bactrian-camel.png",
+    "link": "animals/wild-bactrian-camel.html"
+  },
+  {
+    "name": "Pygmy Hippopotamus",
+    "status": "Endangered",
+    "region": "West Africa",
+    "estimated": "2,000-3,000",
+    "image": "images/pygmy-hippopotamus.png",
+    "link": "animals/pygmy-hippopotamus.html"
+  },
+  {
+    "name": "Vancouver Island Marmot",
+    "status": "Critically Endangered",
+    "region": "Vancouver Island, Canada",
+    "estimated": "~200",
+    "image": "images/vancouver-island-marmot.png",
+    "link": "animals/vancouver-island-marmot.html"
+  },
+  {
+    "name": "Iberian Lynx",
+    "status": "Endangered",
+    "region": "Spain and Portugal",
+    "estimated": "~1,100",
+    "image": "images/iberian-lynx.png",
+    "link": "animals/iberian-lynx.html"
+  },
+  {
+    "name": "Canadian Lynx",
+    "status": "Least Concern",
+    "region": "Canada and Northern United States",
+    "estimated": "Unknown",
+    "image": "images/canadian-lynx.png",
+    "link": "animals/canadian-lynx.html"
+  },
+  {
+    "name": "Eurasian Lynx",
+    "status": "Least Concern",
+    "region": "Europe and Asia",
+    "estimated": "~50,000",
+    "image": "images/eurasian-lynx.png",
+    "link": "animals/eurasian-lynx.html"
+  },
+  {
+    "name": "Caracal",
+    "status": "Least Concern",
+    "region": "Africa, Middle East, Central Asia",
+    "estimated": "Unknown",
+    "image": "images/caracal.png",
+    "link": "animals/caracal.html"
+  },
+  {
+    "name": "Serval",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/serval.png",
+    "link": "animals/serval.html"
+  },
+  {
+    "name": "Cheetah",
+    "status": "Vulnerable",
+    "region": "Africa and Iran",
+    "estimated": "~7,100",
+    "image": "images/cheetah.png",
+    "link": "animals/cheetah.html"
+  },
+  {
+    "name": "African Lion",
+    "status": "Vulnerable",
+    "region": "Sub-Saharan Africa",
+    "estimated": "~20,000",
+    "image": "images/african-lion.png",
+    "link": "animals/african-lion.html"
+  },
+  {
+    "name": "Asiatic Lion",
+    "status": "Endangered",
+    "region": "Gir Forest, India",
+    "estimated": "~670",
+    "image": "images/asiatic-lion.png",
+    "link": "animals/asiatic-lion.html"
+  },
+  {
+    "name": "Leopard",
+    "status": "Vulnerable",
+    "region": "Africa and Asia",
+    "estimated": "~250,000",
+    "image": "images/leopard.png",
+    "link": "animals/leopard.html"
+  },
+  {
+    "name": "Clouded Leopard",
+    "status": "Vulnerable",
+    "region": "Southeast Asia",
+    "estimated": "~10,000",
+    "image": "images/clouded-leopard.png",
+    "link": "animals/clouded-leopard.html"
+  },
+  {
+    "name": "Sunda Clouded Leopard",
+    "status": "Vulnerable",
+    "region": "Borneo and Sumatra",
+    "estimated": "~4,500",
+    "image": "images/sunda-clouded-leopard.png",
+    "link": "animals/sunda-clouded-leopard.html"
+  },
+  {
+    "name": "Jaguar",
+    "status": "Near Threatened",
+    "region": "Central and South America",
+    "estimated": "~64,000",
+    "image": "images/jaguar.png",
+    "link": "animals/jaguar.html"
+  },
+  {
+    "name": "Cougar",
+    "status": "Least Concern",
+    "region": "Americas",
+    "estimated": "~50,000",
+    "image": "images/cougar.png",
+    "link": "animals/cougar.html"
+  },
+  {
+    "name": "Bobcat",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "~1,000,000",
+    "image": "images/bobcat.png",
+    "link": "animals/bobcat.html"
+  },
+  {
+    "name": "Ocelot",
+    "status": "Least Concern",
+    "region": "South and Central America",
+    "estimated": "~40,000",
+    "image": "images/ocelot.png",
+    "link": "animals/ocelot.html"
+  },
+  {
+    "name": "Margay",
+    "status": "Near Threatened",
+    "region": "Central and South America",
+    "estimated": "Unknown",
+    "image": "images/margay.png",
+    "link": "animals/margay.html"
+  },
+  {
+    "name": "Pampas Cat",
+    "status": "Near Threatened",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/pampas-cat.png",
+    "link": "animals/pampas-cat.html"
+  },
+  {
+    "name": "Andean Mountain Cat",
+    "status": "Endangered",
+    "region": "Andes Mountains",
+    "estimated": "~1,400",
+    "image": "images/andean-mountain-cat.png",
+    "link": "animals/andean-mountain-cat.html"
+  },
+  {
+    "name": "Pallas's Cat",
+    "status": "Least Concern",
+    "region": "Central Asia",
+    "estimated": "~58,000",
+    "image": "images/pallass-cat.png",
+    "link": "animals/pallass-cat.html"
+  },
+  {
+    "name": "Sand Cat",
+    "status": "Least Concern",
+    "region": "Sahara Desert, Arabian Peninsula",
+    "estimated": "Unknown",
+    "image": "images/sand-cat.png",
+    "link": "animals/sand-cat.html"
+  },
+  {
+    "name": "Black-footed Cat",
+    "status": "Vulnerable",
+    "region": "Southern Africa",
+    "estimated": "~13,000",
+    "image": "images/black-footed-cat.png",
+    "link": "animals/black-footed-cat.html"
+  },
+  {
+    "name": "Rusty-spotted Cat",
+    "status": "Near Threatened",
+    "region": "India and Sri Lanka",
+    "estimated": "~10,000",
+    "image": "images/rusty-spotted-cat.png",
+    "link": "animals/rusty-spotted-cat.html"
+  },
+  {
+    "name": "Fishing Cat",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "~10,000",
+    "image": "images/fishing-cat.png",
+    "link": "animals/fishing-cat.html"
+  },
+  {
+    "name": "Flat-headed Cat",
+    "status": "Endangered",
+    "region": "Malay Peninsula, Borneo, Sumatra",
+    "estimated": "~2,500",
+    "image": "images/flat-headed-cat.png",
+    "link": "animals/flat-headed-cat.html"
+  },
+  {
+    "name": "Marbled Cat",
+    "status": "Near Threatened",
+    "region": "Southeast Asia",
+    "estimated": "~10,000",
+    "image": "images/marbled-cat.png",
+    "link": "animals/marbled-cat.html"
+  },
+  {
+    "name": "Bay Cat",
+    "status": "Endangered",
+    "region": "Borneo",
+    "estimated": "~2,200",
+    "image": "images/bay-cat.png",
+    "link": "animals/bay-cat.html"
+  },
+  {
+    "name": "Spotted Hyena",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "~47,000",
+    "image": "images/spotted-hyena.png",
+    "link": "animals/spotted-hyena.html"
+  },
+  {
+    "name": "Brown Hyena",
+    "status": "Near Threatened",
+    "region": "Southern Africa",
+    "estimated": "~10,000",
+    "image": "images/brown-hyena.png",
+    "link": "animals/brown-hyena.html"
+  },
+  {
+    "name": "Striped Hyena",
+    "status": "Near Threatened",
+    "region": "North and East Africa, Middle East, India",
+    "estimated": "~10,000",
+    "image": "images/striped-hyena.png",
+    "link": "animals/striped-hyena.html"
+  },
+  {
+    "name": "Aardwolf",
+    "status": "Least Concern",
+    "region": "East and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/aardwolf.png",
+    "link": "animals/aardwolf.html"
+  },
+  {
+    "name": "Grey Wolf",
+    "status": "Least Concern",
+    "region": "North America, Europe, Asia",
+    "estimated": "~300,000",
+    "image": "images/grey-wolf.png",
+    "link": "animals/grey-wolf.html"
+  },
+  {
+    "name": "Ethiopian Wolf",
+    "status": "Endangered",
+    "region": "Ethiopian Highlands",
+    "estimated": "~500",
+    "image": "images/ethiopian-wolf.png",
+    "link": "animals/ethiopian-wolf.html"
+  },
+  {
+    "name": "Maned Wolf",
+    "status": "Near Threatened",
+    "region": "South America",
+    "estimated": "~23,000",
+    "image": "images/maned-wolf.png",
+    "link": "animals/maned-wolf.html"
+  },
+  {
+    "name": "Arctic Wolf",
+    "status": "Least Concern",
+    "region": "Arctic regions of North America and Greenland",
+    "estimated": "~200,000",
+    "image": "images/arctic-wolf.png",
+    "link": "animals/arctic-wolf.html"
+  },
+  {
+    "name": "Mexican Wolf",
+    "status": "Endangered",
+    "region": "Mexico and Southwestern United States",
+    "estimated": "~200",
+    "image": "images/mexican-wolf.png",
+    "link": "animals/mexican-wolf.html"
+  },
+  {
+    "name": "Dhole",
+    "status": "Endangered",
+    "region": "South and Southeast Asia",
+    "estimated": "~2,500",
+    "image": "images/dhole.png",
+    "link": "animals/dhole.html"
+  },
+  {
+    "name": "African Wild Dog",
+    "status": "Endangered",
+    "region": "Sub-Saharan Africa",
+    "estimated": "~6,600",
+    "image": "images/african-wild-dog.png",
+    "link": "animals/african-wild-dog.html"
+  },
+  {
+    "name": "Coyote",
+    "status": "Least Concern",
+    "region": "North and Central America",
+    "estimated": "~1,000,000",
+    "image": "images/coyote.png",
+    "link": "animals/coyote.html"
+  },
+  {
+    "name": "Golden Jackal",
+    "status": "Least Concern",
+    "region": "Europe, Asia, Africa",
+    "estimated": "Unknown",
+    "image": "images/golden-jackal.png",
+    "link": "animals/golden-jackal.html"
+  },
+  {
+    "name": "Black-backed Jackal",
+    "status": "Least Concern",
+    "region": "Eastern and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/black-backed-jackal.png",
+    "link": "animals/black-backed-jackal.html"
+  },
+  {
+    "name": "Side-striped Jackal",
+    "status": "Least Concern",
+    "region": "Central and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/side-striped-jackal.png",
+    "link": "animals/side-striped-jackal.html"
+  },
+  {
+    "name": "Bat-eared Fox",
+    "status": "Least Concern",
+    "region": "Eastern and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/bat-eared-fox.png",
+    "link": "animals/bat-eared-fox.html"
+  },
+  {
+    "name": "Fennec Fox",
+    "status": "Least Concern",
+    "region": "Sahara Desert",
+    "estimated": "Unknown",
+    "image": "images/fennec-fox.png",
+    "link": "animals/fennec-fox.html"
+  },
+  {
+    "name": "Arctic Fox",
+    "status": "Least Concern",
+    "region": "Arctic regions",
+    "estimated": "~110,000",
+    "image": "images/arctic-fox.png",
+    "link": "animals/arctic-fox.html"
+  },
+  {
+    "name": "Red Fox",
+    "status": "Least Concern",
+    "region": "North America, Europe, Asia, Australia",
+    "estimated": "Unknown",
+    "image": "images/red-fox.png",
+    "link": "animals/red-fox.html"
+  },
+  {
+    "name": "Gray Fox",
+    "status": "Least Concern",
+    "region": "North and South America",
+    "estimated": "Unknown",
+    "image": "images/gray-fox.png",
+    "link": "animals/gray-fox.html"
+  },
+  {
+    "name": "Crab-eating Fox",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/crab-eating-fox.png",
+    "link": "animals/crab-eating-fox.html"
+  },
+  {
+    "name": "Tibetan Fox",
+    "status": "Least Concern",
+    "region": "Tibetan Plateau",
+    "estimated": "Unknown",
+    "image": "images/tibetan-fox.png",
+    "link": "animals/tibetan-fox.html"
+  },
+  {
+    "name": "Blanford's Fox",
+    "status": "Least Concern",
+    "region": "Middle East and Central Asia",
+    "estimated": "Unknown",
+    "image": "images/blanfords-fox.png",
+    "link": "animals/blanfords-fox.html"
+  },
+  {
+    "name": "Rüppell's Fox",
+    "status": "Least Concern",
+    "region": "North Africa and Middle East",
+    "estimated": "Unknown",
+    "image": "images/ruppells-fox.png",
+    "link": "animals/ruppells-fox.html"
+  },
+  {
+    "name": "Cape Fox",
+    "status": "Least Concern",
+    "region": "Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/cape-fox.png",
+    "link": "animals/cape-fox.html"
+  },
+  {
+    "name": "Swift Fox",
+    "status": "Least Concern",
+    "region": "North American Great Plains",
+    "estimated": "~1,000",
+    "image": "images/swift-fox.png",
+    "link": "animals/swift-fox.html"
+  },
+  {
+    "name": "Kit Fox",
+    "status": "Least Concern",
+    "region": "Southwestern United States and Mexico",
+    "estimated": "Unknown",
+    "image": "images/kit-fox.png",
+    "link": "animals/kit-fox.html"
+  },
+  {
+    "name": "Corsac Fox",
+    "status": "Least Concern",
+    "region": "Central Asia",
+    "estimated": "Unknown",
+    "image": "images/corsac-fox.png",
+    "link": "animals/corsac-fox.html"
+  },
+  {
+    "name": "Bengal Fox",
+    "status": "Least Concern",
+    "region": "Indian subcontinent",
+    "estimated": "Unknown",
+    "image": "images/bengal-fox.png",
+    "link": "animals/bengal-fox.html"
+  },
+  {
+    "name": "Pale Fox",
+    "status": "Least Concern",
+    "region": "Sahel region of Africa",
+    "estimated": "Unknown",
+    "image": "images/pale-fox.png",
+    "link": "animals/pale-fox.html"
+  },
+  {
+    "name": "Hoary Fox",
+    "status": "Near Threatened",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/hoary-fox.png",
+    "link": "animals/hoary-fox.html"
+  },
+  {
+    "name": "Sechuran Fox",
+    "status": "Near Threatened",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/sechuran-fox.png",
+    "link": "animals/sechuran-fox.html"
+  },
+  {
+    "name": "Darwin's Fox",
+    "status": "Endangered",
+    "region": "Chile",
+    "estimated": "~250",
+    "image": "images/darwins-fox.png",
+    "link": "animals/darwins-fox.html"
+  },
+  {
+    "name": "Island Fox",
+    "status": "Near Threatened",
+    "region": "Channel Islands of California",
+    "estimated": "~6,000",
+    "image": "images/island-fox.png",
+    "link": "animals/island-fox.html"
+  },
+  {
+    "name": "South American Gray Fox",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/south-american-gray-fox.png",
+    "link": "animals/south-american-gray-fox.html"
+  },
+  {
+    "name": "Pampas Fox",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/pampas-fox.png",
+    "link": "animals/pampas-fox.html"
+  },
+  {
+    "name": "Chilla Fox",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/chilla-fox.png",
+    "link": "animals/chilla-fox.html"
+  },
+  {
+    "name": "Culpeo Fox",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/culpeo-fox.png",
+    "link": "animals/culpeo-fox.html"
+  },
+  {
+    "name": "Raccoon Dog",
+    "status": "Least Concern",
+    "region": "East Asia",
+    "estimated": "Unknown",
+    "image": "images/raccoon-dog.png",
+    "link": "animals/raccoon-dog.html"
+  },
+  {
+    "name": "Tanuki",
+    "status": "Least Concern",
+    "region": "Japan",
+    "estimated": "Unknown",
+    "image": "images/tanuki.png",
+    "link": "animals/tanuki.html"
+  },
+  {
+    "name": "Binturong",
+    "status": "Vulnerable",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/binturong.png",
+    "link": "animals/binturong.html"
+  },
+  {
+    "name": "Fossa",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "~2,500",
+    "image": "images/fossa.png",
+    "link": "animals/fossa.html"
+  },
+  {
+    "name": "Ring-tailed Mongoose",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/ring-tailed-mongoose.png",
+    "link": "animals/ring-tailed-mongoose.html"
+  },
+  {
+    "name": "Broad-striped Mongoose",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/broad-striped-mongoose.png",
+    "link": "animals/broad-striped-mongoose.html"
+  },
+  {
+    "name": "Giant-striped Mongoose",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/giant-striped-mongoose.png",
+    "link": "animals/giant-striped-mongoose.html"
+  },
+  {
+    "name": "Narrow-striped Mongoose",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/narrow-striped-mongoose.png",
+    "link": "animals/narrow-striped-mongoose.html"
+  },
+  {
+    "name": "Brown-tailed Mongoose",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/brown-tailed-mongoose.png",
+    "link": "animals/brown-tailed-mongoose.html"
+  },
+  {
+    "name": "Grandidier's Mongoose",
+    "status": "Endangered",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/grandidiers-mongoose.png",
+    "link": "animals/grandidiers-mongoose.html"
+  },
+  {
+    "name": "Egyptian Mongoose",
+    "status": "Least Concern",
+    "region": "Africa, Southern Europe, Middle East",
+    "estimated": "Unknown",
+    "image": "images/egyptian-mongoose.png",
+    "link": "animals/egyptian-mongoose.html"
+  },
+  {
+    "name": "Indian Gray Mongoose",
+    "status": "Least Concern",
+    "region": "Indian subcontinent",
+    "estimated": "Unknown",
+    "image": "images/indian-gray-mongoose.png",
+    "link": "animals/indian-gray-mongoose.html"
+  },
+  {
+    "name": "Small Indian Mongoose",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/small-indian-mongoose.png",
+    "link": "animals/small-indian-mongoose.html"
+  },
+  {
+    "name": "Ruddy Mongoose",
+    "status": "Least Concern",
+    "region": "Indian subcontinent",
+    "estimated": "Unknown",
+    "image": "images/ruddy-mongoose.png",
+    "link": "animals/ruddy-mongoose.html"
+  },
+  {
+    "name": "Striped-necked Mongoose",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/striped-necked-mongoose.png",
+    "link": "animals/striped-necked-mongoose.html"
+  },
+  {
+    "name": "Crab-eating Mongoose",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/crab-eating-mongoose.png",
+    "link": "animals/crab-eating-mongoose.html"
+  },
+  {
+    "name": "Yellow Mongoose",
+    "status": "Least Concern",
+    "region": "Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/yellow-mongoose.png",
+    "link": "animals/yellow-mongoose.html"
+  },
+  {
+    "name": "Slender Mongoose",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/slender-mongoose.png",
+    "link": "animals/slender-mongoose.html"
+  },
+  {
+    "name": "Banded Mongoose",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/banded-mongoose.png",
+    "link": "animals/banded-mongoose.html"
+  },
+  {
+    "name": "Dwarf Mongoose",
+    "status": "Least Concern",
+    "region": "Eastern and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/dwarf-mongoose.png",
+    "link": "animals/dwarf-mongoose.html"
+  },
+  {
+    "name": "Common Genet",
+    "status": "Least Concern",
+    "region": "Africa, Southern Europe, Middle East",
+    "estimated": "Unknown",
+    "image": "images/common-genet.png",
+    "link": "animals/common-genet.html"
+  },
+  {
+    "name": "Large-spotted Genet",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/large-spotted-genet.png",
+    "link": "animals/large-spotted-genet.html"
+  },
+  {
+    "name": "Small-spotted Genet",
+    "status": "Least Concern",
+    "region": "Africa, Southern Europe, Middle East",
+    "estimated": "Unknown",
+    "image": "images/small-spotted-genet.png",
+    "link": "animals/small-spotted-genet.html"
+  },
+  {
+    "name": "Aquatic Genet",
+    "status": "Near Threatened",
+    "region": "Central Africa",
+    "estimated": "Unknown",
+    "image": "images/aquatic-genet.png",
+    "link": "animals/aquatic-genet.html"
+  },
+  {
+    "name": "Crested Genet",
+    "status": "Least Concern",
+    "region": "Central and West Africa",
+    "estimated": "Unknown",
+    "image": "images/crested-genet.png",
+    "link": "animals/crested-genet.html"
+  },
+  {
+    "name": "Johnston's Genet",
+    "status": "Near Threatened",
+    "region": "West Africa",
+    "estimated": "Unknown",
+    "image": "images/johnstons-genet.png",
+    "link": "animals/johnstons-genet.html"
+  },
+  {
+    "name": "Pardine Genet",
+    "status": "Least Concern",
+    "region": "West and Central Africa",
+    "estimated": "Unknown",
+    "image": "images/pardine-genet.png",
+    "link": "animals/pardine-genet.html"
+  },
+  {
+    "name": "King Genet",
+    "status": "Least Concern",
+    "region": "West and Central Africa",
+    "estimated": "Unknown",
+    "image": "images/king-genet.png",
+    "link": "animals/king-genet.html"
+  },
+  {
+    "name": "Servaline Genet",
+    "status": "Least Concern",
+    "region": "Central Africa",
+    "estimated": "Unknown",
+    "image": "images/servaline-genet.png",
+    "link": "animals/servaline-genet.html"
+  },
+  {
+    "name": "Miombo Genet",
+    "status": "Least Concern",
+    "region": "Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/miombo-genet.png",
+    "link": "animals/miombo-genet.html"
+  },
+  {
+    "name": "Rusty-spotted Genet",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/rusty-spotted-genet.png",
+    "link": "animals/rusty-spotted-genet.html"
+  },
+  {
+    "name": "Hausa Genet",
+    "status": "Least Concern",
+    "region": "West Africa",
+    "estimated": "Unknown",
+    "image": "images/hausa-genet.png",
+    "link": "animals/hausa-genet.html"
+  },
+  {
+    "name": "Abyssinian Genet",
+    "status": "Least Concern",
+    "region": "East Africa",
+    "estimated": "Unknown",
+    "image": "images/abyssinian-genet.png",
+    "link": "animals/abyssinian-genet.html"
+  },
+  {
+    "name": "Bourlon's Genet",
+    "status": "Vulnerable",
+    "region": "West Africa",
+    "estimated": "Unknown",
+    "image": "images/bourlons-genet.png",
+    "link": "animals/bourlons-genet.html"
+  },
+  {
+    "name": "Cape Genet",
+    "status": "Least Concern",
+    "region": "Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/cape-genet.png",
+    "link": "animals/cape-genet.html"
+  },
+  {
+    "name": "Common Palm Civet",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/common-palm-civet.png",
+    "link": "animals/common-palm-civet.html"
+  },
+  {
+    "name": "Masked Palm Civet",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/masked-palm-civet.png",
+    "link": "animals/masked-palm-civet.html"
+  },
+  {
+    "name": "Hose's Palm Civet",
+    "status": "Vulnerable",
+    "region": "Borneo",
+    "estimated": "Unknown",
+    "image": "images/hoses-palm-civet.png",
+    "link": "animals/hoses-palm-civet.html"
+  },
+  {
+    "name": "Otter Civet",
+    "status": "Endangered",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/otter-civet.png",
+    "link": "animals/otter-civet.html"
+  },
+  {
+    "name": "African Civet",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/african-civet.png",
+    "link": "animals/african-civet.html"
+  },
+  {
+    "name": "Malayan Civet",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/malayan-civet.png",
+    "link": "animals/malayan-civet.html"
+  },
+  {
+    "name": "Large Indian Civet",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/large-indian-civet.png",
+    "link": "animals/large-indian-civet.html"
+  },
+  {
+    "name": "Small Indian Civet",
+    "status": "Least Concern",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/small-indian-civet.png",
+    "link": "animals/small-indian-civet.html"
+  },
+  {
+    "name": "Brown Palm Civet",
+    "status": "Vulnerable",
+    "region": "Western Ghats, India",
+    "estimated": "Unknown",
+    "image": "images/brown-palm-civet.png",
+    "link": "animals/brown-palm-civet.html"
+  },
+  {
+    "name": "Golden Palm Civet",
+    "status": "Vulnerable",
+    "region": "Sri Lanka",
+    "estimated": "Unknown",
+    "image": "images/golden-palm-civet.png",
+    "link": "animals/golden-palm-civet.html"
+  },
+  {
+    "name": "Jerdon's Palm Civet",
+    "status": "Vulnerable",
+    "region": "Western Ghats, India",
+    "estimated": "Unknown",
+    "image": "images/jerdons-palm-civet.png",
+    "link": "animals/jerdons-palm-civet.html"
+  },
+  {
+    "name": "Sulawesi Palm Civet",
+    "status": "Vulnerable",
+    "region": "Sulawesi, Indonesia",
+    "estimated": "Unknown",
+    "image": "images/sulawesi-palm-civet.png",
+    "link": "animals/sulawesi-palm-civet.html"
+  },
+  {
+    "name": "Owston's Palm Civet",
+    "status": "Endangered",
+    "region": "Vietnam, Laos, China",
+    "estimated": "Unknown",
+    "image": "images/owstons-palm-civet.png",
+    "link": "animals/owstons-palm-civet.html"
+  },
+  {
+    "name": "Malagasy Civet",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/malagasy-civet.png",
+    "link": "animals/malagasy-civet.html"
+  },
+  {
+    "name": "Spotted Linsang",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/spotted-linsang.png",
+    "link": "animals/spotted-linsang.html"
+  },
+  {
+    "name": "Banded Linsang",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/banded-linsang.png",
+    "link": "animals/banded-linsang.html"
+  },
+  {
+    "name": "African Linsang",
+    "status": "Least Concern",
+    "region": "Central Africa",
+    "estimated": "Unknown",
+    "image": "images/african-linsang.png",
+    "link": "animals/african-linsang.html"
+  },
+  {
+    "name": "West African Oyan",
+    "status": "Near Threatened",
+    "region": "West Africa",
+    "estimated": "Unknown",
+    "image": "images/west-african-oyan.png",
+    "link": "animals/west-african-oyan.html"
+  },
+  {
+    "name": "Central African Oyan",
+    "status": "Near Threatened",
+    "region": "Central Africa",
+    "estimated": "Unknown",
+    "image": "images/central-african-oyan.png",
+    "link": "animals/central-african-oyan.html"
+  },
+  {
+    "name": "Eastern Falanouc",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/eastern-falanouc.png",
+    "link": "animals/eastern-falanouc.html"
+  },
+  {
+    "name": "Western Falanouc",
+    "status": "Vulnerable",
+    "region": "Madagascar",
+    "estimated": "Unknown",
+    "image": "images/western-falanouc.png",
+    "link": "animals/western-falanouc.html"
+  },
+  {
+    "name": "Giant Otter",
+    "status": "Endangered",
+    "region": "South America",
+    "estimated": "~5,000",
+    "image": "images/giant-otter.png",
+    "link": "animals/giant-otter.html"
+  },
+  {
+    "name": "Sea Otter",
+    "status": "Endangered",
+    "region": "North Pacific",
+    "estimated": "~3,000",
+    "image": "images/sea-otter.png",
+    "link": "animals/sea-otter.html"
+  },
+  {
+    "name": "North American River Otter",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/north-american-river-otter.png",
+    "link": "animals/north-american-river-otter.html"
+  },
+  {
+    "name": "European Otter",
+    "status": "Near Threatened",
+    "region": "Europe, Asia, North Africa",
+    "estimated": "Unknown",
+    "image": "images/european-otter.png",
+    "link": "animals/european-otter.html"
+  },
+  {
+    "name": "Asian Small-clawed Otter",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/asian-small-clawed-otter.png",
+    "link": "animals/asian-small-clawed-otter.html"
+  },
+  {
+    "name": "Smooth-coated Otter",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/smooth-coated-otter.png",
+    "link": "animals/smooth-coated-otter.html"
+  },
+  {
+    "name": "Hairy-nosed Otter",
+    "status": "Endangered",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/hairy-nosed-otter.png",
+    "link": "animals/hairy-nosed-otter.html"
+  },
+  {
+    "name": "Spotted-necked Otter",
+    "status": "Near Threatened",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/spotted-necked-otter.png",
+    "link": "animals/spotted-necked-otter.html"
+  },
+  {
+    "name": "Marine Otter",
+    "status": "Endangered",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/marine-otter.png",
+    "link": "animals/marine-otter.html"
+  },
+  {
+    "name": "Southern River Otter",
+    "status": "Endangered",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/southern-river-otter.png",
+    "link": "animals/southern-river-otter.html"
+  },
+  {
+    "name": "Neotropical Otter",
+    "status": "Near Threatened",
+    "region": "Central and South America",
+    "estimated": "Unknown",
+    "image": "images/neotropical-otter.png",
+    "link": "animals/neotropical-otter.html"
+  },
+  {
+    "name": "Congo Clawless Otter",
+    "status": "Near Threatened",
+    "region": "Central Africa",
+    "estimated": "Unknown",
+    "image": "images/congo-clawless-otter.png",
+    "link": "animals/congo-clawless-otter.html"
+  },
+  {
+    "name": "Cape Clawless Otter",
+    "status": "Near Threatened",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/cape-clawless-otter.png",
+    "link": "animals/cape-clawless-otter.html"
+  },
+  {
+    "name": "American Badger",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/american-badger.png",
+    "link": "animals/american-badger.html"
+  },
+  {
+    "name": "European Badger",
+    "status": "Least Concern",
+    "region": "Europe and Asia",
+    "estimated": "Unknown",
+    "image": "images/european-badger.png",
+    "link": "animals/european-badger.html"
+  },
+  {
+    "name": "Honey Badger",
+    "status": "Least Concern",
+    "region": "Africa, Southwest Asia, Indian subcontinent",
+    "estimated": "Unknown",
+    "image": "images/honey-badger.png",
+    "link": "animals/honey-badger.html"
+  },
+  {
+    "name": "Asian Badger",
+    "status": "Least Concern",
+    "region": "East Asia",
+    "estimated": "Unknown",
+    "image": "images/asian-badger.png",
+    "link": "animals/asian-badger.html"
+  },
+  {
+    "name": "Japanese Badger",
+    "status": "Least Concern",
+    "region": "Japan",
+    "estimated": "Unknown",
+    "image": "images/japanese-badger.png",
+    "link": "animals/japanese-badger.html"
+  },
+  {
+    "name": "Chinese Ferret-badger",
+    "status": "Least Concern",
+    "region": "East and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/chinese-ferret-badger.png",
+    "link": "animals/chinese-ferret-badger.html"
+  },
+  {
+    "name": "Burmese Ferret-badger",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/burmese-ferret-badger.png",
+    "link": "animals/burmese-ferret-badger.html"
+  },
+  {
+    "name": "Javan Ferret-badger",
+    "status": "Least Concern",
+    "region": "Java, Indonesia",
+    "estimated": "Unknown",
+    "image": "images/javan-ferret-badger.png",
+    "link": "animals/javan-ferret-badger.html"
+  },
+  {
+    "name": "Bornean Ferret-badger",
+    "status": "Least Concern",
+    "region": "Borneo",
+    "estimated": "Unknown",
+    "image": "images/bornean-ferret-badger.png",
+    "link": "animals/bornean-ferret-badger.html"
+  },
+  {
+    "name": "Striped Skunk",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/striped-skunk.png",
+    "link": "animals/striped-skunk.html"
+  },
+  {
+    "name": "Hooded Skunk",
+    "status": "Least Concern",
+    "region": "North and Central America",
+    "estimated": "Unknown",
+    "image": "images/hooded-skunk.png",
+    "link": "animals/hooded-skunk.html"
+  },
+  {
+    "name": "Hog-nosed Skunk",
+    "status": "Least Concern",
+    "region": "Americas",
+    "estimated": "Unknown",
+    "image": "images/hog-nosed-skunk.png",
+    "link": "animals/hog-nosed-skunk.html"
+  },
+  {
+    "name": "Spotted Skunk",
+    "status": "Least Concern",
+    "region": "North and Central America",
+    "estimated": "Unknown",
+    "image": "images/spotted-skunk.png",
+    "link": "animals/spotted-skunk.html"
+  },
+  {
+    "name": "Stink Badger",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/stink-badger.png",
+    "link": "animals/stink-badger.html"
+  },
+  {
+    "name": "Tayra",
+    "status": "Least Concern",
+    "region": "Central and South America",
+    "estimated": "Unknown",
+    "image": "images/tayra.png",
+    "link": "animals/tayra.html"
+  },
+  {
+    "name": "Greater Grison",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/greater-grison.png",
+    "link": "animals/greater-grison.html"
+  },
+  {
+    "name": "Lesser Grison",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/lesser-grison.png",
+    "link": "animals/lesser-grison.html"
+  },
+  {
+    "name": "Wolverine",
+    "status": "Least Concern",
+    "region": "Northern North America, Europe, Asia",
+    "estimated": "Unknown",
+    "image": "images/wolverine.png",
+    "link": "animals/wolverine.html"
+  },
+  {
+    "name": "Fisher",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/fisher.png",
+    "link": "animals/fisher.html"
+  },
+  {
+    "name": "American Marten",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/american-marten.png",
+    "link": "animals/american-marten.html"
+  },
+  {
+    "name": "European Pine Marten",
+    "status": "Least Concern",
+    "region": "Europe and Asia",
+    "estimated": "Unknown",
+    "image": "images/european-pine-marten.png",
+    "link": "animals/european-pine-marten.html"
+  },
+  {
+    "name": "Beech Marten",
+    "status": "Least Concern",
+    "region": "Europe and Asia",
+    "estimated": "Unknown",
+    "image": "images/beech-marten.png",
+    "link": "animals/beech-marten.html"
+  },
+  {
+    "name": "Sable",
+    "status": "Least Concern",
+    "region": "Russia, Mongolia, China, Korea",
+    "estimated": "Unknown",
+    "image": "images/sable.png",
+    "link": "animals/sable.html"
+  },
+  {
+    "name": "Japanese Marten",
+    "status": "Least Concern",
+    "region": "Japan",
+    "estimated": "Unknown",
+    "image": "images/japanese-marten.png",
+    "link": "animals/japanese-marten.html"
+  },
+  {
+    "name": "Yellow-throated Marten",
+    "status": "Least Concern",
+    "region": "Asia",
+    "estimated": "Unknown",
+    "image": "images/yellow-throated-marten.png",
+    "link": "animals/yellow-throated-marten.html"
+  },
+  {
+    "name": "Nilgiri Marten",
+    "status": "Vulnerable",
+    "region": "Western Ghats, India",
+    "estimated": "Unknown",
+    "image": "images/nilgiri-marten.png",
+    "link": "animals/nilgiri-marten.html"
+  },
+  {
+    "name": "African Striped Weasel",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/african-striped-weasel.png",
+    "link": "animals/african-striped-weasel.html"
+  },
+  {
+    "name": "Amazon Weasel",
+    "status": "Least Concern",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/amazon-weasel.png",
+    "link": "animals/amazon-weasel.html"
+  },
+  {
+    "name": "Back-striped Weasel",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/back-striped-weasel.png",
+    "link": "animals/back-striped-weasel.html"
+  },
+  {
+    "name": "Egyptian Weasel",
+    "status": "Least Concern",
+    "region": "North Africa, Middle East",
+    "estimated": "Unknown",
+    "image": "images/egyptian-weasel.png",
+    "link": "animals/egyptian-weasel.html"
+  },
+  {
+    "name": "European Mink",
+    "status": "Critically Endangered",
+    "region": "Europe",
+    "estimated": "~1,000",
+    "image": "images/european-mink.png",
+    "link": "animals/european-mink.html"
+  },
+  {
+    "name": "American Mink",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/american-mink.png",
+    "link": "animals/american-mink.html"
+  },
+  {
+    "name": "Sea Mink",
+    "status": "Extinct",
+    "region": "Eastern North America",
+    "estimated": "0",
+    "image": "images/sea-mink.png",
+    "link": "animals/sea-mink.html"
+  },
+  {
+    "name": "European Polecat",
+    "status": "Least Concern",
+    "region": "Europe",
+    "estimated": "Unknown",
+    "image": "images/european-polecat.png",
+    "link": "animals/european-polecat.html"
+  },
+  {
+    "name": "Steppe Polecat",
+    "status": "Least Concern",
+    "region": "Eastern Europe and Asia",
+    "estimated": "Unknown",
+    "image": "images/steppe-polecat.png",
+    "link": "animals/steppe-polecat.html"
+  },
+  {
+    "name": "Black-footed Ferret",
+    "status": "Endangered",
+    "region": "North America",
+    "estimated": "~300",
+    "image": "images/black-footed-ferret.png",
+    "link": "animals/black-footed-ferret.html"
+  },
+  {
+    "name": "Domestic Ferret",
+    "status": "Domesticated",
+    "region": "Worldwide",
+    "estimated": "Unknown",
+    "image": "images/domestic-ferret.png",
+    "link": "animals/domestic-ferret.html"
+  },
+  {
+    "name": "Least Weasel",
+    "status": "Least Concern",
+    "region": "North America, Europe, Asia, North Africa",
+    "estimated": "Unknown",
+    "image": "images/least-weasel.png",
+    "link": "animals/least-weasel.html"
+  },
+  {
+    "name": "Stoat",
+    "status": "Least Concern",
+    "region": "North America, Europe, Asia",
+    "estimated": "Unknown",
+    "image": "images/stoat.png",
+    "link": "animals/stoat.html"
+  },
+  {
+    "name": "Long-tailed Weasel",
+    "status": "Least Concern",
+    "region": "North and Central America",
+    "estimated": "Unknown",
+    "image": "images/long-tailed-weasel.png",
+    "link": "animals/long-tailed-weasel.html"
+  },
+  {
+    "name": "Yellow-bellied Weasel",
+    "status": "Least Concern",
+    "region": "Asia",
+    "estimated": "Unknown",
+    "image": "images/yellow-bellied-weasel.png",
+    "link": "animals/yellow-bellied-weasel.html"
+  },
+  {
+    "name": "Malayan Weasel",
+    "status": "Least Concern",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/malayan-weasel.png",
+    "link": "animals/malayan-weasel.html"
+  },
+  {
+    "name": "Siberian Weasel",
+    "status": "Least Concern",
+    "region": "Asia",
+    "estimated": "Unknown",
+    "image": "images/siberian-weasel.png",
+    "link": "animals/siberian-weasel.html"
+  },
+  {
+    "name": "Japanese Weasel",
+    "status": "Least Concern",
+    "region": "Japan",
+    "estimated": "Unknown",
+    "image": "images/japanese-weasel.png",
+    "link": "animals/japanese-weasel.html"
+  },
+  {
+    "name": "Mountain Weasel",
+    "status": "Near Threatened",
+    "region": "Asia",
+    "estimated": "Unknown",
+    "image": "images/mountain-weasel.png",
+    "link": "animals/mountain-weasel.html"
+  },
+  {
+    "name": "Indonesian Mountain Weasel",
+    "status": "Least Concern",
+    "region": "Indonesia",
+    "estimated": "Unknown",
+    "image": "images/indonesian-mountain-weasel.png",
+    "link": "animals/indonesian-mountain-weasel.html"
+  },
+  {
+    "name": "African Clawless Otter",
+    "status": "Near Threatened",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/african-clawless-otter.png",
+    "link": "animals/african-clawless-otter.html"
+  },
+  {
+    "name": "Congo Clawless Otter",
+    "status": "Near Threatened",
+    "region": "Central Africa",
+    "estimated": "Unknown",
+    "image": "images/congo-clawless-otter.png",
+    "link": "animals/congo-clawless-otter.html"
+  },
+  {
+    "name": "Oriental Small-clawed Otter",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/oriental-small-clawed-otter.png",
+    "link": "animals/oriental-small-clawed-otter.html"
+  },
+  {
+    "name": "Giant River Otter",
+    "status": "Endangered",
+    "region": "South America",
+    "estimated": "~5,000",
+    "image": "images/giant-river-otter.png",
+    "link": "animals/giant-river-otter.html"
+  },
+  {
+    "name": "Southern River Otter",
+    "status": "Endangered",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/southern-river-otter.png",
+    "link": "animals/southern-river-otter.html"
+  },
+  {
+    "name": "Marine Otter",
+    "status": "Endangered",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/marine-otter.png",
+    "link": "animals/marine-otter.html"
+  },
+  {
+    "name": "North American River Otter",
+    "status": "Least Concern",
+    "region": "North America",
+    "estimated": "Unknown",
+    "image": "images/north-american-river-otter.png",
+    "link": "animals/north-american-river-otter.html"
+  },
+  {
+    "name": "Neotropical River Otter",
+    "status": "Near Threatened",
+    "region": "Central and South America",
+    "estimated": "Unknown",
+    "image": "images/neotropical-river-otter.png",
+    "link": "animals/neotropical-river-otter.html"
+  },
+  {
+    "name": "Spotted-necked Otter",
+    "status": "Near Threatened",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/spotted-necked-otter.png",
+    "link": "animals/spotted-necked-otter.html"
+  },
+  {
+    "name": "Smooth-coated Otter",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/smooth-coated-otter.png",
+    "link": "animals/smooth-coated-otter.html"
+  },
+  {
+    "name": "Hairy-nosed Otter",
+    "status": "Endangered",
+    "region": "Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/hairy-nosed-otter.png",
+    "link": "animals/hairy-nosed-otter.html"
+  },
+  {
+    "name": "European Otter",
+    "status": "Near Threatened",
+    "region": "Europe, Asia, North Africa",
+    "estimated": "Unknown",
+    "image": "images/european-otter.png",
+    "link": "animals/european-otter.html"
+  },
+  {
+    "name": "African Otter",
+    "status": "Near Threatened",
+    "region": "Sub-Saharan Africa",
+    "estimated": "Unknown",
+    "image": "images/african-otter.png",
+    "link": "animals/african-otter.html"
+  },
+  {
+    "name": "Asian Small-clawed Otter",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "Unknown",
+    "image": "images/asian-small-clawed-otter.png",
+    "link": "animals/asian-small-clawed-otter.html"
+  },
+  {
+    "name": "Sea Otter",
+    "status": "Endangered",
+    "region": "North Pacific",
+    "estimated": "~3,000",
+    "image": "images/sea-otter.png",
+    "link": "animals/sea-otter.html"
+  },
+    {
+    "name": "Margay",
+    "status": "Near Threatened",
+    "region": "Central and South America",
+    "estimated": "Unknown",
+    "image": "images/margay.png",
+    "link": "animals/margay.html"
+  },
+  {
+    "name": "Pampas Cat",
+    "status": "Near Threatened",
+    "region": "South America",
+    "estimated": "Unknown",
+    "image": "images/pampas-cat.png",
+    "link": "animals/pampas-cat.html"
+  },
+  {
+    "name": "Andean Mountain Cat",
+    "status": "Endangered",
+    "region": "Andes Mountains",
+    "estimated": "~1,400",
+    "image": "images/andean-mountain-cat.png",
+    "link": "animals/andean-mountain-cat.html"
+  },
+  {
+    "name": "Pallas's Cat",
+    "status": "Least Concern",
+    "region": "Central Asia",
+    "estimated": "~58,000",
+    "image": "images/pallass-cat.png",
+    "link": "animals/pallass-cat.html"
+  },
+  {
+    "name": "Sand Cat",
+    "status": "Least Concern",
+    "region": "Sahara Desert, Arabian Peninsula",
+    "estimated": "Unknown",
+    "image": "images/sand-cat.png",
+    "link": "animals/sand-cat.html"
+  },
+  {
+    "name": "Black-footed Cat",
+    "status": "Vulnerable",
+    "region": "Southern Africa",
+    "estimated": "~13,000",
+    "image": "images/black-footed-cat.png",
+    "link": "animals/black-footed-cat.html"
+  },
+  {
+    "name": "Rusty-spotted Cat",
+    "status": "Near Threatened",
+    "region": "India and Sri Lanka",
+    "estimated": "~10,000",
+    "image": "images/rusty-spotted-cat.png",
+    "link": "animals/rusty-spotted-cat.html"
+  },
+  {
+    "name": "Fishing Cat",
+    "status": "Vulnerable",
+    "region": "South and Southeast Asia",
+    "estimated": "~10,000",
+    "image": "images/fishing-cat.png",
+    "link": "animals/fishing-cat.html"
+  },
+  {
+    "name": "Flat-headed Cat",
+    "status": "Endangered",
+    "region": "Malay Peninsula, Borneo, Sumatra",
+    "estimated": "~2,500",
+    "image": "images/flat-headed-cat.png",
+    "link": "animals/flat-headed-cat.html"
+  },
+  {
+    "name": "Marbled Cat",
+    "status": "Near Threatened",
+    "region": "Southeast Asia",
+    "estimated": "~10,000",
+    "image": "images/marbled-cat.png",
+    "link": "animals/marbled-cat.html"
+  },
+  {
+    "name": "Bay Cat",
+    "status": "Endangered",
+    "region": "Borneo",
+    "estimated": "~2,200",
+    "image": "images/bay-cat.png",
+    "link": "animals/bay-cat.html"
+  },
+  {
+    "name": "Spotted Hyena",
+    "status": "Least Concern",
+    "region": "Sub-Saharan Africa",
+    "estimated": "~47,000",
+    "image": "images/spotted-hyena.png",
+    "link": "animals/spotted-hyena.html"
+  },
+  {
+    "name": "Brown Hyena",
+    "status": "Near Threatened",
+    "region": "Southern Africa",
+    "estimated": "~10,000",
+    "image": "images/brown-hyena.png",
+    "link": "animals/brown-hyena.html"
+  },
+  {
+    "name": "Striped Hyena",
+    "status": "Near Threatened",
+    "region": "North and East Africa, Middle East, India",
+    "estimated": "~10,000",
+    "image": "images/striped-hyena.png",
+    "link": "animals/striped-hyena.html"
+  },
+  {
+    "name": "Aardwolf",
+    "status": "Least Concern",
+    "region": "East and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/aardwolf.png",
+    "link": "animals/aardwolf.html"
+  },
+  {
+    "name": "Grey Wolf",
+    "status": "Least Concern",
+    "region": "North America, Europe, Asia",
+    "estimated": "~300,000",
+    "image": "images/grey-wolf.png",
+    "link": "animals/grey-wolf.html"
+  },
+  {
+    "name": "Ethiopian Wolf",
+    "status": "Endangered",
+    "region": "Ethiopian Highlands",
+    "estimated": "~500",
+    "image": "images/ethiopian-wolf.png",
+    "link": "animals/ethiopian-wolf.html"
+  },
+  {
+    "name": "Maned Wolf",
+    "status": "Near Threatened",
+    "region": "South America",
+    "estimated": "~23,000",
+    "image": "images/maned-wolf.png",
+    "link": "animals/maned-wolf.html"
+  },
+  {
+    "name": "Arctic Wolf",
+    "status": "Least Concern",
+    "region": "Arctic regions of North America and Greenland",
+    "estimated": "~200,000",
+    "image": "images/arctic-wolf.png",
+    "link": "animals/arctic-wolf.html"
+  },
+  {
+    "name": "Mexican Wolf",
+    "status": "Endangered",
+    "region": "Mexico and Southwestern United States",
+    "estimated": "~200",
+    "image": "images/mexican-wolf.png",
+    "link": "animals/mexican-wolf.html"
+  },
+  {
+    "name": "Dhole",
+    "status": "Endangered",
+    "region": "South and Southeast Asia",
+    "estimated": "~2,500",
+    "image": "images/dhole.png",
+    "link": "animals/dhole.html"
+  },
+  {
+    "name": "Coyote",
+    "status": "Least Concern",
+    "region": "North and Central America",
+    "estimated": "~1,000,000",
+    "image": "images/coyote.png",
+    "link": "animals/coyote.html"
+  },
+  {
+    "name": "Golden Jackal",
+    "status": "Least Concern",
+    "region": "Europe, Asia, Africa",
+    "estimated": "Unknown",
+    "image": "images/golden-jackal.png",
+    "link": "animals/golden-jackal.html"
+  },
+  {
+    "name": "Black-backed Jackal",
+    "status": "Least Concern",
+    "region": "Eastern and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/black-backed-jackal.png",
+    "link": "animals/black-backed-jackal.html"
+  },
+  {
+    "name": "Side-striped Jackal",
+    "status": "Least Concern",
+    "region": "Central and Southern Africa",
+    "estimated": "Unknown",
+    "image": "images/side-striped-jackal.png",
+    "link": "animals/side-striped-jackal.html"
+  }
+]

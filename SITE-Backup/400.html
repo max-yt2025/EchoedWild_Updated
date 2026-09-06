@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoedWild | Bad Request</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff6e7f, #bfe9ff);
+      color: #1e1e1e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.5em 0 2em;
+      max-width: 600px;
+    }
+    .button {
+      padding: 0.75em 1.5em;
+      background-color: #3498db;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #2980b9;
+    }
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.85rem;
+      color: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Bad Request</h1>
+  <p>The server couldn’t understand your request. It might be a tiny syntax hiccup or a wild echo that confused the system. Try refreshing or head back home.</p>
+  <button class="button" onclick="goHome()">Return Home</button>
+
+  <footer>&copy; 2025 EchoedWild. Crafted with clarity.</footer>
+
+  <script>
+    function goHome() {
+      window.location.href = "/";
+    }
+
+    console.log("Echo static — your request went off-script 🎯 Let’s recalibrate.");
+  </script>
+</body>
+</html>

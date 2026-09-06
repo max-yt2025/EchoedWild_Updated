@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EchoedWild Admin</title>
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .glass {
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .captcha-canvas { background:#f8fafc; border:1px solid #cbd5e1; display:block; margin:auto; }
+    .progress-shine { position:relative; overflow:hidden; }
+    .progress-shine::after{
+      content:""; position:absolute; top:0; left:-150%;
+      width:50%; height:100%;
+      background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.6) 50%, transparent 100%);
+      animation: shine 1.2s linear infinite;
+    }
+    @keyframes shine{ to{ left:150%; } }
+    .sidebar-enter{ transform: translateX(-100%); opacity:0; }
+    .sidebar-enter.active{ transform: translateX(0); opacity:1; transition: transform .25s ease, opacity .25s ease; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen" class="min-h-dvh flex items-center justify-center bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 p-4">
+    <div class="glass rounded-2xl shadow-2xl p-6 w-full max-w-md text-center text-white">
+      <div class="flex items-center justify-center gap-2 mb-2">
+        <img src="favicon.ico" alt="EchoedWild" class="w-8 h-8">
+        <h1 class="text-2xl font-extrabold tracking-wide">EchoedWild Admin</h1>
+      </div>
+      <p class="text-emerald-50 text-sm mb-5">Endangered Animals • Internal Panel</p>
+
+      <input id="username" type="text" placeholder="Username" class="w-full mb-3 px-3 py-2 rounded-lg bg-white/90 text-gray-900 outline-emerald-400">
+      <input id="password" type="password" placeholder="Password" class="w-full mb-4 px-3 py-2 rounded-lg bg-white/90 text-gray-900 outline-emerald-400">
+
+      <!-- Custom EchoedWild CAPTCHA -->
+      <div class="bg-white/90 rounded-xl p-3 mb-4 text-left text-gray-900">
+        <div class="flex items-center gap-2 mb-2">
+          <img src="favicon.ico" class="w-5 h-5" alt="">
+          <p class="text-sm font-semibold">EchoedWild CAPTCHA</p>
+        </div>
+        <canvas id="captchaCanvas" width="220" height="60" class="captcha-canvas rounded mb-2"></canvas>
+        <input id="captchaInput" type="text" placeholder="Type the characters" class="w-full mb-2 px-3 py-2 rounded border">
+        <div class="flex justify-between items-center text-sm">
+          <button onclick="generateCaptcha()" class="text-emerald-700 hover:underline">↻ Refresh</button>
+          <button onclick="playCaptchaSound()" class="text-indigo-700 hover:underline">🔊 Sound</button>
+        </div>
+        <label class="mt-2 flex items-center gap-2 text-sm">
+          <input id="captchaCheck" type="checkbox" class="accent-emerald-600">
+          <span>I am not a bot</span>
+        </label>
+      </div>
+
+      <button onclick="login()" class="w-full py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 font-semibold">Login</button>
+      <p id="login-error" class="text-red-200 text-sm mt-3 hidden">Invalid login</p>
+      <button onclick="showRecovery()" class="mt-3 text-sm underline decoration-dotted">Forgot password?</button>
+    </div>
+  </div>
+
+  <!-- RECOVERY SCREEN -->
+  <div id="recovery-screen" class="hidden min-h-dvh flex items-center justify-center bg-gray-900 p-4">
+    <div class="glass rounded-2xl shadow-2xl p-6 w-full max-w-md text-center text-white">
+      <h2 class="text-xl font-bold mb-4">Recover Access</h2>
+      <button onclick="usePin()" class="w-full mb-3 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 font-semibold">Use PIN (13 - age)</button>
+      <button onclick="useFingerprint()" class="w-full py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 font-semibold">Use Fingerprint (simulate)</button>
+      <p id="recovery-error" class="text-red-200 text-sm mt-3 hidden"></p>
+    </div>
+  </div>
+
+  <!-- DASHBOARD WRAPPER -->
+  <div id="app" class="hidden min-h-dvh">
+
+    <!-- Top bar -->
+    <header class="sticky top-0 z-30 bg-white/70 backdrop-blur border-b">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <button id="hamburgerOpen" class="lg:hidden p-2 rounded hover:bg-gray-100" aria-label="Open menu">
+            ☰
+          </button>
+          <div class="flex items-center gap-2">
+            <img src="favicon.ico" class="w-6 h-6" alt="">
+            <h1 id="siteTitle" class="font-bold">EchoedWild Admin</h1>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="clock" class="text-sm text-gray-600"></span>
+          <button onclick="logout()" class="px-3 py-1.5 rounded-lg bg-emerald-600 text-white hover:bg-emerald-500">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar overlay (mobile) -->
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black/40 hidden"></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed lg:static inset-y-0 left-0 w-72 lg:w-72 p-4 lg:p-5 glass shadow-xl lg:shadow-none sidebar-enter lg:translate-x-0 lg:opacity-100 z-40">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <img src="favicon.ico" class="w-6 h-6" alt="">
+          <span class="font-bold text-emerald-900">EchoedWild</span>
+        </div>
+        <button id="hamburgerClose" class="lg:hidden p-2 rounded hover:bg-white/30" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="space-y-2" id="navList">
+        <button data-target="section-dashboard" class="w-full text-left px-3 py-2 rounded hover:bg-white/30 bg-white/30">Dashboard</button>
+        <button data-target="section-visitors"  class="w-full text-left px-3 py-2 rounded hover:bg-white/30">Visitors</button>
+        <button data-target="section-reports"   class="w-full text-left px-3 py-2 rounded hover:bg-white/30">Reports</button>
+        <button data-target="section-settings"  class="w-full text-left px-3 py-2 rounded hover:bg-white/30">Settings</button>
+      </nav>
+      <div class="mt-6 text-xs text-emerald-900/70">
+        v1.0 • Endangered species CMS
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="lg:ml-72">
+      <div class="max-w-7xl mx-auto p-4 lg:p-6 space-y-6">
+
+        <!-- SECTION: Dashboard -->
+        <section id="section-dashboard" class="space-y-6">
+          <!-- Stat cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl p-4 shadow">
+              <p class="text-gray-500">Active Visitors</p>
+              <p id="visitor-count" class="text-3xl font-extrabold">0</p>
+              <p class="text-xs text-gray-400 mt-1">fluctuates 1–27</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow">
+              <p class="text-gray-500">Protected Species</p>
+              <p class="text-3xl font-extrabold">18</p>
+              <p class="text-xs text-gray-400 mt-1">tracked internally</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow">
+              <p class="text-gray-500">Reports Logged</p>
+              <p id="report-count" class="text-3xl font-extrabold">0</p>
+              <p class="text-xs text-gray-400 mt-1">auto-streaming</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow">
+              <p class="text-gray-500">System Status</p>
+              <p id="system-status" class="text-3xl font-extrabold text-emerald-600">OK</p>
+              <p class="text-xs text-gray-400 mt-1">all services nominal</p>
+            </div>
+          </div>
+
+          <!-- Live widgets -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div class="bg-white rounded-xl p-4 shadow lg:col-span-2">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold">Visitors (real-time)</h3>
+                <div class="text-xs text-gray-500">updates ~1–2s</div>
+              </div>
+              <canvas id="visitorsChart" height="100"></canvas>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-white rounded-xl p-4 shadow">
+                <h3 class="font-semibold mb-2">Conservation Alerts</h3>
+                <ul id="alerts" class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>Nesting site check scheduled.</li>
+                  <li>Ranger patrol route updated.</li>
+                  <li>Sensor battery at 78%.</li>
+                </ul>
+              </div>
+              <div class="bg-white rounded-xl p-4 shadow">
+                <h3 class="font-semibold mb-2">Recent Activity</h3>
+                <ul id="activity" class="text-sm text-gray-700 space-y-1">
+                  <li>🗂 Dataset synced</li>
+                  <li>🛰 GPS tag ping</li>
+                  <li>📦 Backup complete</li>
+                </ul>
+              </div>
+              <div class="bg-white rounded-xl p-4 shadow">
+                <h3 class="font-semibold mb-2">Live Clock</h3>
+                <div id="clockCard" class="text-2xl font-bold text-gray-800"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: Visitors -->
+        <section id="section-visitors" class="hidden space-y-4">
+          <div class="bg-white rounded-xl p-4 shadow">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold">Visitors Stream</h3>
+              <div class="text-sm text-gray-500">animated values every 1–2s</div>
+            </div>
+            <div class="mt-3 flex items-end gap-4">
+              <div>
+                <div class="text-sm text-gray-500">Current</div>
+                <div id="visitorsCurrent" class="text-3xl font-extrabold">0</div>
+              </div>
+              <div>
+                <div class="text-sm text-gray-500">Peak (session)</div>
+                <div id="visitorsPeak" class="text-2xl font-bold">0</div>
+              </div>
+              <div>
+                <div class="text-sm text-gray-500">Low (session)</div>
+                <div id="visitorsLow" class="text-2xl font-bold">0</div>
+              </div>
+            </div>
+            <canvas id="visitorsChart2" height="110" class="mt-4"></canvas>
+          </div>
+        </section>
+
+        <!-- SECTION: Reports -->
+        <section id="section-reports" class="hidden space-y-4">
+          <div class="bg-white rounded-xl p-4 shadow">
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold">Incoming Reports</h3>
+              <div class="flex items-center gap-2">
+                <button id="btnPauseReports" class="px-3 py-1.5 rounded bg-gray-800 text-white text-sm">Pause</button>
+                <button id="btnClearReports" class="px-3 py-1.5 rounded bg-gray-200 text-sm">Clear</button>
+              </div>
+            </div>
+            <div class="overflow-auto max-h-[420px] mt-3">
+              <table class="w-full text-sm">
+                <thead class="sticky top-0 bg-gray-50">
+                  <tr class="text-left text-gray-600">
+                    <th class="py-2 px-2">Time</th>
+                    <th class="py-2 px-2">Animal</th>
+                    <th class="py-2 px-2">Contact</th>
+                    <th class="py-2 px-2">Support</th>
+                    <th class="py-2 px-2">Rating</th>
+                  </tr>
+                </thead>
+                <tbody id="reportsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: Settings -->
+        <section id="section-settings" class="hidden space-y-4">
+          <div class="bg-white rounded-xl p-4 shadow">
+            <h3 class="font-semibold mb-3">Preferences (fake, saved locally)</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="flex items-center justify-between gap-4 p-3 rounded border">
+                <span>Dark mode</span>
+                <input id="setDark" type="checkbox" class="accent-emerald-600">
+              </label>
+              <label class="flex items-center justify-between gap-4 p-3 rounded border">
+                <span>Animate visitors faster</span>
+                <input id="setFast" type="checkbox" class="accent-emerald-600">
+              </label>
+              <label class="flex items-center justify-between gap-4 p-3 rounded border">
+                <span>Sidebar compact</span>
+                <input id="setCompact" type="checkbox" class="accent-emerald-600">
+              </label>
+              <div class="p-3 rounded border">
+                <label class="block text-sm mb-1">Site title</label>
+                <input id="setTitle" type="text" class="w-full px-3 py-2 rounded border" placeholder="EchoedWild Admin">
+              </div>
+            </div>
+            <div class="mt-3 flex gap-2">
+              <button id="btnSave" class="px-3 py-1.5 rounded bg-emerald-600 text-white">Save</button>
+              <button id="btnReset" class="px-3 py-1.5 rounded bg-gray-200">Reset</button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- REDIRECT POPUP (for 5 failed logins) -->
+  <div id="redirect-popup" class="hidden fixed inset-0 bg-black/60 backdrop-blur-md flex items-center justify-center z-50">
+    <div class="glass p-6 rounded-2xl shadow-2xl text-white w-80">
+      <h2 class="text-xl font-bold mb-4">Redirecting…</h2>
+      <p id="redirect-text" class="mb-3">Redirecting to homepage: 0%</p>
+      <div class="w-full h-3 bg-white/30 rounded-full overflow-hidden progress-shine">
+        <div id="redirect-bar" class="h-3 bg-emerald-400 rounded-full w-0"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* -------- GLOBALS -------- */
+    const correctUser = "Admin";
+    const correctPass = "2026-project";
+    let attempts = 0;
+    let captchaText = "";
+    const maxVisitors = 27;
+    const minVisitors = 1;
+
+    /* -------- CLOCK -------- */
+    const clockEl = document.getElementById("clock");
+    const clockCard = document.getElementById("clockCard");
+    function tickClock(){
+      const d = new Date();
+      const s = d.toLocaleString();
+      if (clockEl) clockEl.textContent = s;
+      if (clockCard) clockCard.textContent = s;
+    }
+    setInterval(tickClock, 1000); tickClock();
+
+    /* -------- CAPTCHA -------- */
+    function generateCaptcha(){
+      const canvas = document.getElementById("captchaCanvas");
+      const ctx = canvas.getContext("2d");
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      // background noise
+      ctx.fillStyle = "#e5f3ec";
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      captchaText = "";
+      for(let i=0;i<5;i++) captchaText += chars[Math.floor(Math.random()*chars.length)];
+
+      for(let i=0;i<captchaText.length;i++){
+        const x = 20 + i*36;
+        const y = 40 + Math.random()*6-3;
+        ctx.save();
+        ctx.translate(x,y);
+        ctx.rotate((Math.random()*0.5-0.25));
+        ctx.font = `${26+Math.floor(Math.random()*6)}px Verdana`;
+        ctx.fillStyle = `hsl(${Math.random()*60+120} 70% 20%)`;
+        ctx.fillText(captchaText[i],0,0);
+        ctx.restore();
+      }
+      // lines
+      for(let i=0;i<6;i++){
+        ctx.strokeStyle = `rgba(0,0,0,${Math.random()*0.25+0.1})`;
+        ctx.beginPath();
+        ctx.moveTo(Math.random()*220, Math.random()*60);
+        ctx.lineTo(Math.random()*220, Math.random()*60);
+        ctx.stroke();
+      }
+      // dots
+      for(let i=0;i<30;i++){
+        ctx.fillStyle = `rgba(0,0,0,${Math.random()*0.2})`;
+        ctx.fillRect(Math.random()*220, Math.random()*60, 1, 1);
+      }
+    }
+    function playCaptchaSound(){
+      const u = new SpeechSynthesisUtterance(captchaText.split("").join(" "));
+      u.rate = 0.9; u.pitch = 1;
+      speechSynthesis.speak(u);
+    }
+
+    /* -------- LOGIN / RECOVERY -------- */
+    function showError(msg){
+      const err = document.getElementById("login-error");
+      err.textContent = msg; err.classList.remove("hidden");
+    }
+    function login(){
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const capInput = document.getElementById("captchaInput").value.trim();
+      const capCheck = document.getElementById("captchaCheck").checked;
+
+      if (user === correctUser && pass === correctPass && capInput === captchaText && capCheck){
+        enterApp();
+      } else {
+        attempts++;
+        showError(`Login failed (${attempts}/5)`);
+        if (attempts >= 5) showRedirectPopup();
+        generateCaptcha();
+        document.getElementById("captchaInput").value = "";
+        document.getElementById("captchaCheck").checked = false;
+      }
+    }
+    function showRecovery(){
+      document.getElementById("login-screen").classList.add("hidden");
+      document.getElementById("recovery-screen").classList.remove("hidden");
+    }
+    function usePin(){
+      const age = parseInt(prompt("Enter your age:"),10);
+      const pin = 13 - (isNaN(age)?0:age);
+      const entered = parseInt(prompt("Enter your recovery PIN:"),10);
+      if (entered === pin){ enterApp(); }
+      else{
+        const e = document.getElementById("recovery-error");
+        e.textContent = "Wrong PIN"; e.classList.remove("hidden");
+      }
+    }
+    function useFingerprint(){
+      alert("Fingerprint scan successful ✅");
+      enterApp();
+    }
+    function enterApp(){
+      document.getElementById("login-screen").classList.add("hidden");
+      document.getElementById("recovery-screen").classList.add("hidden");
+      document.getElementById("app").classList.remove("hidden");
+      startVisitorsEngines();
+      startReportsStream();
+      restoreSettings();
+    }
+    function logout(){ location.reload(); }
+
+    /* -------- REDIRECT POPUP -------- */
+    function showRedirectPopup(){
+      const wrap = document.getElementById("redirect-popup");
+      const bar = document.getElementById("redirect-bar");
+      const txt = document.getElementById("redirect-text");
+      wrap.classList.remove("hidden");
+      let p = 0;
+      const t = setInterval(()=>{
+        p += 5;
+        bar.style.width = p+"%";
+        txt.textContent = `Redirecting to homepage: ${p}%`;
+        if (p>=100){ clearInterval(t); location.href = "index.html"; }
+      }, 80);
+    }
+
+    /* -------- SIDEBAR (glass + hamburger) -------- */
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebarOverlay");
+    document.getElementById("hamburgerOpen").addEventListener("click", ()=>{
+      overlay.classList.remove("hidden");
+      sidebar.classList.add("active");
+      sidebar.classList.remove("sidebar-enter");
+    });
+    document.getElementById("hamburgerClose").addEventListener("click", closeSidebar);
+    overlay.addEventListener("click", closeSidebar);
+    function closeSidebar(){
+      overlay.classList.add("hidden");
+      sidebar.classList.add("sidebar-enter");
+      setTimeout(()=>sidebar.classList.remove("active"), 200);
+    }
+
+    // Nav buttons switch sections
+    document.querySelectorAll("#navList button").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        document.querySelectorAll("main section").forEach(s=>s.classList.add("hidden"));
+        document.getElementById(btn.dataset.target).classList.remove("hidden");
+        document.querySelectorAll("#navList button").forEach(b=>b.classList.remove("bg-white/30"));
+        btn.classList.add("bg-white/30");
+        if (window.innerWidth < 1024) closeSidebar();
+      });
+    });
+
+    /* -------- VISITORS (animated counter + real-time charts) -------- */
+    const visitorCountEl = document.getElementById("visitor-count");
+    const visitorsCurrent = document.getElementById("visitorsCurrent");
+    const visitorsPeak = document.getElementById("visitorsPeak");
+    const visitorsLow  = document.getElementById("visitorsLow");
+    let currentVisitors = 0, peak = 0, low = 999;
+
+    // helper for animated number change
+    function animateNumber(el, from, to, duration=500){
+      const start = performance.now();
+      function step(now){
+        const p = Math.min(1, (now-start)/duration);
+        const val = Math.round(from + (to-from)*p);
+        el.textContent = val;
+        if (p<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    // produce random next value 1..27 with small steps up/down
+    function nextVisitors(val){
+      let delta = Math.floor(Math.random()*5)-2; // -2..+2
+      let next = val + delta;
+      if (next < minVisitors) next = minVisitors + Math.floor(Math.random()*2); // 1..2
+      if (next > maxVisitors) next = maxVisitors - Math.floor(Math.random()*2); // 26..27
+      if (next === val) next += (Math.random()<0.5 ? -1 : 1);
+      next = Math.min(maxVisitors, Math.max(minVisitors, next));
+      return next;
+    }
+
+    // charts
+    let chart1, chart2;
+    function buildVisitorsCharts(){
+      const ctx1 = document.getElementById("visitorsChart").getContext("2d");
+      const ctx2 = document.getElementById("visitorsChart2").getContext("2d");
+      const baseLabels = Array.from({length:30}, (_,i)=>`${i+1}s`);
+      const baseData = Array.from({length:30}, ()=>Math.floor(Math.random()*(maxVisitors-minVisitors+1))+minVisitors);
+
+      chart1 = new Chart(ctx1,{
+        type:"line",
+        data:{ labels:[...baseLabels], datasets:[{ label:"Visitors", data:[...baseData], borderColor:"rgb(16,185,129)", backgroundColor:"rgba(16,185,129,.2)", fill:true, tension:.35 }]},
+        options:{ animation:{duration:300}, scales:{ y:{ min:0, max:30 }}, plugins:{legend:{display:false}}}
+      });
+      chart2 = new Chart(ctx2,{
+        type:"line",
+        data:{ labels:[...baseLabels], datasets:[{ label:"Visitors", data:[...baseData], borderColor:"rgb(16,185,129)", backgroundColor:"rgba(16,185,129,.2)", fill:true, tension:.35 }]},
+        options:{ animation:{duration:300}, scales:{ y:{ min:0, max:30 }}, plugins:{legend:{display:false}}}
+      });
+    }
+
+    let visitorTimer;
+    function startVisitorsEngines(){
+      // init values
+      currentVisitors = Math.floor(Math.random()*(maxVisitors-minVisitors+1))+minVisitors;
+      peak = currentVisitors; low = currentVisitors;
+      visitorCountEl.textContent = currentVisitors;
+      if (visitorsCurrent) visitorsCurrent.textContent = currentVisitors;
+      if (visitorsPeak) visitorsPeak.textContent = peak;
+      if (visitorsLow) visitorsLow.textContent = low;
+      buildVisitorsCharts();
+
+      function tick(){
+        const next = nextVisitors(currentVisitors);
+        animateNumber(visitorCountEl, currentVisitors, next, 500);
+        if (visitorsCurrent) animateNumber(visitorsCurrent, currentVisitors, next, 500);
+        currentVisitors = next;
+        peak = Math.max(peak, currentVisitors);
+        low  = Math.min(low,  currentVisitors);
+        if (visitorsPeak) visitorsPeak.textContent = peak;
+        if (visitorsLow)  visitorsLow.textContent  = low;
+
+        // update charts (shift left, push new)
+        [chart1, chart2].forEach(ch=>{
+          ch.data.datasets[0].data.shift();
+          ch.data.datasets[0].data.push(currentVisitors);
+          ch.update();
+        });
+
+        // schedule next 1–2s based on setting
+        const fast = JSON.parse(localStorage.getItem("ew:fast") || "false");
+        const delay = fast ? 1000 : (1000 + Math.floor(Math.random()*1000)); // 1–2s
+        visitorTimer = setTimeout(tick, delay);
+      }
+      tick();
+    }
+
+    /* -------- REPORTS (fake stream, +1/sec) -------- */
+    const animals = ["Amur Leopard","Black Rhino","Sumatran Orangutan","Hawksbill Turtle","Vaquita","Mountain Gorilla","Javan Rhino","Saola","Philippine Eagle","Kakapo","Iberian Lynx","Blue Whale","Snow Leopard","African Wild Dog","Cross River Gorilla","Addax","Bornean Elephant","Sunda Tiger"];
+    const supports = ["Email","Chat","Phone","In-app","Twitter","Discord"];
+    const ratings  = ["★☆☆☆☆","★★☆☆☆","★★★☆☆","★★★★☆","★★★★★"];
+    let reportCount = 0, reportsPaused = false, reportsTimer;
+
+    function pushReport(){
+      if (reportsPaused) return;
+      const now = new Date().toLocaleTimeString();
+      const animal = animals[Math.floor(Math.random()*animals.length)];
+      const contact = `contact${Math.floor(Math.random()*900+100)}@echoedwild.org`;
+      const support = supports[Math.floor(Math.random()*supports.length)];
+      const rating  = ratings[Math.floor(Math.random()*ratings.length)];
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="py-2 px-2 whitespace-nowrap text-gray-600">${now}</td>
+        <td class="py-2 px-2">${animal}</td>
+        <td class="py-2 px-2 text-emerald-700 underline decoration-dotted">${contact}</td>
+        <td class="py-2 px-2">${support}</td>
+        <td class="py-2 px-2">${rating}</td>
+      `;
+      const body = document.getElementById("reportsBody");
+      body.prepend(tr); // newest on top
+      reportCount++;
+      document.getElementById("report-count").textContent = reportCount;
+      // cap rows for performance
+      const maxRows = 200;
+      while (body.rows.length > maxRows) body.deleteRow(body.rows.length - 1);
+    }
+
+    function startReportsStream(){
+      // seed initial batch
+      for(let i=0;i<30;i++) pushReport();
+      // stream 1/sec
+      reportsTimer = setInterval(()=>pushReport(), 1000);
+      document.getElementById("btnPauseReports").addEventListener("click", ()=>{
+        reportsPaused = !reportsPaused;
+        document.getElementById("btnPauseReports").textContent = reportsPaused ? "Resume" : "Pause";
+      });
+      document.getElementById("btnClearReports").addEventListener("click", ()=>{
+        document.getElementById("reportsBody").innerHTML = "";
+      });
+    }
+
+    /* -------- SETTINGS (fake, saved to localStorage) -------- */
+    const setDark    = document.getElementById("setDark");
+    const setFast    = document.getElementById("setFast");
+    const setCompact = document.getElementById("setCompact");
+    const setTitle   = document.getElementById("setTitle");
+    const siteTitle  = document.getElementById("siteTitle");
+
+    function applySettings({dark, fast, compact, title}){
+      document.documentElement.classList.toggle("dark", !!dark);
+      document.body.classList.toggle("bg-gray-950", !!dark);
+      document.body.classList.toggle("text-gray-100", !!dark);
+
+      if (compact) sidebar.classList.add("p-2"); else sidebar.classList.remove("p-2");
+      if (title){ siteTitle.textContent = title; document.title = title; }
+
+      // visitors speed handled in engine tick via localStorage flag
+    }
+
+    function saveSettings(){
+      const data = {
+        dark: setDark.checked,
+        fast: setFast.checked,
+        compact: setCompact.checked,
+        title: setTitle.value || "EchoedWild Admin"
+      };
+      localStorage.setItem("ew:settings", JSON.stringify(data));
+      localStorage.setItem("ew:fast", JSON.stringify(!!data.fast));
+      applySettings(data);
+    }
+    function restoreSettings(){
+      const raw = localStorage.getItem("ew:settings");
+      const data = raw ? JSON.parse(raw) : { dark:false, fast:false, compact:false, title:"EchoedWild Admin" };
+      setDark.checked = !!data.dark;
+      setFast.checked = !!data.fast;
+      setCompact.checked = !!data.compact;
+      setTitle.value = data.title || "EchoedWild Admin";
+      applySettings(data);
+    }
+    document.getElementById("btnSave").addEventListener("click", saveSettings);
+    document.getElementById("btnReset").addEventListener("click", ()=>{
+      localStorage.removeItem("ew:settings");
+      localStorage.removeItem("ew:fast");
+      setDark.checked = false; setFast.checked=false; setCompact.checked=false; setTitle.value="EchoedWild Admin";
+      applySettings({dark:false, fast:false, compact:false, title:"EchoedWild Admin"});
+    });
+
+    /* -------- INIT -------- */
+    window.onload = ()=>{
+      generateCaptcha();
+    };
+  </script>
+</body>
+</html>

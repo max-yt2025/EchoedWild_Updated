@@ -1,0 +1,10 @@
+/* status pills */
+.status{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;font-weight:700;font-size:0.8rem}
+.status.critical{background:#ffe9e6;color:#9b1e11}
+.status.endangered{background:#fff4e6;color:#7a3f00}
+.status.vulnerable{background:#fff7e6;color:#7a4b00}
+
+/* status table */
+.status-table{width:100%;border-collapse:collapse;background:transparent}
+.status-table th, .status-table td{padding:12px;text-align:left;border-bottom:1px solid rgba(10,15,25,0.04)}
+.status-table td a{color:var(--accent)}

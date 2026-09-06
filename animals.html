@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Animals — EchoedWild</title>
+  <meta name="description" content="EchoedWild Animal Database - Browse 100+ endangered species profiles with detailed information, conservation status, and habitat data." />
+  <meta name="keywords" content="endangered animals database, wildlife species, animal profiles, conservation status, habitat information" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/animals-data.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="cursor-inner"></div>
+<div id="cursor-outer"></div>
+  <header class="site-header glass">
+    <div class="container header-inner">
+
+      <div class="logo">
+        <img src="images/favicon.png" alt="EchoedWild Logo" class="logo-img">
+     </div>
+
+      <a class="logo" href="index.html"><span class="echo">Echoed</span><span class="wild">Wild</span></a>
+
+      <div class="search-wrap desktop-only">
+        <input id="globalSearch" class="search" type="search" placeholder="Search animals, habitats, status..." aria-label="Search animals">
+      </div>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="animals.html">Animals</a></li>
+          <li><a href="status.html">Status</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="icon-btn" id="searchToggle" title="Open search (mobile)">🔍</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="glass animate-up">
+      <h1>Animal Database</h1>
+      <p class="muted">Explore our comprehensive database of endangered species. Browse through 100+ animal profiles with detailed information about their habitat, conservation status, threats, and ongoing conservation efforts.</p>
+      
+      <div class="hero-cta" style="margin-top: 20px;">
+        <a class="btn" href="status.html">View Status Tracker</a>
+        <a class="btn ghost" href="index.html">Return Home</a>
+      </div>
+    </section>
+
+    <section class="controls-row animate-up">
+      <div class="filters">
+        <input id="listSearch" class="search" type="search" placeholder="Search animals..." aria-label="Search animals list" style="width: 250px;">
+        
+        <label>
+          <select id="statusFilter" aria-label="Filter by status">
+            <option value="">All statuses</option>
+            <option value="Critically Endangered">Critically Endangered</option>
+            <option value="Endangered">Endangered</option>
+            <option value="Vulnerable">Vulnerable</option>
+            <option value="Near Threatened">Near Threatened</option>
+            <option value="Least Concern">Least Concern</option>
+          </select>
+        </label>
+        
+        <label>
+          <select id="regionFilter" aria-label="Filter by region">
+            <option value="">All regions</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Europe">Europe</option>
+            <option value="Arctic">Arctic</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Global">Global</option>
+          </select>
+        </label>
+        
+        <button id="clearFilters" class="btn ghost small">Clear</button>
+      </div>
+
+      <div class="stats">
+        <span id="resultsCount" class="muted">Loading species...</span>
+      </div>
+    </section>
+
+    <section class="grid animate-up" id="animalsGrid" aria-live="polite">
+      <div class="muted">Loading animals...</div>
+    </section>
+
+    <section class="glass animate-up" id="noResults" style="display: none; text-align: center; padding: 40px;">
+      <h2>No Results Found</h2>
+      <p class="muted">Try adjusting your search terms or filters to find what you're looking for.</p>
+      <button id="resetSearch" class="btn" style="margin-top: 20px;">Reset Search</button>
+    </section>
+  </main>
+
+  <footer class="site-footer glass">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a class="logo small" href="index.html">EchoedWild</a>
+        <p class="muted">© <span id="year"></span> EchoedWild — All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tos.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="status.html">Status Tracker</a></li>
+            <li><a href="download.html">Download App</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

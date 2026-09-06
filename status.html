@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Status Tracker — EchoedWild</title>
+  <meta name="description" content="EchoedWild Conservation Status Tracker - Real-time IUCN Red List status monitoring for endangered species worldwide." />
+  <meta name="keywords" content="conservation status tracker, IUCN Red List, endangered species status, wildlife monitoring" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/animals-data.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div id="cursor-inner"></div>
+<div id="cursor-outer"></div>
+  <header class="site-header glass">
+    <div class="container header-inner">
+
+      <div class="logo">
+        <img src="images/favicon.png" alt="EchoedWild Logo" class="logo-img">
+     </div>
+
+      <a class="logo" href="index.html"><span class="echo">Echoed</span><span class="wild">Wild</span></a>
+
+      <div class="search-wrap desktop-only">
+        <input id="globalSearch" class="search" type="search" placeholder="Search animals, habitats, status..." aria-label="Search animals">
+      </div>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="animals.html">Animals</a></li>
+          <li><a class="active" href="status.html">Status</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="icon-btn" id="searchToggle" title="Open search (mobile)">🔍</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="glass animate-up">
+      <h1>Conservation Status Tracker</h1>
+      <p class="muted">Monitor the conservation status of endangered species worldwide. This table displays animals from our database along with their IUCN Red List status and estimated remaining populations.</p>
+      
+      <div class="hero-cta" style="margin-top: 20px;">
+        <a class="btn" href="animals.html">View All Animals</a>
+        <a class="btn ghost" href="index.html">Return Home</a>
+      </div>
+    </section>
+
+    <section class="glass animate-up">
+      <h2>Status Legend</h2>
+      <div class="grid">
+        <div class="card glass">
+          <div class="status critical">Critically Endangered</div>
+          <p class="muted">Extremely high risk of extinction in the wild</p>
+        </div>
+        
+        <div class="card glass">
+          <div class="status endangered">Endangered</div>
+          <p class="muted">Very high risk of extinction in the wild</p>
+        </div>
+        
+        <div class="card glass">
+          <div class="status vulnerable">Vulnerable</div>
+          <p class="muted">High risk of extinction in the wild</p>
+        </div>
+        
+        <div class="card glass">
+          <div class="status near-threatened">Near Threatened</div>
+          <p class="muted">Likely to become endangered in the near future</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass animate-up">
+      <h2>Species Status Table</h2>
+      <p class="muted">Live data from our database. Animals are sorted by conservation concern level.</p>
+      
+      <div class="status-table-wrap">
+        <table class="status-table">
+          <thead>
+            <tr>
+              <th>Animal</th>
+              <th>Status</th>
+              <th>Region</th>
+              <th>Estimated Remaining</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Populated dynamically from data/animals.json -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="glass animate-up">
+      <h2>About IUCN Red List</h2>
+      <p class="muted">The IUCN Red List of Threatened Species is the world's most comprehensive inventory of the global conservation status of biological species. It uses a set of criteria to evaluate the extinction risk of thousands of species and subspecies.</p>
+      
+      <p class="muted">These criteria are relevant to all species and all regions of the world. With its strong scientific base, the IUCN Red List is recognized as the most authoritative guide to the status of biological diversity.</p>
+      
+      <div class="hero-cta" style="margin-top: 20px;">
+        <a class="btn ghost" href="https://www.iucnredlist.org/" target="_blank" rel="noopener noreferrer">Visit IUCN Red List</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer glass">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a class="logo small" href="index.html">EchoedWild</a>
+        <p class="muted">© <span id="year"></span> EchoedWild — All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tos.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="status.html">Status Tracker</a></li>
+            <li><a href="download.html">Download App</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download EchoedWild</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .download-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4361ee, #4cc9f0);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .app-icon i {
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        h1 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .download-info {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-row:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .info-value {
+            color: #666;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(to right, #4361ee, #3f37c9);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.5);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: #4361ee;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .countdown {
+            margin-top: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .linkvertise-note {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            text-align: left;
+            border-radius: 5px;
+        }
+        
+        .linkvertise-note h3 {
+            color: #ff9800;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .linkvertise-note p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 600px) {
+            .download-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="download-container">
+        <div class="app-icon">
+            <i class="fas fa-mountain"></i>
+        </div>
+        
+        <h1>Download EchoedWild</h1>
+        <p>Click the download button below to get redirected to Linkvertise. Complete the quick step to access your download.</p>
+        
+        <div class="download-info">
+            <div class="info-row">
+                <span class="info-label">File Name:</span>
+                <span class="info-value">EchoedWild-v1.0.0.apk</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">File Size:</span>
+                <span class="info-value">42.5 MB</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Version:</span>
+                <span class="info-value">1.0.0 (Release)</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">Download Via:</span>
+                <span class="info-value">Linkvertise</span>
+            </div>
+        </div>
+        
+        <div class="linkvertise-note">
+            <h3><i class="fas fa-info-circle"></i> Important Note</h3>
+            <p>You will be redirected to Linkvertise to complete a quick step before downloading. This helps support the development of EchoedWild.</p>
+        </div>
+        
+        <!-- This button will redirect to Linkvertise -->
+        <button class="download-btn" id="download-btn">
+            <span id="btn-text">Proceed to Linkvertise</span>
+            <span id="btn-icon"><i class="fas fa-external-link-alt"></i></span>
+        </button>
+        
+        <div class="countdown" id="countdown">Redirecting in <span id="countdown-number">10</span> seconds...</div>
+        
+        <a href="../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Home Page
+        </a>
+    </div>
+
+    <script>
+        // Linkvertise URL
+        const LINKVERTISE_URL = "https://linkvertise.com/2623305/jP3teemHVWfF?o=sharing";
+        
+        // Countdown timer for automatic redirect
+        let countdown = 10;
+        const countdownElement = document.getElementById('countdown-number');
+        const countdownContainer = document.getElementById('countdown');
+        const downloadBtn = document.getElementById('download-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnIcon = document.getElementById('btn-icon');
+        
+        // Manual redirect function
+        function redirectToLinkvertise() {
+            // Show loading state
+            btnText.textContent = 'Redirecting...';
+            btnIcon.innerHTML = '<div class="loading-spinner"></div>';
+            downloadBtn.disabled = true;
+            
+            // Redirect after a brief moment
+            setTimeout(() => {
+                window.location.href = LINKVERTISE_URL;
+            }, 500);
+        }
+        
+        // Automatic redirect function
+        function autoRedirect() {
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                // Redirect when countdown reaches 0
+                countdownElement.textContent = '0';
+                countdownContainer.textContent = 'Redirecting now...';
+                redirectToLinkvertise();
+                return;
+            }
+            
+            countdown--;
+            setTimeout(autoRedirect, 1000);
+        }
+        
+        // Event listener for the download button
+        downloadBtn.addEventListener('click', redirectToLinkvertise);
+        
+        // Start countdown when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start the countdown
+            setTimeout(autoRedirect, 1000);
+            
+            // Also add a click listener for the back link to prevent accidental clicks
+            document.querySelector('.back-link').addEventListener('click', function(e) {
+                if (confirm('You will lose your download progress. Are you sure you want to go back?')) {
+                    return true;
+                }
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

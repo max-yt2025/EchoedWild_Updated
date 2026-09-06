@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EchoedWild — Comprehensive Wildlife Education & Conservation Resource | Endangered Species Database</title>
+  <meta name="description" content="EchoedWild is your comprehensive wildlife education platform featuring 100+ animal profiles, endangered species status tracking, conservation resources, and educational content for students, teachers, and wildlife enthusiasts. Learn about biodiversity, ecosystem protection, and how you can help save endangered species." />
+  <meta name="keywords" content="wildlife education, endangered species, animal conservation, biodiversity, ecosystem protection, wildlife database, student resources, environmental education, IUCN Red List, habitat conservation, marine life, rainforest animals, wildlife facts" />
+  <meta name="author" content="EchoedWild" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://echoedwild.com/" />
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="EchoedWild — Comprehensive Wildlife Education & Conservation Resource" />
+  <meta property="og:description" content="Explore 100+ animal profiles, track endangered species status, and learn about wildlife conservation. Educational resources for students, teachers, and nature enthusiasts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://echoedwild.com/" />
+  <meta property="og:image" content="https://echoedwild.com/images/favicon.png" />
+  <meta property="og:site_name" content="EchoedWild" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EchoedWild — Wildlife Education & Conservation" />
+  <meta name="twitter:description" content="Your comprehensive resource for endangered species education, wildlife conservation, and biodiversity protection." />
+  <meta name="twitter:image" content="https://echoedwild.com/images/favicon.png" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="msapplication-TileColor" content="#1a1a2e" />
+  
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/animals-data.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div id="cursor-inner"></div>
+<div id="cursor-outer"></div>
+  <header class="site-header glass">
+    <div class="container header-inner">
+
+      <div class="logo">
+        <img src="images/favicon.png" alt="EchoedWild Logo" class="logo-img">
+     </div>
+
+      <a class="logo" href="index.html"><span class="echo">Echoed</span><span class="wild">Wild</span></a>
+
+      <div class="search-wrap desktop-only">
+        <input id="globalSearch" class="search" type="search" placeholder="Search animals, habitats, status..." aria-label="Search animals">
+      </div>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="animals.html">Animals</a></li>
+          <li><a href="status.html">Status</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="icon-btn" id="searchToggle" title="Open search (mobile)">🔍</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="glow">EchoedWild</h1>
+          <p class="muted">Protecting wildlife with knowledge and action. Explore endangered species, read comprehensive animal bios, track conservation status, and discover how you can make a difference in protecting our planet's most vulnerable creatures.</p>
+          <div class="hero-cta">
+            <a class="btn" href="animals.html">Explore Animals</a>
+            <a class="btn ghost" href="status.html">View Status Tracker</a>
+          </div>
+          <div class="feature-logos">
+            <div class="pill">Educational</div>
+            <div class="pill">Data-driven</div>
+            <div class="pill">Mobile-first</div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/Colla/ge.png" alt="Wild animals collage showcasing diverse endangered species from around the world" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="container animate-up">
+      <div class="glass">
+        <h2>Welcome to EchoedWild</h2>
+        <p class="muted">EchoedWild is a comprehensive wildlife education platform dedicated to raising awareness about endangered species and promoting conservation efforts worldwide. Our mission is to provide students, educators, and wildlife enthusiasts with accurate, engaging, and accessible information about the world's most vulnerable animals.</p>
+        
+        <p class="muted">At EchoedWild, we believe that knowledge is the first step toward conservation. By understanding the challenges facing endangered species, the importance of biodiversity, and the interconnectedness of all living things, we can all become better stewards of our planet. Our platform features detailed profiles of over 100 animal species, ranging from the majestic African elephant to the elusive vaquita porpoise.</p>
+        
+        <p class="muted">EchoedWild exists because wildlife education matters more than ever. With habitat loss, climate change, and human activities threatening countless species, there's an urgent need for accessible, reliable information that can inspire action. Whether you're a student working on a research project, a teacher looking for classroom resources, or simply someone who cares about wildlife, EchoedWild provides the tools and knowledge you need to make a difference.</p>
+        
+        <p class="muted">Our educational mission extends beyond simple facts and figures. We aim to foster a deeper understanding of ecosystems, conservation science, and the complex relationships between species and their habitats. Through our status tracker, you can monitor the conservation status of endangered species in real-time, staying informed about the latest updates from conservation organizations worldwide.</p>
+        
+        <p class="muted">Wildlife conservation is a collective responsibility. By educating ourselves and others, supporting conservation organizations, and making conscious choices in our daily lives, we can all contribute to protecting the incredible diversity of life on Earth. EchoedWild is here to guide you on that journey, providing the knowledge and resources you need to become an effective advocate for wildlife.</p>
+      </div>
+    </section>
+
+    <!-- Why Wildlife Matters Section -->
+    <section class="container animate-up">
+      <h2>Why Wildlife Matters</h2>
+      <div class="grid">
+        <div class="card glass">
+          <h3>Ecosystems & Biodiversity</h3>
+          <p class="muted">Every species plays a crucial role in maintaining the balance of ecosystems. Biodiversity—the variety of life on Earth—is essential for healthy, functioning ecosystems that provide clean air, fresh water, fertile soil, and climate regulation. When species disappear, these ecosystem services can be disrupted, affecting all life, including humans.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Pollination & Food Security</h3>
+          <p class="muted">Approximately 75% of the world's food crops depend at least in part on pollination. Birds, bees, butterflies, bats, and other pollinators are essential for the reproduction of flowering plants and the production of fruits, vegetables, and nuts. The decline of pollinator species threatens global food security and agricultural systems.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Food Chains & Food Webs</h3>
+          <p class="muted">All species are interconnected through complex food chains and food webs. Predators keep prey populations in check, herbivores control plant growth, and decomposers recycle nutrients. The loss of even a single species can create a domino effect, causing cascading impacts throughout entire ecosystems and potentially leading to ecosystem collapse.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Forest Health & Carbon Storage</h3>
+          <p class="muted">Forests are home to 80% of terrestrial biodiversity and play a critical role in carbon storage, helping to mitigate climate change. Wildlife species contribute to forest health by dispersing seeds, controlling pests, and maintaining nutrient cycles. Protecting forest wildlife is essential for preserving these vital carbon sinks and maintaining global climate stability.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Oceans & Marine Ecosystems</h3>
+          <p class="muted">Marine ecosystems cover 71% of Earth's surface and contain 99% of the planet's living space. From coral reefs to deep-sea vents, marine life regulates global climate, produces oxygen, and provides food for billions of people. The health of our oceans depends on the delicate balance of marine species, from microscopic plankton to massive whales.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Climate Regulation</h3>
+          <p class="muted">Wildlife species are integral to climate regulation processes. Forests store carbon, wetlands filter water and absorb greenhouse gases, and marine organisms produce oxygen and regulate atmospheric CO2. The loss of wildlife reduces nature's ability to buffer against climate change, creating a dangerous feedback loop that accelerates global warming.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Endangered Species Section -->
+    <section class="container animate-up">
+      <div class="glass">
+        <h2>About Endangered Species</h2>
+        <p class="muted">An endangered species is a type of organism that is threatened by extinction. Species become endangered for two main reasons: loss of habitat and loss of genetic variation. While extinction is a natural process, the current rate of extinction is estimated to be 1,000 to 10,000 times higher than the natural background rate, primarily due to human activities.</p>
+        
+        <p class="muted">The International Union for Conservation of Nature (IUCN) Red List of Threatened Species is the world's most comprehensive inventory of the global conservation status of biological species. It uses a standardized system to classify species based on their risk of extinction, providing critical information for conservation planning and policy-making.</p>
+        
+        <div class="grid">
+          <div class="card glass">
+            <h3>Vulnerable</h3>
+            <p class="muted">Species considered to be facing a high risk of extinction in the wild. These populations are declining but still have relatively high numbers. Examples include the African elephant and the giant panda, which have seen conservation success but remain at risk.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Endangered</h3>
+            <p class="muted">Species considered to be facing a very high risk of extinction in the wild. These populations have experienced significant declines and face serious threats. The black rhinoceros and the blue whale are examples of endangered species that require urgent conservation action.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Critically Endangered</h3>
+            <p class="muted">Species facing an extremely high risk of extinction in the wild. These populations are often on the brink of disappearance, with few individuals remaining. The vaquita porpoise, Amur leopard, and Javan rhinoceros are critically endangered and require immediate intervention.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Extinct in the Wild</h3>
+            <p class="muted">Species that are known only to survive in captivity, cultivation, or as naturalized populations well outside their native range. These species no longer exist in their natural habitats. The scimitar-horned oryx and the Hawaiian crow are examples of species extinct in the wild.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Extinct</h3>
+            <p class="muted">Species that have no living individuals remaining anywhere on Earth. Once a species is extinct, it is gone forever. The dodo bird, passenger pigeon, and Tasmanian tiger are tragic examples of species driven to extinction by human activities.</p>
+          </div>
+        </div>
+        
+        <p class="muted">Understanding these categories is crucial for prioritizing conservation efforts. The IUCN Red List provides a framework for assessing extinction risk and guides conservation organizations, governments, and researchers in their work to protect threatened species. At EchoedWild, we use this classification system to help you understand the conservation status of each animal in our database.</p>
+      </div>
+    </section>
+
+    <!-- Explore Wildlife Library Section -->
+    <section class="container animate-up">
+      <h2>Explore Our Wildlife Library</h2>
+      <p class="muted">EchoedWild contains comprehensive profiles of over 100 animal species, carefully curated to provide educational value for students, teachers, and wildlife enthusiasts. Each profile includes detailed information about the species' habitat, behavior, diet, conservation status, and the threats they face in the wild.</p>
+      
+      <div class="grid">
+        <div class="card glass">
+          <h3>Mammals</h3>
+          <p class="muted">From the African savanna to the Arctic tundra, mammals are found in virtually every habitat on Earth. Our mammal profiles include iconic species like lions, elephants, and pandas, as well as lesser-known but equally important creatures like pangolins, okapis, and tree kangaroos.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Birds</h3>
+          <p class="muted">Birds are essential indicators of environmental health and play crucial roles in ecosystems as pollinators, seed dispersers, and pest controllers. Our bird database features everything from majestic eagles and colorful parrots to rare species like the kakapo and California condor.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Marine Life</h3>
+          <p class="muted">The oceans cover most of our planet and host an incredible diversity of life. Our marine life section profiles sea turtles, whales, dolphins, sharks, rays, and countless fish species, highlighting the importance of ocean conservation and the threats facing marine ecosystems.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Reptiles</h3>
+          <p class="muted">Reptiles have been around for millions of years and play vital roles in ecosystems as predators, prey, and ecosystem engineers. Discover fascinating species like sea turtles, crocodiles, snakes, lizards, and the unique tuatara, a living fossil found only in New Zealand.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Amphibians</h3>
+          <p class="muted">Amphibians are among the most threatened groups of animals, with over 40% of species at risk of extinction. These sensitive creatures serve as important indicators of environmental health. Learn about frogs, salamanders, caecilians, and the conservation challenges they face.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Insects & Invertebrates</h3>
+          <p class="muted">Though often overlooked, insects and other invertebrates make up the majority of animal life on Earth and are essential for ecosystem functioning. Our profiles include butterflies, bees, beetles, and other crucial invertebrates that support life on our planet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Animals Section -->
+    <section class="featured container animate-up">
+      <h2>Featured Endangered Animals</h2>
+      <div id="featuredGrid" class="grid">
+        <!-- Cards populated from data/animals.json by js/main.js -->
+      </div>
+    </section>
+
+    <!-- Major Threats Section -->
+    <section class="container animate-up">
+      <h2>Major Threats to Wildlife</h2>
+      <p class="muted">Wildlife around the world faces numerous threats, most of which are caused or exacerbated by human activities. Understanding these threats is the first step toward developing effective conservation strategies. Below, we explore the most significant challenges facing endangered species today.</p>
+      
+      <div class="grid">
+        <div class="card glass">
+          <h3>Habitat Loss</h3>
+          <p class="muted">Habitat loss is the primary threat to 85% of all species described on the IUCN Red List. As human populations grow, natural habitats are converted to agricultural land, urban areas, and infrastructure developments. Forests are cleared, wetlands are drained, and grasslands are plowed, leaving wildlife with nowhere to live, breed, or find food.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Climate Change</h3>
+          <p class="muted">Rising temperatures, changing precipitation patterns, and extreme weather events are disrupting ecosystems worldwide. Species that cannot adapt quickly enough face extinction. Polar bears are losing sea ice habitat, coral reefs are dying from ocean warming and acidification, and many species are shifting their ranges poleward or upward in elevation.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Illegal Wildlife Trade</h3>
+          <p class="muted">The illegal trade in wildlife is worth billions of dollars annually and threatens thousands of species. Animals are trafficked for pets, traditional medicine, food, and luxury goods. This trade decimates populations of elephants (ivory), rhinos (horn), pangolins (scales), tigers (parts), and countless other species, pushing many toward extinction.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Poaching</h3>
+          <p class="muted">Poaching for illegal wildlife products is devastating populations of charismatic species. Elephants are killed for ivory, rhinos for their horns, tigers for their bones and skins, and pangolins for their scales. Even when poaching is controlled, the legacy of population depletion can take decades to reverse, if recovery is possible at all.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Ocean Pollution</h3>
+          <p class="muted">Marine pollution threatens countless species, from microscopic plankton to massive whales. Chemical pollutants, oil spills, agricultural runoff, and industrial waste contaminate oceans, harming marine life through direct toxicity, bioaccumulation, and habitat degradation. Sea turtles mistake plastic bags for jellyfish, and whales ingest microplastics throughout the food chain.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Plastic Pollution</h3>
+          <p class="muted">Over 8 million tons of plastic enter the oceans each year, breaking down into microplastics that permeate marine ecosystems. Sea birds, turtles, fish, and marine mammals ingest plastic, leading to starvation, entanglement, and death. Plastic pollution has been found in the deepest ocean trenches and the most remote Arctic ice.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Overfishing</h3>
+          <p class="muted">Overfishing has depleted fish populations worldwide, disrupting marine food webs and threatening the survival of countless species. Bycatch—the accidental capture of non-target species—kills millions of turtles, dolphins, sharks, and seabirds annually. Sustainable fishing practices and marine protected areas are essential for recovery.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Deforestation</h3>
+          <p class="muted">Forests are cleared for agriculture, logging, mining, and urban development, destroying critical habitat for countless species. Tropical rainforests, which harbor over half of Earth's species, are particularly vulnerable. Deforestation also contributes to climate change by releasing stored carbon and reducing the planet's capacity to absorb greenhouse gases.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Wildfires</h3>
+          <p class="muted">The frequency and intensity of wildfires are increasing due to climate change and land management practices. Uncontrolled fires destroy habitats, kill wildlife directly, and cause long-term habitat degradation. Many species cannot escape fast-moving fires, and those that survive may lose their food sources and shelter.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Invasive Species</h3>
+          <p class="muted">Invasive species—non-native organisms that spread rapidly in new environments—outcompete native species for resources, prey on them, or introduce diseases. Islands are particularly vulnerable, with invasive species being the primary cause of bird extinctions. Control and eradication programs are costly but essential for protecting native biodiversity.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Human Expansion</h3>
+          <p class="muted">As human populations grow and expand into wildlife habitats, conflicts between humans and wildlife increase. Urbanization, infrastructure development, and recreational activities fragment habitats, create barriers to animal movement, and increase disturbance. Wildlife corridors and careful land-use planning are essential for coexistence.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Agriculture</h3>
+          <p class="muted">Agricultural expansion is the leading cause of habitat loss worldwide. Intensive farming practices also degrade soil, pollute water with fertilizers and pesticides, and harm beneficial insects like pollinators. Sustainable agriculture, regenerative farming, and reducing food waste are critical for reducing agriculture's impact on wildlife.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Mining</h3>
+          <p class="muted">Mining operations destroy habitats, pollute water with heavy metals and toxic chemicals, and create long-term environmental degradation. Many mining projects occur in biodiversity hotspots, threatening endemic species found nowhere else. Responsible mining practices and protected areas are essential for balancing resource extraction with conservation.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Road Construction</h3>
+          <p class="muted">Roads fragment habitats, create barriers to animal movement, and increase wildlife mortality through vehicle collisions. Wildlife crossing structures, careful route planning, and maintaining connectivity between habitats are essential for mitigating the impacts of road networks on wildlife populations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conservation Success Stories Section -->
+    <section class="container animate-up">
+      <div class="glass">
+        <h2>Conservation Success Stories</h2>
+        <p class="muted">While the challenges facing wildlife are significant, conservation efforts have achieved remarkable successes. These stories demonstrate that with dedicated action, resources, and political will, we can bring species back from the brink of extinction and restore ecosystems. These successes provide hope and valuable lessons for future conservation work.</p>
+        
+        <div class="grid">
+          <div class="card glass">
+            <h3>Bald Eagle Recovery</h3>
+            <p class="muted">The bald eagle, America's national symbol, was nearly extinct in the lower 48 states by the 1960s due to DDT poisoning and habitat loss. After DDT was banned and conservation protections were implemented, bald eagle populations recovered dramatically. In 2007, the bald eagle was removed from the Endangered Species List—a testament to the power of environmental regulation and conservation action.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Giant Panda Conservation</h3>
+            <p class="muted">Once on the brink of extinction, giant pandas have made a remarkable recovery thanks to intensive conservation efforts in China. Habitat protection, anti-poaching measures, and successful captive breeding programs have increased wild panda populations. In 2016, the giant panda was downlisted from Endangered to Vulnerable on the IUCN Red List.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Gray Wolf Reintroduction</h3>
+            <p class="muted">Gray wolves were exterminated from most of the United States by the mid-20th century. Reintroduction programs in Yellowstone National Park and other areas have successfully restored wolf populations, demonstrating the ecological importance of apex predators. Wolves now regulate elk populations, benefitting vegetation and other species.</p>
+          </div>
+          
+          <div class="card glass">
+          <h3>Black Rhinoceros</h3>
+          <p class="muted">Black rhino populations plummeted from 65,000 in 1970 to just 2,400 in 1995 due to intensive poaching. Conservation efforts including anti-poaching patrols, community engagement, and translocation programs have helped populations recover to over 5,500 today. Several African countries have seen stable or increasing rhino populations in recent years.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Sea Turtle Conservation</h3>
+            <p class="muted">All sea turtle species were once in steep decline due to habitat loss, bycatch, and poaching. Conservation measures including protected nesting beaches, turtle excluder devices on fishing nets, and international trade bans have helped some sea turtle populations recover. The green sea turtle population in Florida has increased significantly since protection efforts began.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>California Condor</h3>
+            <p class="muted">The California condor, North America's largest flying bird, was reduced to just 27 individuals in 1987. An aggressive captive breeding and reintroduction program has increased the population to over 400 birds, with more than half flying free in the wild. This recovery required unprecedented cooperation between government agencies, zoos, and conservation organizations.</p>
+          </div>
+        </div>
+        
+        <p class="muted">These success stories show that conservation works, but they also highlight the need for sustained commitment and resources. Recovery takes time, often decades, and requires addressing the root causes of species decline. At EchoedWild, we share these stories to inspire action and demonstrate that together, we can make a difference for wildlife.</p>
+      </div>
+    </section>
+
+    <!-- How You Can Help Section -->
+    <section class="container animate-up">
+      <h2>How You Can Help</h2>
+      <p class="muted">Individual actions, when multiplied across millions of people, can have a significant impact on wildlife conservation. Here are practical ways you can contribute to protecting endangered species and preserving biodiversity.</p>
+      
+      <div class="grid">
+        <div class="card glass">
+          <h3>Reduce Plastic Use</h3>
+          <p class="muted">Plastic pollution is one of the most visible threats to wildlife. Choose reusable bags, bottles, and containers instead of single-use plastics. Avoid products with microplastics and support plastic-free alternatives. Properly recycle plastic items and participate in community clean-up events to remove plastic from natural environments.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Recycle and Compost</h3>
+          <p class="muted">Reducing waste decreases the need for resource extraction and landfill expansion, which threaten wildlife habitats. Recycle paper, glass, metal, and plastic according to your local programs. Compost organic waste to reduce methane emissions from landfills and create nutrient-rich soil for your garden.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Support Conservation Organizations</h3>
+          <p class="muted">Donate to reputable conservation organizations working to protect wildlife and habitats. Even small contributions can make a difference when combined with others. Consider becoming a member, adopting an animal symbolically, or including conservation organizations in your estate planning.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Volunteer Your Time</h3>
+          <p class="muted">Many conservation organizations rely on volunteers for field work, education programs, administrative support, and fundraising. Local wildlife rehabilitation centers, nature preserves, and conservation groups often welcome volunteers. Your skills and time can directly contribute to conservation efforts in your community.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Practice Responsible Tourism</h3>
+          <p class="muted">When traveling to natural areas, choose eco-friendly tour operators and accommodations that support conservation. Maintain respectful distance from wildlife, never feed animals, and follow all guidelines in protected areas. Your tourism dollars can support conservation efforts when spent responsibly.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Learn About Wildlife</h3>
+          <p class="muted">Education is the foundation of effective conservation. Use resources like EchoedWild to learn about endangered species, their habitats, and the threats they face. Share your knowledge with friends, family, and social media followers. An informed public is essential for building support for conservation policies and actions.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Plant Native Species</h3>
+          <p class="muted">Native plants provide food and habitat for local wildlife, including birds, butterflies, bees, and other beneficial insects. Replace portions of your lawn with native plants, create pollinator gardens, and avoid invasive species. Even small gardens can serve as important habitat corridors for wildlife in urban and suburban areas.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Protect Local Habitats</h3>
+          <p class="muted">Support local conservation efforts to protect parks, natural areas, and wildlife corridors in your community. Participate in public planning processes to advocate for wildlife-friendly development. Help maintain trails, remove invasive species, and restore degraded habitats through local stewardship programs.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Choose Sustainable Products</h3>
+          <p class="muted">Look for certifications like Forest Stewardship Council (FSC) for wood products, Marine Stewardship Council (MSC) for seafood, and Rainforest Alliance for agricultural products. Avoid products made from endangered species or sourced from threatened habitats. Your purchasing decisions can drive market change toward more sustainable practices.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Advocate for Wildlife</h3>
+          <p class="muted">Use your voice to support policies that protect wildlife and habitats. Contact elected officials to express support for conservation legislation, environmental protection, and funding for conservation programs. Vote for candidates who prioritize environmental issues. Public support is essential for passing and maintaining strong conservation laws.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Facts Section -->
+    <section class="container animate-up">
+      <h2>Featured Wildlife Facts</h2>
+      <div class="grid">
+        <div class="card glass">
+          <h3>Bee Pollination</h3>
+          <p class="muted">A single bee can visit up to 5,000 flowers in one day, and bee pollination is responsible for approximately one-third of the food we eat. Without bees, our diets would be severely limited, and ecosystems would collapse.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Elephant Intelligence</h3>
+          <p class="muted">Elephants have the largest brains of any land animal and exhibit remarkable intelligence, memory, and emotional complexity. They can recognize themselves in mirrors, mourn their dead, and communicate using sophisticated vocalizations and infrasound.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Sea Turtle Navigation</h3>
+          <p class="muted">Sea turtles can migrate thousands of miles across oceans and return to the exact beach where they were born to lay eggs, even after decades at sea. They use Earth's magnetic field as a GPS system for navigation.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Octopus Problem-Solving</h3>
+          <p class="muted">Octopuses are incredibly intelligent invertebrates capable of solving complex puzzles, opening jars, and escaping from enclosures. They have been observed using tools and even play, demonstrating cognitive abilities once thought unique to vertebrates.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Whale Communication</h3>
+          <p class="muted">Blue whale songs can travel up to 1,000 miles underwater, making them the loudest sounds produced by any animal. Humpback whales have complex songs that evolve over time and are shared across populations, similar to cultural transmission in humans.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3> Peregrine Falcon Speed</h3>
+          <p class="muted">The peregrine falcon is the fastest animal on Earth, reaching speeds over 240 miles per hour during hunting dives. This incredible speed, combined with exceptional eyesight, makes them formidable aerial predators.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Coral Reef Biodiversity</h3>
+          <p class="muted">Coral reefs cover less than 1% of the ocean floor but support 25% of all marine species. They are often called the "rainforests of the sea" due to their incredible biodiversity and importance to ocean ecosystems.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Ant Colony Organization</h3>
+          <p class="muted">Ant colonies are remarkably organized societies with complex social structures, division of labor, and communication systems. Some colonies contain millions of individuals working together as a single superorganism to survive and thrive.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Polar Bear Swimming</h3>
+          <p class="muted">Polar bears are excellent swimmers and have been recorded swimming over 200 miles without stopping. Their large paws act as paddles, and they can swim at speeds of up to 6 miles per hour, making them perfectly adapted to their Arctic marine environment.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Monarch Butterfly Migration</h3>
+          <p class="muted">Monarch butterflies migrate up to 3,000 miles each year, a journey that takes multiple generations to complete. Amazingly, butterflies that have never made the journey before instinctively know the route to their wintering grounds in Mexico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container animate-up">
+      <div class="glass">
+        <h2>Frequently Asked Questions</h2>
+        <div class="grid">
+          <div class="card glass">
+            <h3>What is an endangered species?</h3>
+            <p class="muted">An endangered species is a type of organism that is threatened by extinction. Species become endangered when their populations decline to critically low levels due to habitat loss, pollution, climate change, overexploitation, or other threats. The IUCN Red List provides standardized criteria for assessing extinction risk.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>How many species are currently endangered?</h3>
+            <p class="muted">According to the IUCN Red List, over 42,100 species are threatened with extinction. This includes approximately 41% of amphibians, 26% of mammals, 14% of birds, and 37% of sharks and rays. Many more species are likely endangered but have not yet been assessed.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is the IUCN Red List?</h3>
+            <p class="muted">The IUCN Red List of Threatened Species is the world's most comprehensive inventory of the global conservation status of biological species. It uses standardized criteria to classify species as Least Concern, Near Threatened, Vulnerable, Endangered, Critically Endangered, Extinct in the Wild, or Extinct.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What causes species to become endangered?</h3>
+            <p class="muted">The primary causes of species endangerment are habitat loss, climate change, pollution, overexploitation (including overfishing and poaching), invasive species, and disease. Most endangered species face multiple threats simultaneously, making conservation efforts more complex and challenging.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Why is biodiversity important?</h3>
+            <p class="muted">Biodiversity ensures ecosystem resilience, provides essential services like clean air and water, supports food security through pollination and soil fertility, regulates climate, and offers cultural, recreational, and economic benefits. Losing biodiversity undermines ecosystem functioning and human well-being.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>Can endangered species recover?</h3>
+            <p class="muted">Yes, many endangered species have recovered thanks to conservation efforts. Success stories include the bald eagle, gray wolf, giant panda, and California condor. Recovery requires addressing threats, protecting habitat, and often involves long-term commitment of resources and political will.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is a conservation status?</h3>
+            <p class="muted">Conservation status indicates a species' risk of extinction. Categories like Critically Endangered, Endangered, and Vulnerable describe different levels of threat. These assessments help prioritize conservation efforts and track changes in species populations over time.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>How does climate change affect wildlife?</h3>
+            <p class="muted">Climate change alters habitats, shifts species ranges, changes timing of biological events, increases extreme weather, and causes ocean acidification. Species that cannot adapt quickly enough or move to suitable new habitats face extinction. Climate change exacerbates all other threats to wildlife.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is habitat fragmentation?</h3>
+            <p class="muted">Habitat fragmentation occurs when large, continuous habitats are divided into smaller, isolated patches by roads, agriculture, urban development, or other human activities. Fragmentation reduces habitat area, isolates populations, increases edge effects, and makes species more vulnerable to extinction.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What are invasive species?</h3>
+            <p class="muted">Invasive species are non-native organisms that spread rapidly in new environments, outcompeting native species for resources, preying on them, introducing diseases, or altering ecosystems. Invasive species are a major cause of extinctions, particularly on islands and in freshwater ecosystems.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>How does plastic pollution affect marine life?</h3>
+            <p class="muted">Marine animals ingest plastic debris, mistaking it for food. This causes blockages, malnutrition, and starvation. Animals also become entangled in plastic fishing gear and other debris, leading to injury, drowning, or restricted movement. Microplastics accumulate in food webs, potentially affecting human health.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is bycatch?</h3>
+            <p class="muted">Bycatch refers to the unintentional capture of non-target species during fishing operations. It is a major threat to sea turtles, dolphins, whales, sharks, seabirds, and non-commercial fish species. Bycatch reduction devices and improved fishing practices can significantly reduce this problem.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is a wildlife corridor?</h3>
+            <p class="muted">Wildlife corridors are strips of habitat that connect otherwise isolated habitat patches, allowing animals to move between areas for breeding, foraging, and migration. Corridors are essential for maintaining genetic diversity and enabling species to adapt to environmental changes like climate change.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>How can I help endangered species?</h3>
+            <p class="muted">You can help by reducing your environmental footprint, supporting conservation organizations, making sustainable consumer choices, advocating for wildlife-friendly policies, volunteering for conservation projects, and educating others about the importance of wildlife conservation.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is the Endangered Species Act?</h3>
+            <p class="muted">The Endangered Species Act is a U.S. law designed to protect critically imperiled species from extinction. It provides for the listing and protection of species, designation of critical habitat, development of recovery plans, and prohibition of harm to listed species. It has been instrumental in preventing extinctions.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is CITES?</h3>
+            <p class="muted">CITES (Convention on International Trade in Endangered Species) is an international agreement between governments to ensure that international trade in specimens of wild animals and plants does not threaten the survival of the species. It regulates trade in over 38,000 species.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is a keystone species?</h3>
+            <p class="muted">A keystone species is a species that has a disproportionately large effect on its environment relative to its abundance. Removing keystone species causes dramatic changes in ecosystem structure and function. Examples include sea stars, wolves, and elephants, which shape entire ecosystems.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is rewilding?</h3>
+            <p class="muted">Rewilding is a conservation approach that focuses on restoring natural processes and wilderness areas, often by reintroducing species that have been lost, removing human infrastructure, and allowing ecosystems to self-regulate. It aims to create functional, self-sustaining ecosystems with minimal human management.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>How do zoos contribute to conservation?</h3>
+            <p class="muted">Modern zoos contribute to conservation through captive breeding programs for endangered species, research that supports wild populations, education programs that raise awareness, funding for in-situ conservation projects, and sometimes reintroduction of species to the wild.</p>
+          </div>
+          
+          <div class="card glass">
+            <h3>What is the sixth mass extinction?</h3>
+            <p class="muted">Scientists believe we are experiencing a sixth mass extinction event, the first caused by human activities. Current extinction rates are estimated to be 100-1,000 times higher than natural background rates. Unlike previous mass extinctions, this one is preventable if we take decisive conservation action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Conservation Updates Section -->
+    <section class="container animate-up">
+      <div class="glass">
+        <h2>Latest Conservation Updates</h2>
+        <p class="muted">Staying informed about conservation news and developments is crucial for effective wildlife advocacy. Conservation is a rapidly evolving field, with new scientific discoveries, policy changes, and conservation successes emerging regularly. At EchoedWild, we believe that an informed public is essential for building support for wildlife protection.</p>
+        
+        <p class="muted">Recent years have seen both concerning trends and hopeful developments in conservation. Climate change continues to accelerate, with record temperatures, extreme weather events, and rapid changes in ecosystems. However, there have also been significant conservation successes, including species recoveries, new protected areas, and innovative conservation approaches.</p>
+        
+        <p class="muted">International agreements like the Paris Climate Accord and the Post-2020 Global Biodiversity Framework represent important commitments to addressing environmental challenges. Implementation of these agreements requires sustained political will, funding, and public support. Conservation organizations are working on multiple fronts, from local community projects to global policy advocacy.</p>
+        
+        <p class="muted">Technology is playing an increasingly important role in conservation. Satellite monitoring, camera traps, environmental DNA analysis, and artificial intelligence are enhancing our ability to track wildlife populations, detect illegal activities, and understand ecosystem dynamics. These tools are making conservation more effective and efficient.</p>
+        
+        <p class="muted">Community-based conservation approaches are gaining recognition for their effectiveness. Engaging local communities in conservation efforts, ensuring they benefit from protection, and respecting indigenous knowledge and rights are proving essential for sustainable, long-term conservation success.</p>
+        
+        <p class="muted">We encourage you to follow reputable conservation organizations, read scientific publications, and stay engaged with conservation news. Understanding current challenges and solutions will help you become a more effective advocate for wildlife. Check our status tracker regularly for updates on specific species and conservation efforts.</p>
+      </div>
+    </section>
+
+    <!-- Educational Resources Section -->
+    <section class="container animate-up">
+      <h2>Educational Resources</h2>
+      <p class="muted">EchoedWild is designed to be a valuable educational resource for students, teachers, homeschoolers, and anyone interested in learning about wildlife and conservation. Our platform aligns with educational standards and provides comprehensive, accurate information suitable for various learning levels and contexts.</p>
+      
+      <div class="grid">
+        <div class="card glass">
+          <h3>For Students</h3>
+          <p class="muted">Students conducting research projects, writing reports, or preparing presentations will find EchoedWild an invaluable resource. Our animal profiles provide detailed information suitable for middle school, high school, and undergraduate research. The content is well-organized, properly cited, and covers essential topics like habitat, behavior, diet, and conservation status.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>For Teachers</h3>
+          <p class="muted">Teachers can use EchoedWild as a classroom resource for biology, environmental science, ecology, and conservation lessons. The platform supports lesson planning, student research assignments, and class discussions about biodiversity and conservation. The visual design and clear organization make it accessible for students of various ages and abilities.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>For Homeschoolers</h3>
+          <p class="muted">Homeschooling families will find EchoedWild particularly useful for science education. The comprehensive nature of our wildlife database provides material for extended learning units on animals, ecosystems, and environmental science. The content is appropriate for self-directed learning and can be adapted for various age groups and learning styles.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>For Researchers</h3>
+          <p class="muted">While designed primarily for educational purposes, EchoedWild can serve as a starting point for researchers seeking basic information about species. Our profiles include conservation status, geographic range, and basic biological information that can guide more detailed research. We always encourage researchers to consult primary scientific literature for in-depth study.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>For Conservation Enthusiasts</h3>
+          <p class="muted">Wildlife enthusiasts and conservation advocates will find EchoedWild a valuable tool for learning about species they care about and understanding conservation challenges. The platform provides accessible information that can enhance your knowledge and support your advocacy efforts. Understanding the science behind conservation makes you a more effective advocate.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Lifelong Learning</h3>
+          <p class="muted">Conservation education isn't just for students—it's for everyone. Whether you're a curious adult, a retiree looking to learn something new, or someone who simply loves nature, EchoedWild offers opportunities for lifelong learning about the natural world. Understanding wildlife and conservation enriches our connection to nature and informs our decisions as citizens and consumers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose EchoedWild Section -->
+    <section class="container animate-up">
+      <h2>Why Choose EchoedWild</h2>
+      <div class="grid">
+        <div class="card glass">
+          <h3>100+ Animal Profiles</h3>
+          <p class="muted">Our comprehensive database features detailed profiles of over 100 animal species, from well-known charismatic megafauna to lesser-known but equally important creatures. Each profile is carefully researched and regularly updated to ensure accuracy and relevance.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Educational Focus</h3>
+          <p class="muted">EchoedWild is designed specifically for educational purposes. Our content is written to be accessible, engaging, and informative for students, teachers, and lifelong learners. We prioritize clarity and educational value without sacrificing scientific accuracy.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Student Friendly</h3>
+          <p class="muted">Our platform is designed with students in mind. The interface is intuitive, the content is age-appropriate, and the information is organized for easy navigation and comprehension. Students can quickly find what they need for research projects and assignments.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Conservation Focused</h3>
+          <p class="muted">Unlike general reference sites, EchoedWild emphasizes conservation. Every profile includes information about conservation status, threats, and conservation efforts. We aim to educate and inspire action to protect endangered species and their habitats.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Mobile Friendly</h3>
+          <p class="muted">Access EchoedWild anywhere, on any device. Our responsive design ensures a seamless experience on desktop computers, tablets, and smartphones. Learn about wildlife on the go, whether you're in the classroom, at home, or exploring nature.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Powerful Search</h3>
+          <p class="muted">Our advanced search functionality helps you quickly find the information you need. Search by species name, habitat, conservation status, or other criteria. The search feature makes it easy to discover new species and find specific information for research.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Status Tracker</h3>
+          <p class="muted">Our conservation status tracker provides up-to-date information on the risk of extinction for each species. Stay informed about changes in conservation status and understand which species are most at risk. The tracker uses the standardized IUCN Red List categories.</p>
+        </div>
+        
+        <div class="card glass">
+          <h3>Fast Website</h3>
+          <p class="muted">We've optimized EchoedWild for speed and performance. Quick loading times mean you spend less time waiting and more time learning. Our efficient design ensures a smooth experience even with slower internet connections.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="container animate-up">
+      <div class="glass" style="text-align: center;">
+        <h2>Start Exploring Wildlife Today</h2>
+        <p class="muted">The world of wildlife is fascinating, diverse, and more threatened than ever. Take the first step in your conservation journey by exploring our comprehensive animal database. Learn about species you've never heard of, discover the challenges they face, and find out how you can help make a difference.</p>
+        
+        <p class="muted">Every species has a story to tell, and understanding these stories is the first step toward protecting them. Whether you're a student working on a project, a teacher planning a lesson, or simply someone who cares about nature, EchoedWild provides the knowledge and resources you need to become an effective advocate for wildlife conservation.</p>
+        
+        <div class="hero-cta" style="justify-content: center;">
+          <a class="btn" href="animals.html">Explore Animal Database</a>
+          <a class="btn ghost" href="status.html">Check Conservation Status</a>
+        </div>
+        
+        <p class="muted">Together, we can make a difference for wildlife. Start your journey today.</p>
+      </div>
+    </section>
+
+<!-- Contact and Newsletter Section Wrapper -->
+<section class="connect-section">
+  <div class="container">
+    
+<section id="contact" class="contact-section"> <h2>Contact Us</h2> <form action="https://formspree.io/f/movlrqnd" method="POST"> <label for="name">Name</label> <input type="text" name="name" id="name" required> <label for="email">Email</label> <input type="email" name="_replyto" id="email" required> <label for="message">Message</label> <textarea name="message" id="message" rows="5" required></textarea> <button type="submit">Send Message</button> </form> </section>
+
+<section id="newsletter" style="padding: 2em; background-color: #f9f9f9; text-align: center;"> <h2 style="font-size: 2em; margin-bottom: 0.5em;">🌿 Stay Wild with EchoedWild</h2> <p style="font-size: 1.1em; margin-bottom: 1em;"> Subscribe to our newsletter for the latest animal profiles, conservation updates, and educational resources. </p> <form action="https://buttondown.email/api/emails/embed-subscribe/EchoedWild" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/EchoedWild', 'popupwindow')"> <input type="email" name="email" id="bd-email" placeholder="Enter your email" required style="padding: 0.6em; width: 250px; max-width: 80%; border: 1px solid #ccc; border-radius: 4px;"> <br><br> <input type="submit" value="Subscribe" style="padding: 0.6em 1.2em; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;"> </form> </section>
+
+    <section class="info container animate-up">
+      <h2>Why it matters</h2>
+      <p class="muted">Species loss affects ecosystems, food webs, and human livelihoods. EchoedWild helps students learn and share conservation actions. By understanding the challenges facing wildlife and the importance of biodiversity, we can all contribute to protecting the incredible variety of life on Earth. Every species matters, and every action counts.</p>
+    </section>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer glass">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a class="logo small" href="index.html">EchoedWild</a>
+        <p class="muted">© <span id="year"></span> EchoedWild — All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tos.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="status.html">Status Tracker</a></li>
+            <li><a href="download.html">Download App</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+<div class="cookie-popup" id="cookiePopup">
+  <div class="cookie-box">
+    <span class="close-btn" id="closeCookie">×</span>
+    <div class="cookie-emoji">🍪</div>
+    <h3>We use cookies</h3>
+    <p>We use cookies to personalize your experience and support conservation efforts. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+    <div class="cookie-actions">
+      <button id="acceptCookies">Accept</button>
+      <button id="declineCookies">Reject</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
