@@ -5,7 +5,7 @@
     "region": "Asia",
     "estimated": "~1,864",
     "image": "images/giant-panda.png",
-    "link": "animals/giant-panda.html",
+    "link": "animals/giant-panda",
     "habitat": "Bamboo forests in mountainous regions of central China",
     "threats": ["Habitat loss", "Climate change", "Poaching"],
     "conservation": ["Protected nature reserves", "Bamboo restoration projects", "Anti-poaching patrols"]
@@ -16,7 +16,7 @@
     "region": "Asia",
     "estimated": "~400",
     "image": "images/sumatran-tiger.png",
-    "link": "animals/sumatran-tiger.html",
+    "link": "animals/sumatran-tiger",
     "habitat": "Tropical rainforests and peat swamp forests of Sumatra, Indonesia",
     "threats": ["Habitat destruction", "Poaching for traditional medicine", "Human-wildlife conflict"],
     "conservation": ["Anti-poaching units", "Habitat protection", "Community engagement programs"]
@@ -27,7 +27,7 @@
     "region": "Africa",
     "estimated": "~5,500",
     "image": "images/black-rhino.png",
-    "link": "animals/black-rhino.html",
+    "link": "animals/black-rhino",
     "habitat": "Savannas, grasslands, and tropical bushlands in eastern and southern Africa",
     "threats": ["Poaching for horns", "Habitat loss", "Political instability"],
     "conservation": ["De-horning programs", "Strict anti-poaching laws", "Translocation to safe areas"]
@@ -38,7 +38,7 @@
     "region": "Africa",
     "estimated": "~415,000",
     "image": "images/african-elephant.png",
-    "link": "animals/african-elephant.html",
+    "link": "animals/african-elephant",
     "habitat": "Savannas, forests, deserts, and marshes across sub-Saharan Africa",
     "threats": ["Ivory poaching", "Habitat loss", "Human-wildlife conflict"],
     "conservation": ["International ivory trade bans", "Protected area networks", "Elephant corridors"]
@@ -49,7 +49,7 @@
     "region": "Americas",
     "estimated": "<10",
     "image": "images/vaquita.png",
-    "link": "animals/vaquita.html",
+    "link": "animals/vaquita",
     "habitat": "Northern Gulf of California, Mexico",
     "threats": ["Bycatch in illegal gillnets", "Habitat degradation", "Limited range"],
     "conservation": ["Gillnet bans", " captive breeding attempts", "International monitoring"]
@@ -60,7 +60,7 @@
     "region": "Asia",
     "estimated": "~100",
     "image": "images/amur-leopard.png",
-    "link": "animals/amur-leopard.html",
+    "link": "animals/amur-leopard",
     "habitat": "Temperate forests in the Russian Far East and northeast China",
     "threats": ["Habitat loss", "Poaching for skins", "Prey depletion"],
     "conservation": ["Protected areas", "Anti-poaching patrols", "Prey population restoration"]
@@ -71,7 +71,7 @@
     "region": "Oceania",
     "estimated": "~300,000",
     "image": "images/koala.png",
-    "link": "animals/koala.html"
+    "link": "animals/koala"
   },
   {
     "name": "Mountain Gorilla",
@@ -79,7 +79,7 @@
     "region": "Africa",
     "estimated": "~1,063",
     "image": "images/mountain-gorilla.png",
-    "link": "animals/mountain-gorilla.html"
+    "link": "animals/mountain-gorilla"
   },
   {
     "name": "Great Hammerhead",
@@ -87,7 +87,7 @@
     "region": "Global",
     "estimated": "~50,000 – 70,000",
     "image": "images/great-hammerhead.png",
-    "link": "animals/great-hammerhead.html"
+    "link": "animals/great-hammerhead"
   },
   {
     "name": "Snow Leopard",
@@ -95,7 +95,7 @@
     "region": "Asia",
     "estimated": "~4,000–6,500",
     "image": "images/snow-leopard.png",
-    "link": "animals/snow-leopard.html"
+    "link": "animals/snow-leopard"
   },
   {
     "name": "Red Panda",
@@ -103,7 +103,7 @@
     "region": "Asia",
     "estimated": "~10,000",
     "image": "images/red-panda.png",
-    "link": "animals/red-panda.html"
+    "link": "animals/red-panda"
   },
   {
     "name": "Saola",
@@ -111,7 +111,7 @@
     "region": "Asia",
     "estimated": "<100",
     "image": "images/saola.png",
-    "link": "animals/saola.html"
+    "link": "animals/saola"
   },
   {
     "name": "Northern Bald Ibis",
@@ -119,7 +119,7 @@
     "region": "Europe, North Africa",
     "estimated": "~1,000",
     "image": "images/northern-bald-ibis.png",
-    "link": "animals/northern-bald-ibis.html"
+    "link": "animals/northern-bald-ibis"
   },
   {
     "name": "Philippine Eagle",
@@ -127,7 +127,7 @@
     "region": "Asia",
     "estimated": "~400",
     "image": "images/philippine-eagle.png",
-    "link": "animals/philippine-eagle.html"
+    "link": "animals/philippine-eagle"
   },
   {
     "name": "Axolotl",
@@ -135,7 +135,7 @@
     "region": "Americas",
     "estimated": "Unknown (wild population extremely low)",
     "image": "images/axolotl.png",
-    "link": "animals/axolotl.html"
+    "link": "animals/axolotl"
   },
   {
     "name": "Blue Whale",
@@ -143,7 +143,7 @@
     "region": "Global",
     "estimated": "10,000–25,000 individuals",
     "image": "images/blue-whale.png",
-    "link": "animals/blue-whale.html"
+    "link": "animals/blue-whale"
   },
   {
     "name": "Asian Giant Hornet",
@@ -151,7 +151,7 @@
     "region": "East Asia",
     "estimated": "Unknown",
     "image": "images/asian-giant-hornet.png",
-    "link": "animals/asian-giant-hornet.html"
+    "link": "animals/asian-giant-hornet"
   },
   {
     "name": "Ball Python",
@@ -159,7 +159,7 @@
     "region": "West and Central Africa",
     "estimated": "Stable but declining",
     "image": "images/ball-python.png",
-    "link": "animals/ball-python.html"
+    "link": "animals/ball-python"
   },
   {
     "name": "Red Wolf",
@@ -167,7 +167,7 @@
     "region": "North Carolina",
     "estimated": "28-31",
     "image": "images/red-wolf.png",
-    "link": "animals/red-wolf.html"
+    "link": "animals/red-wolf"
   },
   {
     "name": "Sea Otter",
@@ -175,7 +175,7 @@
     "region": "North Pacific Coast",
     "estimated": "~3,000 (Southern population)",
     "image": "images/sea-otter.png",
-    "link": "animals/sea-otter.html"
+    "link": "animals/sea-otter"
   },
   {
     "name": "Addax",
@@ -183,7 +183,7 @@
     "region": "Sahara Desert (Niger, Chad, Morocco)",
     "estimated": "<100 in the wild",
     "image": "images/addax.png",
-    "link": "animals/addax.html"
+    "link": "animals/addax"
   },
   {
     "name": "Pangolin",
@@ -191,7 +191,7 @@
     "region": "Asia & Africa (Forests, Grasslands, Savannas)",
     "estimated": "Unknown (all 8 species declining)",
     "image": "images/pangolin.png",
-    "link": "animals/pangolin.html"
+    "link": "animals/pangolin"
   },
   {
     "name": "Lemur",
@@ -199,7 +199,7 @@
     "region": "Madagascar (Rainforests, Spiny Forests, Dry Forests)",
     "estimated": "98% of species endangered",
     "image": "images/lemur.png",
-    "link": "animals/lemur.html"
+    "link": "animals/lemur"
   },
   {
     "name": "Orangutan",
@@ -207,7 +207,7 @@
     "region": "Borneo & Sumatra (Tropical Rainforests)",
     "estimated": "~50,000 (all species combined)",
     "image": "images/orangutan.png",
-    "link": "animals/orangutan.html"
+    "link": "animals/orangutan"
   },
   {
     "name": "Tiger",
@@ -215,7 +215,7 @@
     "region": "Asia (India, Russia, Indonesia, Nepal, Bhutan)",
     "estimated": "~5,574 wild tigers",
     "image": "images/tiger.png",
-    "link": "animals/tiger.html"
+    "link": "animals/tiger"
   },
   {
     "name": "Rhinoceros",
@@ -223,7 +223,7 @@
     "region": "Africa & Asia (Savannas, Forests, Wetlands)",
     "estimated": "<28,000 across all 5 species",
     "image": "images/rhinoceros.png",
-    "link": "animals/rhinoceros.html"
+    "link": "animals/rhinoceros"
   },
   {
     "name": "Kakapo",
@@ -231,7 +231,7 @@
     "region": "New Zealand (Codfish Island, Anchor Island, Little Barrier Island)",
     "estimated": "238 individuals",
     "image": "images/kakapo.png",
-    "link": "animals/kakapo.html"
+    "link": "animals/kakapo"
   },
   {
     "name": "African Wild Dog",
@@ -239,7 +239,7 @@
     "region": "Sub-Saharan Africa (Savannas, Woodlands, Plains)",
     "estimated": "~6,600 individuals",
     "image": "images/african-wild-dog.png",
-    "link": "animals/african-wild-dog.html"
+    "link": "animals/african-wild-dog"
   },
   {
     "name": "Chimpanzee",
@@ -247,7 +247,7 @@
     "region": "Central & West Africa (Rainforests, Savannas, Woodlands)",
     "estimated": "172,700–299,700",
     "image": "images/chimpanzee.png",
-    "link": "animals/chimpanzee.html"
+    "link": "animals/chimpanzee"
   },
   {
     "name": "Aye-Aye",
@@ -255,7 +255,7 @@
     "region": "Madagascar (Rainforests, Deciduous Forests, Plantations)",
     "estimated": "1,000–10,000",
     "image": "images/aye-aye.png",
-    "link": "animals/aye-aye.html"
+    "link": "animals/aye-aye"
   },
   {
     "name": "Long-eared Jerboa",
@@ -263,7 +263,7 @@
     "region": "Mongolia & China (Deserts, Sandy Valleys, High Plateaus)",
     "estimated": "Unknown",
     "image": "images/long-eared-jerboa.png",
-    "link": "animals/long-eared-jerboa.html"
+    "link": "animals/long-eared-jerboa"
   },
   {
     "name": "Javan Rhino",
@@ -271,7 +271,7 @@
     "region": "Java, Indonesia",
     "estimated": "~75",
     "image": "images/javan-rhino.png",
-    "link": "animals/javan-rhino.html"
+    "link": "animals/javan-rhino"
   },
   {
     "name": "Cross River Gorilla",
@@ -279,7 +279,7 @@
     "region": "Nigeria and Cameroon",
     "estimated": "200-300",
     "image": "images/cross-river-gorilla.png",
-    "link": "animals/cross-river-gorilla.html"
+    "link": "animals/cross-river-gorilla"
   },
   {
     "name": "Malayan Tiger",
@@ -287,7 +287,7 @@
     "region": "Malay Peninsula",
     "estimated": "~200",
     "image": "images/malayan-tiger.png",
-    "link": "animals/malayan-tiger.html"
+    "link": "animals/malayan-tiger"
   },
   {
     "name": "Bengal Tiger",
@@ -295,7 +295,7 @@
     "region": "India, Bangladesh, Nepal, Bhutan",
     "estimated": "~2,500",
     "image": "images/bengal-tiger.png",
-    "link": "animals/bengal-tiger.html"
+    "link": "animals/bengal-tiger"
   },
   {
     "name": "Siberian Tiger",
@@ -303,7 +303,7 @@
     "region": "Russian Far East, Northeast China",
     "estimated": "~500",
     "image": "images/siberian-tiger.png",
-    "link": "animals/siberian-tiger.html"
+    "link": "animals/siberian-tiger"
   },
   {
     "name": "Indochinese Tiger",
@@ -311,7 +311,7 @@
     "region": "Thailand, Myanmar, Laos, Vietnam, Cambodia",
     "estimated": "~350",
     "image": "images/indochinese-tiger.png",
-    "link": "animals/indochinese-tiger.html"
+    "link": "animals/indochinese-tiger"
   },
   {
     "name": "South China Tiger",
@@ -319,7 +319,7 @@
     "region": "China",
     "estimated": "Extinct in the wild",
     "image": "images/south-china-tiger.png",
-    "link": "animals/south-china-tiger.html"
+    "link": "animals/south-china-tiger"
   },
   {
     "name": "Sumatran Elephant",
@@ -327,7 +327,7 @@
     "region": "Sumatra, Indonesia",
     "estimated": "2,400-2,800",
     "image": "images/sumatran-elephant.png",
-    "link": "animals/sumatran-elephant.html"
+    "link": "animals/sumatran-elephant"
   },
   {
     "name": "Bornean Elephant",
@@ -335,7 +335,7 @@
     "region": "Borneo",
     "estimated": "~1,500",
     "image": "images/bornean-elephant.png",
-    "link": "animals/bornean-elephant.html"
+    "link": "animals/bornean-elephant"
   },
   {
     "name": "Asian Elephant",
@@ -343,7 +343,7 @@
     "region": "South and Southeast Asia",
     "estimated": "~50,000",
     "image": "images/asian-elephant.png",
-    "link": "animals/asian-elephant.html"
+    "link": "animals/asian-elephant"
   },
   {
     "name": "Sri Lankan Elephant",
@@ -351,7 +351,7 @@
     "region": "Sri Lanka",
     "estimated": "~7,500",
     "image": "images/sri-lankan-elephant.png",
-    "link": "animals/sri-lankan-elephant.html"
+    "link": "animals/sri-lankan-elephant"
   },
   {
     "name": "Indian Elephant",
@@ -359,7 +359,7 @@
     "region": "India, Nepal, Bangladesh, Bhutan",
     "estimated": "~30,000",
     "image": "images/indian-elephant.png",
-    "link": "animals/indian-elephant.html"
+    "link": "animals/indian-elephant"
   },
   {
     "name": "African Forest Elephant",
@@ -367,7 +367,7 @@
     "region": "Central and West Africa",
     "estimated": "~100,000",
     "image": "images/african-forest-elephant.png",
-    "link": "animals/african-forest-elephant.html"
+    "link": "animals/african-forest-elephant"
   },
   {
     "name": "African Savanna Elephant",
@@ -375,7 +375,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "~415,000",
     "image": "images/african-savanna-elephant.png",
-    "link": "animals/african-savanna-elephant.html"
+    "link": "animals/african-savanna-elephant"
   },
   {
     "name": "White Rhino",
@@ -383,7 +383,7 @@
     "region": "Southern Africa",
     "estimated": "~18,000",
     "image": "images/white-rhino.png",
-    "link": "animals/white-rhino.html"
+    "link": "animals/white-rhino"
   },
   {
     "name": "Greater One-Horned Rhino",
@@ -391,7 +391,7 @@
     "region": "India and Nepal",
     "estimated": "~4,000",
     "image": "images/greater-one-horned-rhino.png",
-    "link": "animals/greater-one-horned-rhino.html"
+    "link": "animals/greater-one-horned-rhino"
   },
   {
     "name": "Sumatran Rhino",
@@ -399,7 +399,7 @@
     "region": "Sumatra and Borneo",
     "estimated": "<80",
     "image": "images/sumatran-rhino.png",
-    "link": "animals/sumatran-rhino.html"
+    "link": "animals/sumatran-rhino"
   },
   {
     "name": "Mountain Bongo",
@@ -407,7 +407,7 @@
     "region": "Kenya",
     "estimated": "~100",
     "image": "images/mountain-bongo.png",
-    "link": "animals/mountain-bongo.html"
+    "link": "animals/mountain-bongo"
   },
   {
     "name": "Giant Sable Antelope",
@@ -415,7 +415,7 @@
     "region": "Angola",
     "estimated": "~100",
     "image": "images/giant-sable-antelope.png",
-    "link": "animals/giant-sable-antelope.html"
+    "link": "animals/giant-sable-antelope"
   },
   {
     "name": "Hirola",
@@ -423,7 +423,7 @@
     "region": "Kenya and Somalia",
     "estimated": "~500",
     "image": "images/hirola.png",
-    "link": "animals/hirola.html"
+    "link": "animals/hirola"
   },
   {
     "name": "Addra Gazelle",
@@ -431,7 +431,7 @@
     "region": "Sahel region of Africa",
     "estimated": "~300",
     "image": "images/addra-gazelle.png",
-    "link": "animals/addra-gazelle.html"
+    "link": "animals/addra-gazelle"
   },
   {
     "name": "Dama Gazelle",
@@ -439,7 +439,7 @@
     "region": "Sahara Desert",
     "estimated": "~100",
     "image": "images/dama-gazelle.png",
-    "link": "animals/dama-gazelle.html"
+    "link": "animals/dama-gazelle"
   },
   {
     "name": "Scimitar-Horned Oryx",
@@ -447,7 +447,7 @@
     "region": "North Africa",
     "estimated": "Reintroduced populations",
     "image": "images/scimitar-horned-oryx.png",
-    "link": "animals/scimitar-horned-oryx.html"
+    "link": "animals/scimitar-horned-oryx"
   },
   {
     "name": "Arabian Oryx",
@@ -455,7 +455,7 @@
     "region": "Arabian Peninsula",
     "estimated": "~1,200",
     "image": "images/arabian-oryx.png",
-    "link": "animals/arabian-oryx.html"
+    "link": "animals/arabian-oryx"
   },
   {
     "name": "Bactrian Camel",
@@ -463,7 +463,7 @@
     "region": "Mongolia and China",
     "estimated": "~1,000",
     "image": "images/bactrian-camel.png",
-    "link": "animals/bactrian-camel.html"
+    "link": "animals/bactrian-camel"
   },
   {
     "name": "Wild Bactrian Camel",
@@ -471,7 +471,7 @@
     "region": "Mongolia and China",
     "estimated": "~1,000",
     "image": "images/wild-bactrian-camel.png",
-    "link": "animals/wild-bactrian-camel.html"
+    "link": "animals/wild-bactrian-camel"
   },
   {
     "name": "Pygmy Hippopotamus",
@@ -479,7 +479,7 @@
     "region": "West Africa",
     "estimated": "2,000-3,000",
     "image": "images/pygmy-hippopotamus.png",
-    "link": "animals/pygmy-hippopotamus.html"
+    "link": "animals/pygmy-hippopotamus"
   },
   {
     "name": "Vancouver Island Marmot",
@@ -487,7 +487,7 @@
     "region": "Vancouver Island, Canada",
     "estimated": "~200",
     "image": "images/vancouver-island-marmot.png",
-    "link": "animals/vancouver-island-marmot.html"
+    "link": "animals/vancouver-island-marmot"
   },
   {
     "name": "Iberian Lynx",
@@ -495,7 +495,7 @@
     "region": "Spain and Portugal",
     "estimated": "~1,100",
     "image": "images/iberian-lynx.png",
-    "link": "animals/iberian-lynx.html"
+    "link": "animals/iberian-lynx"
   },
   {
     "name": "Canadian Lynx",
@@ -503,7 +503,7 @@
     "region": "Canada and Northern United States",
     "estimated": "Unknown",
     "image": "images/canadian-lynx.png",
-    "link": "animals/canadian-lynx.html"
+    "link": "animals/canadian-lynx"
   },
   {
     "name": "Eurasian Lynx",
@@ -511,7 +511,7 @@
     "region": "Europe and Asia",
     "estimated": "~50,000",
     "image": "images/eurasian-lynx.png",
-    "link": "animals/eurasian-lynx.html"
+    "link": "animals/eurasian-lynx"
   },
   {
     "name": "Caracal",
@@ -519,7 +519,7 @@
     "region": "Africa, Middle East, Central Asia",
     "estimated": "Unknown",
     "image": "images/caracal.png",
-    "link": "animals/caracal.html"
+    "link": "animals/caracal"
   },
   {
     "name": "Serval",
@@ -527,7 +527,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/serval.png",
-    "link": "animals/serval.html"
+    "link": "animals/serval"
   },
   {
     "name": "Cheetah",
@@ -535,7 +535,7 @@
     "region": "Africa and Iran",
     "estimated": "~7,100",
     "image": "images/cheetah.png",
-    "link": "animals/cheetah.html"
+    "link": "animals/cheetah"
   },
   {
     "name": "African Lion",
@@ -543,7 +543,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "~20,000",
     "image": "images/african-lion.png",
-    "link": "animals/african-lion.html"
+    "link": "animals/african-lion"
   },
   {
     "name": "Asiatic Lion",
@@ -551,7 +551,7 @@
     "region": "Gir Forest, India",
     "estimated": "~670",
     "image": "images/asiatic-lion.png",
-    "link": "animals/asiatic-lion.html"
+    "link": "animals/asiatic-lion"
   },
   {
     "name": "Leopard",
@@ -559,7 +559,7 @@
     "region": "Africa and Asia",
     "estimated": "~250,000",
     "image": "images/leopard.png",
-    "link": "animals/leopard.html"
+    "link": "animals/leopard"
   },
   {
     "name": "Clouded Leopard",
@@ -567,7 +567,7 @@
     "region": "Southeast Asia",
     "estimated": "~10,000",
     "image": "images/clouded-leopard.png",
-    "link": "animals/clouded-leopard.html"
+    "link": "animals/clouded-leopard"
   },
   {
     "name": "Sunda Clouded Leopard",
@@ -575,7 +575,7 @@
     "region": "Borneo and Sumatra",
     "estimated": "~4,500",
     "image": "images/sunda-clouded-leopard.png",
-    "link": "animals/sunda-clouded-leopard.html"
+    "link": "animals/sunda-clouded-leopard"
   },
   {
     "name": "Jaguar",
@@ -583,7 +583,7 @@
     "region": "Central and South America",
     "estimated": "~64,000",
     "image": "images/jaguar.png",
-    "link": "animals/jaguar.html"
+    "link": "animals/jaguar"
   },
   {
     "name": "Cougar",
@@ -591,7 +591,7 @@
     "region": "Americas",
     "estimated": "~50,000",
     "image": "images/cougar.png",
-    "link": "animals/cougar.html"
+    "link": "animals/cougar"
   },
   {
     "name": "Bobcat",
@@ -599,7 +599,7 @@
     "region": "North America",
     "estimated": "~1,000,000",
     "image": "images/bobcat.png",
-    "link": "animals/bobcat.html"
+    "link": "animals/bobcat"
   },
   {
     "name": "Ocelot",
@@ -607,7 +607,7 @@
     "region": "South and Central America",
     "estimated": "~40,000",
     "image": "images/ocelot.png",
-    "link": "animals/ocelot.html"
+    "link": "animals/ocelot"
   },
   {
     "name": "Margay",
@@ -615,7 +615,7 @@
     "region": "Central and South America",
     "estimated": "Unknown",
     "image": "images/margay.png",
-    "link": "animals/margay.html"
+    "link": "animals/margay"
   },
   {
     "name": "Pampas Cat",
@@ -623,7 +623,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/pampas-cat.png",
-    "link": "animals/pampas-cat.html"
+    "link": "animals/pampas-cat"
   },
   {
     "name": "Andean Mountain Cat",
@@ -631,7 +631,7 @@
     "region": "Andes Mountains",
     "estimated": "~1,400",
     "image": "images/andean-mountain-cat.png",
-    "link": "animals/andean-mountain-cat.html"
+    "link": "animals/andean-mountain-cat"
   },
   {
     "name": "Pallas's Cat",
@@ -639,7 +639,7 @@
     "region": "Central Asia",
     "estimated": "~58,000",
     "image": "images/pallass-cat.png",
-    "link": "animals/pallass-cat.html"
+    "link": "animals/pallass-cat"
   },
   {
     "name": "Sand Cat",
@@ -647,7 +647,7 @@
     "region": "Sahara Desert, Arabian Peninsula",
     "estimated": "Unknown",
     "image": "images/sand-cat.png",
-    "link": "animals/sand-cat.html"
+    "link": "animals/sand-cat"
   },
   {
     "name": "Black-footed Cat",
@@ -655,7 +655,7 @@
     "region": "Southern Africa",
     "estimated": "~13,000",
     "image": "images/black-footed-cat.png",
-    "link": "animals/black-footed-cat.html"
+    "link": "animals/black-footed-cat"
   },
   {
     "name": "Rusty-spotted Cat",
@@ -663,7 +663,7 @@
     "region": "India and Sri Lanka",
     "estimated": "~10,000",
     "image": "images/rusty-spotted-cat.png",
-    "link": "animals/rusty-spotted-cat.html"
+    "link": "animals/rusty-spotted-cat"
   },
   {
     "name": "Fishing Cat",
@@ -671,7 +671,7 @@
     "region": "South and Southeast Asia",
     "estimated": "~10,000",
     "image": "images/fishing-cat.png",
-    "link": "animals/fishing-cat.html"
+    "link": "animals/fishing-cat"
   },
   {
     "name": "Flat-headed Cat",
@@ -679,7 +679,7 @@
     "region": "Malay Peninsula, Borneo, Sumatra",
     "estimated": "~2,500",
     "image": "images/flat-headed-cat.png",
-    "link": "animals/flat-headed-cat.html"
+    "link": "animals/flat-headed-cat"
   },
   {
     "name": "Marbled Cat",
@@ -687,7 +687,7 @@
     "region": "Southeast Asia",
     "estimated": "~10,000",
     "image": "images/marbled-cat.png",
-    "link": "animals/marbled-cat.html"
+    "link": "animals/marbled-cat"
   },
   {
     "name": "Bay Cat",
@@ -695,7 +695,7 @@
     "region": "Borneo",
     "estimated": "~2,200",
     "image": "images/bay-cat.png",
-    "link": "animals/bay-cat.html"
+    "link": "animals/bay-cat"
   },
   {
     "name": "Spotted Hyena",
@@ -703,7 +703,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "~47,000",
     "image": "images/spotted-hyena.png",
-    "link": "animals/spotted-hyena.html"
+    "link": "animals/spotted-hyena"
   },
   {
     "name": "Brown Hyena",
@@ -711,7 +711,7 @@
     "region": "Southern Africa",
     "estimated": "~10,000",
     "image": "images/brown-hyena.png",
-    "link": "animals/brown-hyena.html"
+    "link": "animals/brown-hyena"
   },
   {
     "name": "Striped Hyena",
@@ -719,7 +719,7 @@
     "region": "North and East Africa, Middle East, India",
     "estimated": "~10,000",
     "image": "images/striped-hyena.png",
-    "link": "animals/striped-hyena.html"
+    "link": "animals/striped-hyena"
   },
   {
     "name": "Aardwolf",
@@ -727,7 +727,7 @@
     "region": "East and Southern Africa",
     "estimated": "Unknown",
     "image": "images/aardwolf.png",
-    "link": "animals/aardwolf.html"
+    "link": "animals/aardwolf"
   },
   {
     "name": "Grey Wolf",
@@ -735,7 +735,7 @@
     "region": "North America, Europe, Asia",
     "estimated": "~300,000",
     "image": "images/grey-wolf.png",
-    "link": "animals/grey-wolf.html"
+    "link": "animals/grey-wolf"
   },
   {
     "name": "Ethiopian Wolf",
@@ -743,7 +743,7 @@
     "region": "Ethiopian Highlands",
     "estimated": "~500",
     "image": "images/ethiopian-wolf.png",
-    "link": "animals/ethiopian-wolf.html"
+    "link": "animals/ethiopian-wolf"
   },
   {
     "name": "Maned Wolf",
@@ -751,7 +751,7 @@
     "region": "South America",
     "estimated": "~23,000",
     "image": "images/maned-wolf.png",
-    "link": "animals/maned-wolf.html"
+    "link": "animals/maned-wolf"
   },
   {
     "name": "Arctic Wolf",
@@ -759,7 +759,7 @@
     "region": "Arctic regions of North America and Greenland",
     "estimated": "~200,000",
     "image": "images/arctic-wolf.png",
-    "link": "animals/arctic-wolf.html"
+    "link": "animals/arctic-wolf"
   },
   {
     "name": "Mexican Wolf",
@@ -767,7 +767,7 @@
     "region": "Mexico and Southwestern United States",
     "estimated": "~200",
     "image": "images/mexican-wolf.png",
-    "link": "animals/mexican-wolf.html"
+    "link": "animals/mexican-wolf"
   },
   {
     "name": "Dhole",
@@ -775,7 +775,7 @@
     "region": "South and Southeast Asia",
     "estimated": "~2,500",
     "image": "images/dhole.png",
-    "link": "animals/dhole.html"
+    "link": "animals/dhole"
   },
   {
     "name": "African Wild Dog",
@@ -783,7 +783,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "~6,600",
     "image": "images/african-wild-dog.png",
-    "link": "animals/african-wild-dog.html"
+    "link": "animals/african-wild-dog"
   },
   {
     "name": "Coyote",
@@ -791,7 +791,7 @@
     "region": "North and Central America",
     "estimated": "~1,000,000",
     "image": "images/coyote.png",
-    "link": "animals/coyote.html"
+    "link": "animals/coyote"
   },
   {
     "name": "Golden Jackal",
@@ -799,7 +799,7 @@
     "region": "Europe, Asia, Africa",
     "estimated": "Unknown",
     "image": "images/golden-jackal.png",
-    "link": "animals/golden-jackal.html"
+    "link": "animals/golden-jackal"
   },
   {
     "name": "Black-backed Jackal",
@@ -807,7 +807,7 @@
     "region": "Eastern and Southern Africa",
     "estimated": "Unknown",
     "image": "images/black-backed-jackal.png",
-    "link": "animals/black-backed-jackal.html"
+    "link": "animals/black-backed-jackal"
   },
   {
     "name": "Side-striped Jackal",
@@ -815,7 +815,7 @@
     "region": "Central and Southern Africa",
     "estimated": "Unknown",
     "image": "images/side-striped-jackal.png",
-    "link": "animals/side-striped-jackal.html"
+    "link": "animals/side-striped-jackal"
   },
   {
     "name": "Bat-eared Fox",
@@ -823,7 +823,7 @@
     "region": "Eastern and Southern Africa",
     "estimated": "Unknown",
     "image": "images/bat-eared-fox.png",
-    "link": "animals/bat-eared-fox.html"
+    "link": "animals/bat-eared-fox"
   },
   {
     "name": "Fennec Fox",
@@ -831,7 +831,7 @@
     "region": "Sahara Desert",
     "estimated": "Unknown",
     "image": "images/fennec-fox.png",
-    "link": "animals/fennec-fox.html"
+    "link": "animals/fennec-fox"
   },
   {
     "name": "Arctic Fox",
@@ -839,7 +839,7 @@
     "region": "Arctic regions",
     "estimated": "~110,000",
     "image": "images/arctic-fox.png",
-    "link": "animals/arctic-fox.html"
+    "link": "animals/arctic-fox"
   },
   {
     "name": "Red Fox",
@@ -847,7 +847,7 @@
     "region": "North America, Europe, Asia, Australia",
     "estimated": "Unknown",
     "image": "images/red-fox.png",
-    "link": "animals/red-fox.html"
+    "link": "animals/red-fox"
   },
   {
     "name": "Gray Fox",
@@ -855,7 +855,7 @@
     "region": "North and South America",
     "estimated": "Unknown",
     "image": "images/gray-fox.png",
-    "link": "animals/gray-fox.html"
+    "link": "animals/gray-fox"
   },
   {
     "name": "Crab-eating Fox",
@@ -863,7 +863,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/crab-eating-fox.png",
-    "link": "animals/crab-eating-fox.html"
+    "link": "animals/crab-eating-fox"
   },
   {
     "name": "Tibetan Fox",
@@ -871,7 +871,7 @@
     "region": "Tibetan Plateau",
     "estimated": "Unknown",
     "image": "images/tibetan-fox.png",
-    "link": "animals/tibetan-fox.html"
+    "link": "animals/tibetan-fox"
   },
   {
     "name": "Blanford's Fox",
@@ -879,7 +879,7 @@
     "region": "Middle East and Central Asia",
     "estimated": "Unknown",
     "image": "images/blanfords-fox.png",
-    "link": "animals/blanfords-fox.html"
+    "link": "animals/blanfords-fox"
   },
   {
     "name": "Rüppell's Fox",
@@ -887,7 +887,7 @@
     "region": "North Africa and Middle East",
     "estimated": "Unknown",
     "image": "images/ruppells-fox.png",
-    "link": "animals/ruppells-fox.html"
+    "link": "animals/ruppells-fox"
   },
   {
     "name": "Cape Fox",
@@ -895,7 +895,7 @@
     "region": "Southern Africa",
     "estimated": "Unknown",
     "image": "images/cape-fox.png",
-    "link": "animals/cape-fox.html"
+    "link": "animals/cape-fox"
   },
   {
     "name": "Swift Fox",
@@ -903,7 +903,7 @@
     "region": "North American Great Plains",
     "estimated": "~1,000",
     "image": "images/swift-fox.png",
-    "link": "animals/swift-fox.html"
+    "link": "animals/swift-fox"
   },
   {
     "name": "Kit Fox",
@@ -911,7 +911,7 @@
     "region": "Southwestern United States and Mexico",
     "estimated": "Unknown",
     "image": "images/kit-fox.png",
-    "link": "animals/kit-fox.html"
+    "link": "animals/kit-fox"
   },
   {
     "name": "Corsac Fox",
@@ -919,7 +919,7 @@
     "region": "Central Asia",
     "estimated": "Unknown",
     "image": "images/corsac-fox.png",
-    "link": "animals/corsac-fox.html"
+    "link": "animals/corsac-fox"
   },
   {
     "name": "Bengal Fox",
@@ -927,7 +927,7 @@
     "region": "Indian subcontinent",
     "estimated": "Unknown",
     "image": "images/bengal-fox.png",
-    "link": "animals/bengal-fox.html"
+    "link": "animals/bengal-fox"
   },
   {
     "name": "Pale Fox",
@@ -935,7 +935,7 @@
     "region": "Sahel region of Africa",
     "estimated": "Unknown",
     "image": "images/pale-fox.png",
-    "link": "animals/pale-fox.html"
+    "link": "animals/pale-fox"
   },
   {
     "name": "Hoary Fox",
@@ -943,7 +943,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/hoary-fox.png",
-    "link": "animals/hoary-fox.html"
+    "link": "animals/hoary-fox"
   },
   {
     "name": "Sechuran Fox",
@@ -951,7 +951,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/sechuran-fox.png",
-    "link": "animals/sechuran-fox.html"
+    "link": "animals/sechuran-fox"
   },
   {
     "name": "Darwin's Fox",
@@ -959,7 +959,7 @@
     "region": "Chile",
     "estimated": "~250",
     "image": "images/darwins-fox.png",
-    "link": "animals/darwins-fox.html"
+    "link": "animals/darwins-fox"
   },
   {
     "name": "Island Fox",
@@ -967,7 +967,7 @@
     "region": "Channel Islands of California",
     "estimated": "~6,000",
     "image": "images/island-fox.png",
-    "link": "animals/island-fox.html"
+    "link": "animals/island-fox"
   },
   {
     "name": "South American Gray Fox",
@@ -975,7 +975,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/south-american-gray-fox.png",
-    "link": "animals/south-american-gray-fox.html"
+    "link": "animals/south-american-gray-fox"
   },
   {
     "name": "Pampas Fox",
@@ -983,7 +983,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/pampas-fox.png",
-    "link": "animals/pampas-fox.html"
+    "link": "animals/pampas-fox"
   },
   {
     "name": "Chilla Fox",
@@ -991,7 +991,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/chilla-fox.png",
-    "link": "animals/chilla-fox.html"
+    "link": "animals/chilla-fox"
   },
   {
     "name": "Culpeo Fox",
@@ -999,7 +999,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/culpeo-fox.png",
-    "link": "animals/culpeo-fox.html"
+    "link": "animals/culpeo-fox"
   },
   {
     "name": "Raccoon Dog",
@@ -1007,7 +1007,7 @@
     "region": "East Asia",
     "estimated": "Unknown",
     "image": "images/raccoon-dog.png",
-    "link": "animals/raccoon-dog.html"
+    "link": "animals/raccoon-dog"
   },
   {
     "name": "Tanuki",
@@ -1015,7 +1015,7 @@
     "region": "Japan",
     "estimated": "Unknown",
     "image": "images/tanuki.png",
-    "link": "animals/tanuki.html"
+    "link": "animals/tanuki"
   },
   {
     "name": "Binturong",
@@ -1023,7 +1023,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/binturong.png",
-    "link": "animals/binturong.html"
+    "link": "animals/binturong"
   },
   {
     "name": "Fossa",
@@ -1031,7 +1031,7 @@
     "region": "Madagascar",
     "estimated": "~2,500",
     "image": "images/fossa.png",
-    "link": "animals/fossa.html"
+    "link": "animals/fossa"
   },
   {
     "name": "Ring-tailed Mongoose",
@@ -1039,7 +1039,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/ring-tailed-mongoose.png",
-    "link": "animals/ring-tailed-mongoose.html"
+    "link": "animals/ring-tailed-mongoose"
   },
   {
     "name": "Broad-striped Mongoose",
@@ -1047,7 +1047,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/broad-striped-mongoose.png",
-    "link": "animals/broad-striped-mongoose.html"
+    "link": "animals/broad-striped-mongoose"
   },
   {
     "name": "Giant-striped Mongoose",
@@ -1055,7 +1055,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/giant-striped-mongoose.png",
-    "link": "animals/giant-striped-mongoose.html"
+    "link": "animals/giant-striped-mongoose"
   },
   {
     "name": "Narrow-striped Mongoose",
@@ -1063,7 +1063,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/narrow-striped-mongoose.png",
-    "link": "animals/narrow-striped-mongoose.html"
+    "link": "animals/narrow-striped-mongoose"
   },
   {
     "name": "Brown-tailed Mongoose",
@@ -1071,7 +1071,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/brown-tailed-mongoose.png",
-    "link": "animals/brown-tailed-mongoose.html"
+    "link": "animals/brown-tailed-mongoose"
   },
   {
     "name": "Grandidier's Mongoose",
@@ -1079,7 +1079,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/grandidiers-mongoose.png",
-    "link": "animals/grandidiers-mongoose.html"
+    "link": "animals/grandidiers-mongoose"
   },
   {
     "name": "Egyptian Mongoose",
@@ -1087,7 +1087,7 @@
     "region": "Africa, Southern Europe, Middle East",
     "estimated": "Unknown",
     "image": "images/egyptian-mongoose.png",
-    "link": "animals/egyptian-mongoose.html"
+    "link": "animals/egyptian-mongoose"
   },
   {
     "name": "Indian Gray Mongoose",
@@ -1095,7 +1095,7 @@
     "region": "Indian subcontinent",
     "estimated": "Unknown",
     "image": "images/indian-gray-mongoose.png",
-    "link": "animals/indian-gray-mongoose.html"
+    "link": "animals/indian-gray-mongoose"
   },
   {
     "name": "Small Indian Mongoose",
@@ -1103,7 +1103,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/small-indian-mongoose.png",
-    "link": "animals/small-indian-mongoose.html"
+    "link": "animals/small-indian-mongoose"
   },
   {
     "name": "Ruddy Mongoose",
@@ -1111,7 +1111,7 @@
     "region": "Indian subcontinent",
     "estimated": "Unknown",
     "image": "images/ruddy-mongoose.png",
-    "link": "animals/ruddy-mongoose.html"
+    "link": "animals/ruddy-mongoose"
   },
   {
     "name": "Striped-necked Mongoose",
@@ -1119,7 +1119,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/striped-necked-mongoose.png",
-    "link": "animals/striped-necked-mongoose.html"
+    "link": "animals/striped-necked-mongoose"
   },
   {
     "name": "Crab-eating Mongoose",
@@ -1127,7 +1127,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/crab-eating-mongoose.png",
-    "link": "animals/crab-eating-mongoose.html"
+    "link": "animals/crab-eating-mongoose"
   },
   {
     "name": "Yellow Mongoose",
@@ -1135,7 +1135,7 @@
     "region": "Southern Africa",
     "estimated": "Unknown",
     "image": "images/yellow-mongoose.png",
-    "link": "animals/yellow-mongoose.html"
+    "link": "animals/yellow-mongoose"
   },
   {
     "name": "Slender Mongoose",
@@ -1143,7 +1143,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/slender-mongoose.png",
-    "link": "animals/slender-mongoose.html"
+    "link": "animals/slender-mongoose"
   },
   {
     "name": "Banded Mongoose",
@@ -1151,7 +1151,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/banded-mongoose.png",
-    "link": "animals/banded-mongoose.html"
+    "link": "animals/banded-mongoose"
   },
   {
     "name": "Dwarf Mongoose",
@@ -1159,7 +1159,7 @@
     "region": "Eastern and Southern Africa",
     "estimated": "Unknown",
     "image": "images/dwarf-mongoose.png",
-    "link": "animals/dwarf-mongoose.html"
+    "link": "animals/dwarf-mongoose"
   },
   {
     "name": "Common Genet",
@@ -1167,7 +1167,7 @@
     "region": "Africa, Southern Europe, Middle East",
     "estimated": "Unknown",
     "image": "images/common-genet.png",
-    "link": "animals/common-genet.html"
+    "link": "animals/common-genet"
   },
   {
     "name": "Large-spotted Genet",
@@ -1175,7 +1175,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/large-spotted-genet.png",
-    "link": "animals/large-spotted-genet.html"
+    "link": "animals/large-spotted-genet"
   },
   {
     "name": "Small-spotted Genet",
@@ -1183,7 +1183,7 @@
     "region": "Africa, Southern Europe, Middle East",
     "estimated": "Unknown",
     "image": "images/small-spotted-genet.png",
-    "link": "animals/small-spotted-genet.html"
+    "link": "animals/small-spotted-genet"
   },
   {
     "name": "Aquatic Genet",
@@ -1191,7 +1191,7 @@
     "region": "Central Africa",
     "estimated": "Unknown",
     "image": "images/aquatic-genet.png",
-    "link": "animals/aquatic-genet.html"
+    "link": "animals/aquatic-genet"
   },
   {
     "name": "Crested Genet",
@@ -1199,7 +1199,7 @@
     "region": "Central and West Africa",
     "estimated": "Unknown",
     "image": "images/crested-genet.png",
-    "link": "animals/crested-genet.html"
+    "link": "animals/crested-genet"
   },
   {
     "name": "Johnston's Genet",
@@ -1207,7 +1207,7 @@
     "region": "West Africa",
     "estimated": "Unknown",
     "image": "images/johnstons-genet.png",
-    "link": "animals/johnstons-genet.html"
+    "link": "animals/johnstons-genet"
   },
   {
     "name": "Pardine Genet",
@@ -1215,7 +1215,7 @@
     "region": "West and Central Africa",
     "estimated": "Unknown",
     "image": "images/pardine-genet.png",
-    "link": "animals/pardine-genet.html"
+    "link": "animals/pardine-genet"
   },
   {
     "name": "King Genet",
@@ -1223,7 +1223,7 @@
     "region": "West and Central Africa",
     "estimated": "Unknown",
     "image": "images/king-genet.png",
-    "link": "animals/king-genet.html"
+    "link": "animals/king-genet"
   },
   {
     "name": "Servaline Genet",
@@ -1231,7 +1231,7 @@
     "region": "Central Africa",
     "estimated": "Unknown",
     "image": "images/servaline-genet.png",
-    "link": "animals/servaline-genet.html"
+    "link": "animals/servaline-genet"
   },
   {
     "name": "Miombo Genet",
@@ -1239,7 +1239,7 @@
     "region": "Southern Africa",
     "estimated": "Unknown",
     "image": "images/miombo-genet.png",
-    "link": "animals/miombo-genet.html"
+    "link": "animals/miombo-genet"
   },
   {
     "name": "Rusty-spotted Genet",
@@ -1247,7 +1247,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/rusty-spotted-genet.png",
-    "link": "animals/rusty-spotted-genet.html"
+    "link": "animals/rusty-spotted-genet"
   },
   {
     "name": "Hausa Genet",
@@ -1255,7 +1255,7 @@
     "region": "West Africa",
     "estimated": "Unknown",
     "image": "images/hausa-genet.png",
-    "link": "animals/hausa-genet.html"
+    "link": "animals/hausa-genet"
   },
   {
     "name": "Abyssinian Genet",
@@ -1263,7 +1263,7 @@
     "region": "East Africa",
     "estimated": "Unknown",
     "image": "images/abyssinian-genet.png",
-    "link": "animals/abyssinian-genet.html"
+    "link": "animals/abyssinian-genet"
   },
   {
     "name": "Bourlon's Genet",
@@ -1271,7 +1271,7 @@
     "region": "West Africa",
     "estimated": "Unknown",
     "image": "images/bourlons-genet.png",
-    "link": "animals/bourlons-genet.html"
+    "link": "animals/bourlons-genet"
   },
   {
     "name": "Cape Genet",
@@ -1279,7 +1279,7 @@
     "region": "Southern Africa",
     "estimated": "Unknown",
     "image": "images/cape-genet.png",
-    "link": "animals/cape-genet.html"
+    "link": "animals/cape-genet"
   },
   {
     "name": "Common Palm Civet",
@@ -1287,7 +1287,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/common-palm-civet.png",
-    "link": "animals/common-palm-civet.html"
+    "link": "animals/common-palm-civet"
   },
   {
     "name": "Masked Palm Civet",
@@ -1295,7 +1295,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/masked-palm-civet.png",
-    "link": "animals/masked-palm-civet.html"
+    "link": "animals/masked-palm-civet"
   },
   {
     "name": "Hose's Palm Civet",
@@ -1303,7 +1303,7 @@
     "region": "Borneo",
     "estimated": "Unknown",
     "image": "images/hoses-palm-civet.png",
-    "link": "animals/hoses-palm-civet.html"
+    "link": "animals/hoses-palm-civet"
   },
   {
     "name": "Otter Civet",
@@ -1311,7 +1311,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/otter-civet.png",
-    "link": "animals/otter-civet.html"
+    "link": "animals/otter-civet"
   },
   {
     "name": "African Civet",
@@ -1319,7 +1319,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/african-civet.png",
-    "link": "animals/african-civet.html"
+    "link": "animals/african-civet"
   },
   {
     "name": "Malayan Civet",
@@ -1327,7 +1327,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/malayan-civet.png",
-    "link": "animals/malayan-civet.html"
+    "link": "animals/malayan-civet"
   },
   {
     "name": "Large Indian Civet",
@@ -1335,7 +1335,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/large-indian-civet.png",
-    "link": "animals/large-indian-civet.html"
+    "link": "animals/large-indian-civet"
   },
   {
     "name": "Small Indian Civet",
@@ -1343,7 +1343,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/small-indian-civet.png",
-    "link": "animals/small-indian-civet.html"
+    "link": "animals/small-indian-civet"
   },
   {
     "name": "Brown Palm Civet",
@@ -1351,7 +1351,7 @@
     "region": "Western Ghats, India",
     "estimated": "Unknown",
     "image": "images/brown-palm-civet.png",
-    "link": "animals/brown-palm-civet.html"
+    "link": "animals/brown-palm-civet"
   },
   {
     "name": "Golden Palm Civet",
@@ -1359,7 +1359,7 @@
     "region": "Sri Lanka",
     "estimated": "Unknown",
     "image": "images/golden-palm-civet.png",
-    "link": "animals/golden-palm-civet.html"
+    "link": "animals/golden-palm-civet"
   },
   {
     "name": "Jerdon's Palm Civet",
@@ -1367,7 +1367,7 @@
     "region": "Western Ghats, India",
     "estimated": "Unknown",
     "image": "images/jerdons-palm-civet.png",
-    "link": "animals/jerdons-palm-civet.html"
+    "link": "animals/jerdons-palm-civet"
   },
   {
     "name": "Sulawesi Palm Civet",
@@ -1375,7 +1375,7 @@
     "region": "Sulawesi, Indonesia",
     "estimated": "Unknown",
     "image": "images/sulawesi-palm-civet.png",
-    "link": "animals/sulawesi-palm-civet.html"
+    "link": "animals/sulawesi-palm-civet"
   },
   {
     "name": "Owston's Palm Civet",
@@ -1383,7 +1383,7 @@
     "region": "Vietnam, Laos, China",
     "estimated": "Unknown",
     "image": "images/owstons-palm-civet.png",
-    "link": "animals/owstons-palm-civet.html"
+    "link": "animals/owstons-palm-civet"
   },
   {
     "name": "Malagasy Civet",
@@ -1391,7 +1391,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/malagasy-civet.png",
-    "link": "animals/malagasy-civet.html"
+    "link": "animals/malagasy-civet"
   },
   {
     "name": "Spotted Linsang",
@@ -1399,7 +1399,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/spotted-linsang.png",
-    "link": "animals/spotted-linsang.html"
+    "link": "animals/spotted-linsang"
   },
   {
     "name": "Banded Linsang",
@@ -1407,7 +1407,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/banded-linsang.png",
-    "link": "animals/banded-linsang.html"
+    "link": "animals/banded-linsang"
   },
   {
     "name": "African Linsang",
@@ -1415,7 +1415,7 @@
     "region": "Central Africa",
     "estimated": "Unknown",
     "image": "images/african-linsang.png",
-    "link": "animals/african-linsang.html"
+    "link": "animals/african-linsang"
   },
   {
     "name": "West African Oyan",
@@ -1423,7 +1423,7 @@
     "region": "West Africa",
     "estimated": "Unknown",
     "image": "images/west-african-oyan.png",
-    "link": "animals/west-african-oyan.html"
+    "link": "animals/west-african-oyan"
   },
   {
     "name": "Central African Oyan",
@@ -1431,7 +1431,7 @@
     "region": "Central Africa",
     "estimated": "Unknown",
     "image": "images/central-african-oyan.png",
-    "link": "animals/central-african-oyan.html"
+    "link": "animals/central-african-oyan"
   },
   {
     "name": "Eastern Falanouc",
@@ -1439,7 +1439,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/eastern-falanouc.png",
-    "link": "animals/eastern-falanouc.html"
+    "link": "animals/eastern-falanouc"
   },
   {
     "name": "Western Falanouc",
@@ -1447,7 +1447,7 @@
     "region": "Madagascar",
     "estimated": "Unknown",
     "image": "images/western-falanouc.png",
-    "link": "animals/western-falanouc.html"
+    "link": "animals/western-falanouc"
   },
   {
     "name": "Giant Otter",
@@ -1455,7 +1455,7 @@
     "region": "South America",
     "estimated": "~5,000",
     "image": "images/giant-otter.png",
-    "link": "animals/giant-otter.html"
+    "link": "animals/giant-otter"
   },
   {
     "name": "Sea Otter",
@@ -1463,7 +1463,7 @@
     "region": "North Pacific",
     "estimated": "~3,000",
     "image": "images/sea-otter.png",
-    "link": "animals/sea-otter.html"
+    "link": "animals/sea-otter"
   },
   {
     "name": "North American River Otter",
@@ -1471,7 +1471,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/north-american-river-otter.png",
-    "link": "animals/north-american-river-otter.html"
+    "link": "animals/north-american-river-otter"
   },
   {
     "name": "European Otter",
@@ -1479,7 +1479,7 @@
     "region": "Europe, Asia, North Africa",
     "estimated": "Unknown",
     "image": "images/european-otter.png",
-    "link": "animals/european-otter.html"
+    "link": "animals/european-otter"
   },
   {
     "name": "Asian Small-clawed Otter",
@@ -1487,7 +1487,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/asian-small-clawed-otter.png",
-    "link": "animals/asian-small-clawed-otter.html"
+    "link": "animals/asian-small-clawed-otter"
   },
   {
     "name": "Smooth-coated Otter",
@@ -1495,7 +1495,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/smooth-coated-otter.png",
-    "link": "animals/smooth-coated-otter.html"
+    "link": "animals/smooth-coated-otter"
   },
   {
     "name": "Hairy-nosed Otter",
@@ -1503,7 +1503,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/hairy-nosed-otter.png",
-    "link": "animals/hairy-nosed-otter.html"
+    "link": "animals/hairy-nosed-otter"
   },
   {
     "name": "Spotted-necked Otter",
@@ -1511,7 +1511,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/spotted-necked-otter.png",
-    "link": "animals/spotted-necked-otter.html"
+    "link": "animals/spotted-necked-otter"
   },
   {
     "name": "Marine Otter",
@@ -1519,7 +1519,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/marine-otter.png",
-    "link": "animals/marine-otter.html"
+    "link": "animals/marine-otter"
   },
   {
     "name": "Southern River Otter",
@@ -1527,7 +1527,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/southern-river-otter.png",
-    "link": "animals/southern-river-otter.html"
+    "link": "animals/southern-river-otter"
   },
   {
     "name": "Neotropical Otter",
@@ -1535,7 +1535,7 @@
     "region": "Central and South America",
     "estimated": "Unknown",
     "image": "images/neotropical-otter.png",
-    "link": "animals/neotropical-otter.html"
+    "link": "animals/neotropical-otter"
   },
   {
     "name": "Congo Clawless Otter",
@@ -1543,7 +1543,7 @@
     "region": "Central Africa",
     "estimated": "Unknown",
     "image": "images/congo-clawless-otter.png",
-    "link": "animals/congo-clawless-otter.html"
+    "link": "animals/congo-clawless-otter"
   },
   {
     "name": "Cape Clawless Otter",
@@ -1551,7 +1551,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/cape-clawless-otter.png",
-    "link": "animals/cape-clawless-otter.html"
+    "link": "animals/cape-clawless-otter"
   },
   {
     "name": "American Badger",
@@ -1559,7 +1559,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/american-badger.png",
-    "link": "animals/american-badger.html"
+    "link": "animals/american-badger"
   },
   {
     "name": "European Badger",
@@ -1567,7 +1567,7 @@
     "region": "Europe and Asia",
     "estimated": "Unknown",
     "image": "images/european-badger.png",
-    "link": "animals/european-badger.html"
+    "link": "animals/european-badger"
   },
   {
     "name": "Honey Badger",
@@ -1575,7 +1575,7 @@
     "region": "Africa, Southwest Asia, Indian subcontinent",
     "estimated": "Unknown",
     "image": "images/honey-badger.png",
-    "link": "animals/honey-badger.html"
+    "link": "animals/honey-badger"
   },
   {
     "name": "Asian Badger",
@@ -1583,7 +1583,7 @@
     "region": "East Asia",
     "estimated": "Unknown",
     "image": "images/asian-badger.png",
-    "link": "animals/asian-badger.html"
+    "link": "animals/asian-badger"
   },
   {
     "name": "Japanese Badger",
@@ -1591,7 +1591,7 @@
     "region": "Japan",
     "estimated": "Unknown",
     "image": "images/japanese-badger.png",
-    "link": "animals/japanese-badger.html"
+    "link": "animals/japanese-badger"
   },
   {
     "name": "Chinese Ferret-badger",
@@ -1599,7 +1599,7 @@
     "region": "East and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/chinese-ferret-badger.png",
-    "link": "animals/chinese-ferret-badger.html"
+    "link": "animals/chinese-ferret-badger"
   },
   {
     "name": "Burmese Ferret-badger",
@@ -1607,7 +1607,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/burmese-ferret-badger.png",
-    "link": "animals/burmese-ferret-badger.html"
+    "link": "animals/burmese-ferret-badger"
   },
   {
     "name": "Javan Ferret-badger",
@@ -1615,7 +1615,7 @@
     "region": "Java, Indonesia",
     "estimated": "Unknown",
     "image": "images/javan-ferret-badger.png",
-    "link": "animals/javan-ferret-badger.html"
+    "link": "animals/javan-ferret-badger"
   },
   {
     "name": "Bornean Ferret-badger",
@@ -1623,7 +1623,7 @@
     "region": "Borneo",
     "estimated": "Unknown",
     "image": "images/bornean-ferret-badger.png",
-    "link": "animals/bornean-ferret-badger.html"
+    "link": "animals/bornean-ferret-badger"
   },
   {
     "name": "Striped Skunk",
@@ -1631,7 +1631,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/striped-skunk.png",
-    "link": "animals/striped-skunk.html"
+    "link": "animals/striped-skunk"
   },
   {
     "name": "Hooded Skunk",
@@ -1639,7 +1639,7 @@
     "region": "North and Central America",
     "estimated": "Unknown",
     "image": "images/hooded-skunk.png",
-    "link": "animals/hooded-skunk.html"
+    "link": "animals/hooded-skunk"
   },
   {
     "name": "Hog-nosed Skunk",
@@ -1647,7 +1647,7 @@
     "region": "Americas",
     "estimated": "Unknown",
     "image": "images/hog-nosed-skunk.png",
-    "link": "animals/hog-nosed-skunk.html"
+    "link": "animals/hog-nosed-skunk"
   },
   {
     "name": "Spotted Skunk",
@@ -1655,7 +1655,7 @@
     "region": "North and Central America",
     "estimated": "Unknown",
     "image": "images/spotted-skunk.png",
-    "link": "animals/spotted-skunk.html"
+    "link": "animals/spotted-skunk"
   },
   {
     "name": "Stink Badger",
@@ -1663,7 +1663,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/stink-badger.png",
-    "link": "animals/stink-badger.html"
+    "link": "animals/stink-badger"
   },
   {
     "name": "Tayra",
@@ -1671,7 +1671,7 @@
     "region": "Central and South America",
     "estimated": "Unknown",
     "image": "images/tayra.png",
-    "link": "animals/tayra.html"
+    "link": "animals/tayra"
   },
   {
     "name": "Greater Grison",
@@ -1679,7 +1679,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/greater-grison.png",
-    "link": "animals/greater-grison.html"
+    "link": "animals/greater-grison"
   },
   {
     "name": "Lesser Grison",
@@ -1687,7 +1687,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/lesser-grison.png",
-    "link": "animals/lesser-grison.html"
+    "link": "animals/lesser-grison"
   },
   {
     "name": "Wolverine",
@@ -1695,7 +1695,7 @@
     "region": "Northern North America, Europe, Asia",
     "estimated": "Unknown",
     "image": "images/wolverine.png",
-    "link": "animals/wolverine.html"
+    "link": "animals/wolverine"
   },
   {
     "name": "Fisher",
@@ -1703,7 +1703,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/fisher.png",
-    "link": "animals/fisher.html"
+    "link": "animals/fisher"
   },
   {
     "name": "American Marten",
@@ -1711,7 +1711,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/american-marten.png",
-    "link": "animals/american-marten.html"
+    "link": "animals/american-marten"
   },
   {
     "name": "European Pine Marten",
@@ -1719,7 +1719,7 @@
     "region": "Europe and Asia",
     "estimated": "Unknown",
     "image": "images/european-pine-marten.png",
-    "link": "animals/european-pine-marten.html"
+    "link": "animals/european-pine-marten"
   },
   {
     "name": "Beech Marten",
@@ -1727,7 +1727,7 @@
     "region": "Europe and Asia",
     "estimated": "Unknown",
     "image": "images/beech-marten.png",
-    "link": "animals/beech-marten.html"
+    "link": "animals/beech-marten"
   },
   {
     "name": "Sable",
@@ -1735,7 +1735,7 @@
     "region": "Russia, Mongolia, China, Korea",
     "estimated": "Unknown",
     "image": "images/sable.png",
-    "link": "animals/sable.html"
+    "link": "animals/sable"
   },
   {
     "name": "Japanese Marten",
@@ -1743,7 +1743,7 @@
     "region": "Japan",
     "estimated": "Unknown",
     "image": "images/japanese-marten.png",
-    "link": "animals/japanese-marten.html"
+    "link": "animals/japanese-marten"
   },
   {
     "name": "Yellow-throated Marten",
@@ -1751,7 +1751,7 @@
     "region": "Asia",
     "estimated": "Unknown",
     "image": "images/yellow-throated-marten.png",
-    "link": "animals/yellow-throated-marten.html"
+    "link": "animals/yellow-throated-marten"
   },
   {
     "name": "Nilgiri Marten",
@@ -1759,7 +1759,7 @@
     "region": "Western Ghats, India",
     "estimated": "Unknown",
     "image": "images/nilgiri-marten.png",
-    "link": "animals/nilgiri-marten.html"
+    "link": "animals/nilgiri-marten"
   },
   {
     "name": "African Striped Weasel",
@@ -1767,7 +1767,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/african-striped-weasel.png",
-    "link": "animals/african-striped-weasel.html"
+    "link": "animals/african-striped-weasel"
   },
   {
     "name": "Amazon Weasel",
@@ -1775,7 +1775,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/amazon-weasel.png",
-    "link": "animals/amazon-weasel.html"
+    "link": "animals/amazon-weasel"
   },
   {
     "name": "Back-striped Weasel",
@@ -1783,7 +1783,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/back-striped-weasel.png",
-    "link": "animals/back-striped-weasel.html"
+    "link": "animals/back-striped-weasel"
   },
   {
     "name": "Egyptian Weasel",
@@ -1791,7 +1791,7 @@
     "region": "North Africa, Middle East",
     "estimated": "Unknown",
     "image": "images/egyptian-weasel.png",
-    "link": "animals/egyptian-weasel.html"
+    "link": "animals/egyptian-weasel"
   },
   {
     "name": "European Mink",
@@ -1799,7 +1799,7 @@
     "region": "Europe",
     "estimated": "~1,000",
     "image": "images/european-mink.png",
-    "link": "animals/european-mink.html"
+    "link": "animals/european-mink"
   },
   {
     "name": "American Mink",
@@ -1807,7 +1807,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/american-mink.png",
-    "link": "animals/american-mink.html"
+    "link": "animals/american-mink"
   },
   {
     "name": "Sea Mink",
@@ -1815,7 +1815,7 @@
     "region": "Eastern North America",
     "estimated": "0",
     "image": "images/sea-mink.png",
-    "link": "animals/sea-mink.html"
+    "link": "animals/sea-mink"
   },
   {
     "name": "European Polecat",
@@ -1823,7 +1823,7 @@
     "region": "Europe",
     "estimated": "Unknown",
     "image": "images/european-polecat.png",
-    "link": "animals/european-polecat.html"
+    "link": "animals/european-polecat"
   },
   {
     "name": "Steppe Polecat",
@@ -1831,7 +1831,7 @@
     "region": "Eastern Europe and Asia",
     "estimated": "Unknown",
     "image": "images/steppe-polecat.png",
-    "link": "animals/steppe-polecat.html"
+    "link": "animals/steppe-polecat"
   },
   {
     "name": "Black-footed Ferret",
@@ -1839,7 +1839,7 @@
     "region": "North America",
     "estimated": "~300",
     "image": "images/black-footed-ferret.png",
-    "link": "animals/black-footed-ferret.html"
+    "link": "animals/black-footed-ferret"
   },
   {
     "name": "Domestic Ferret",
@@ -1847,7 +1847,7 @@
     "region": "Worldwide",
     "estimated": "Unknown",
     "image": "images/domestic-ferret.png",
-    "link": "animals/domestic-ferret.html"
+    "link": "animals/domestic-ferret"
   },
   {
     "name": "Least Weasel",
@@ -1855,7 +1855,7 @@
     "region": "North America, Europe, Asia, North Africa",
     "estimated": "Unknown",
     "image": "images/least-weasel.png",
-    "link": "animals/least-weasel.html"
+    "link": "animals/least-weasel"
   },
   {
     "name": "Stoat",
@@ -1863,7 +1863,7 @@
     "region": "North America, Europe, Asia",
     "estimated": "Unknown",
     "image": "images/stoat.png",
-    "link": "animals/stoat.html"
+    "link": "animals/stoat"
   },
   {
     "name": "Long-tailed Weasel",
@@ -1871,7 +1871,7 @@
     "region": "North and Central America",
     "estimated": "Unknown",
     "image": "images/long-tailed-weasel.png",
-    "link": "animals/long-tailed-weasel.html"
+    "link": "animals/long-tailed-weasel"
   },
   {
     "name": "Yellow-bellied Weasel",
@@ -1879,7 +1879,7 @@
     "region": "Asia",
     "estimated": "Unknown",
     "image": "images/yellow-bellied-weasel.png",
-    "link": "animals/yellow-bellied-weasel.html"
+    "link": "animals/yellow-bellied-weasel"
   },
   {
     "name": "Malayan Weasel",
@@ -1887,7 +1887,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/malayan-weasel.png",
-    "link": "animals/malayan-weasel.html"
+    "link": "animals/malayan-weasel"
   },
   {
     "name": "Siberian Weasel",
@@ -1895,7 +1895,7 @@
     "region": "Asia",
     "estimated": "Unknown",
     "image": "images/siberian-weasel.png",
-    "link": "animals/siberian-weasel.html"
+    "link": "animals/siberian-weasel"
   },
   {
     "name": "Japanese Weasel",
@@ -1903,7 +1903,7 @@
     "region": "Japan",
     "estimated": "Unknown",
     "image": "images/japanese-weasel.png",
-    "link": "animals/japanese-weasel.html"
+    "link": "animals/japanese-weasel"
   },
   {
     "name": "Mountain Weasel",
@@ -1911,7 +1911,7 @@
     "region": "Asia",
     "estimated": "Unknown",
     "image": "images/mountain-weasel.png",
-    "link": "animals/mountain-weasel.html"
+    "link": "animals/mountain-weasel"
   },
   {
     "name": "Indonesian Mountain Weasel",
@@ -1919,7 +1919,7 @@
     "region": "Indonesia",
     "estimated": "Unknown",
     "image": "images/indonesian-mountain-weasel.png",
-    "link": "animals/indonesian-mountain-weasel.html"
+    "link": "animals/indonesian-mountain-weasel"
   },
   {
     "name": "African Clawless Otter",
@@ -1927,7 +1927,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/african-clawless-otter.png",
-    "link": "animals/african-clawless-otter.html"
+    "link": "animals/african-clawless-otter"
   },
   {
     "name": "Congo Clawless Otter",
@@ -1935,7 +1935,7 @@
     "region": "Central Africa",
     "estimated": "Unknown",
     "image": "images/congo-clawless-otter.png",
-    "link": "animals/congo-clawless-otter.html"
+    "link": "animals/congo-clawless-otter"
   },
   {
     "name": "Oriental Small-clawed Otter",
@@ -1943,7 +1943,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/oriental-small-clawed-otter.png",
-    "link": "animals/oriental-small-clawed-otter.html"
+    "link": "animals/oriental-small-clawed-otter"
   },
   {
     "name": "Giant River Otter",
@@ -1951,7 +1951,7 @@
     "region": "South America",
     "estimated": "~5,000",
     "image": "images/giant-river-otter.png",
-    "link": "animals/giant-river-otter.html"
+    "link": "animals/giant-river-otter"
   },
   {
     "name": "Southern River Otter",
@@ -1959,7 +1959,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/southern-river-otter.png",
-    "link": "animals/southern-river-otter.html"
+    "link": "animals/southern-river-otter"
   },
   {
     "name": "Marine Otter",
@@ -1967,7 +1967,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/marine-otter.png",
-    "link": "animals/marine-otter.html"
+    "link": "animals/marine-otter"
   },
   {
     "name": "North American River Otter",
@@ -1975,7 +1975,7 @@
     "region": "North America",
     "estimated": "Unknown",
     "image": "images/north-american-river-otter.png",
-    "link": "animals/north-american-river-otter.html"
+    "link": "animals/north-american-river-otter"
   },
   {
     "name": "Neotropical River Otter",
@@ -1983,7 +1983,7 @@
     "region": "Central and South America",
     "estimated": "Unknown",
     "image": "images/neotropical-river-otter.png",
-    "link": "animals/neotropical-river-otter.html"
+    "link": "animals/neotropical-river-otter"
   },
   {
     "name": "Spotted-necked Otter",
@@ -1991,7 +1991,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/spotted-necked-otter.png",
-    "link": "animals/spotted-necked-otter.html"
+    "link": "animals/spotted-necked-otter"
   },
   {
     "name": "Smooth-coated Otter",
@@ -1999,7 +1999,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/smooth-coated-otter.png",
-    "link": "animals/smooth-coated-otter.html"
+    "link": "animals/smooth-coated-otter"
   },
   {
     "name": "Hairy-nosed Otter",
@@ -2007,7 +2007,7 @@
     "region": "Southeast Asia",
     "estimated": "Unknown",
     "image": "images/hairy-nosed-otter.png",
-    "link": "animals/hairy-nosed-otter.html"
+    "link": "animals/hairy-nosed-otter"
   },
   {
     "name": "European Otter",
@@ -2015,7 +2015,7 @@
     "region": "Europe, Asia, North Africa",
     "estimated": "Unknown",
     "image": "images/european-otter.png",
-    "link": "animals/european-otter.html"
+    "link": "animals/european-otter"
   },
   {
     "name": "African Otter",
@@ -2023,7 +2023,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "Unknown",
     "image": "images/african-otter.png",
-    "link": "animals/african-otter.html"
+    "link": "animals/african-otter"
   },
   {
     "name": "Asian Small-clawed Otter",
@@ -2031,7 +2031,7 @@
     "region": "South and Southeast Asia",
     "estimated": "Unknown",
     "image": "images/asian-small-clawed-otter.png",
-    "link": "animals/asian-small-clawed-otter.html"
+    "link": "animals/asian-small-clawed-otter"
   },
   {
     "name": "Sea Otter",
@@ -2039,7 +2039,7 @@
     "region": "North Pacific",
     "estimated": "~3,000",
     "image": "images/sea-otter.png",
-    "link": "animals/sea-otter.html"
+    "link": "animals/sea-otter"
   },
     {
     "name": "Margay",
@@ -2047,7 +2047,7 @@
     "region": "Central and South America",
     "estimated": "Unknown",
     "image": "images/margay.png",
-    "link": "animals/margay.html"
+    "link": "animals/margay"
   },
   {
     "name": "Pampas Cat",
@@ -2055,7 +2055,7 @@
     "region": "South America",
     "estimated": "Unknown",
     "image": "images/pampas-cat.png",
-    "link": "animals/pampas-cat.html"
+    "link": "animals/pampas-cat"
   },
   {
     "name": "Andean Mountain Cat",
@@ -2063,7 +2063,7 @@
     "region": "Andes Mountains",
     "estimated": "~1,400",
     "image": "images/andean-mountain-cat.png",
-    "link": "animals/andean-mountain-cat.html"
+    "link": "animals/andean-mountain-cat"
   },
   {
     "name": "Pallas's Cat",
@@ -2071,7 +2071,7 @@
     "region": "Central Asia",
     "estimated": "~58,000",
     "image": "images/pallass-cat.png",
-    "link": "animals/pallass-cat.html"
+    "link": "animals/pallass-cat"
   },
   {
     "name": "Sand Cat",
@@ -2079,7 +2079,7 @@
     "region": "Sahara Desert, Arabian Peninsula",
     "estimated": "Unknown",
     "image": "images/sand-cat.png",
-    "link": "animals/sand-cat.html"
+    "link": "animals/sand-cat"
   },
   {
     "name": "Black-footed Cat",
@@ -2087,7 +2087,7 @@
     "region": "Southern Africa",
     "estimated": "~13,000",
     "image": "images/black-footed-cat.png",
-    "link": "animals/black-footed-cat.html"
+    "link": "animals/black-footed-cat"
   },
   {
     "name": "Rusty-spotted Cat",
@@ -2095,7 +2095,7 @@
     "region": "India and Sri Lanka",
     "estimated": "~10,000",
     "image": "images/rusty-spotted-cat.png",
-    "link": "animals/rusty-spotted-cat.html"
+    "link": "animals/rusty-spotted-cat"
   },
   {
     "name": "Fishing Cat",
@@ -2103,7 +2103,7 @@
     "region": "South and Southeast Asia",
     "estimated": "~10,000",
     "image": "images/fishing-cat.png",
-    "link": "animals/fishing-cat.html"
+    "link": "animals/fishing-cat"
   },
   {
     "name": "Flat-headed Cat",
@@ -2111,7 +2111,7 @@
     "region": "Malay Peninsula, Borneo, Sumatra",
     "estimated": "~2,500",
     "image": "images/flat-headed-cat.png",
-    "link": "animals/flat-headed-cat.html"
+    "link": "animals/flat-headed-cat"
   },
   {
     "name": "Marbled Cat",
@@ -2119,7 +2119,7 @@
     "region": "Southeast Asia",
     "estimated": "~10,000",
     "image": "images/marbled-cat.png",
-    "link": "animals/marbled-cat.html"
+    "link": "animals/marbled-cat"
   },
   {
     "name": "Bay Cat",
@@ -2127,7 +2127,7 @@
     "region": "Borneo",
     "estimated": "~2,200",
     "image": "images/bay-cat.png",
-    "link": "animals/bay-cat.html"
+    "link": "animals/bay-cat"
   },
   {
     "name": "Spotted Hyena",
@@ -2135,7 +2135,7 @@
     "region": "Sub-Saharan Africa",
     "estimated": "~47,000",
     "image": "images/spotted-hyena.png",
-    "link": "animals/spotted-hyena.html"
+    "link": "animals/spotted-hyena"
   },
   {
     "name": "Brown Hyena",
@@ -2143,7 +2143,7 @@
     "region": "Southern Africa",
     "estimated": "~10,000",
     "image": "images/brown-hyena.png",
-    "link": "animals/brown-hyena.html"
+    "link": "animals/brown-hyena"
   },
   {
     "name": "Striped Hyena",
@@ -2151,7 +2151,7 @@
     "region": "North and East Africa, Middle East, India",
     "estimated": "~10,000",
     "image": "images/striped-hyena.png",
-    "link": "animals/striped-hyena.html"
+    "link": "animals/striped-hyena"
   },
   {
     "name": "Aardwolf",
@@ -2159,7 +2159,7 @@
     "region": "East and Southern Africa",
     "estimated": "Unknown",
     "image": "images/aardwolf.png",
-    "link": "animals/aardwolf.html"
+    "link": "animals/aardwolf"
   },
   {
     "name": "Grey Wolf",
@@ -2167,7 +2167,7 @@
     "region": "North America, Europe, Asia",
     "estimated": "~300,000",
     "image": "images/grey-wolf.png",
-    "link": "animals/grey-wolf.html"
+    "link": "animals/grey-wolf"
   },
   {
     "name": "Ethiopian Wolf",
@@ -2175,7 +2175,7 @@
     "region": "Ethiopian Highlands",
     "estimated": "~500",
     "image": "images/ethiopian-wolf.png",
-    "link": "animals/ethiopian-wolf.html"
+    "link": "animals/ethiopian-wolf"
   },
   {
     "name": "Maned Wolf",
@@ -2183,7 +2183,7 @@
     "region": "South America",
     "estimated": "~23,000",
     "image": "images/maned-wolf.png",
-    "link": "animals/maned-wolf.html"
+    "link": "animals/maned-wolf"
   },
   {
     "name": "Arctic Wolf",
@@ -2191,7 +2191,7 @@
     "region": "Arctic regions of North America and Greenland",
     "estimated": "~200,000",
     "image": "images/arctic-wolf.png",
-    "link": "animals/arctic-wolf.html"
+    "link": "animals/arctic-wolf"
   },
   {
     "name": "Mexican Wolf",
@@ -2199,7 +2199,7 @@
     "region": "Mexico and Southwestern United States",
     "estimated": "~200",
     "image": "images/mexican-wolf.png",
-    "link": "animals/mexican-wolf.html"
+    "link": "animals/mexican-wolf"
   },
   {
     "name": "Dhole",
@@ -2207,7 +2207,7 @@
     "region": "South and Southeast Asia",
     "estimated": "~2,500",
     "image": "images/dhole.png",
-    "link": "animals/dhole.html"
+    "link": "animals/dhole"
   },
   {
     "name": "Coyote",
@@ -2215,7 +2215,7 @@
     "region": "North and Central America",
     "estimated": "~1,000,000",
     "image": "images/coyote.png",
-    "link": "animals/coyote.html"
+    "link": "animals/coyote"
   },
   {
     "name": "Golden Jackal",
@@ -2223,7 +2223,7 @@
     "region": "Europe, Asia, Africa",
     "estimated": "Unknown",
     "image": "images/golden-jackal.png",
-    "link": "animals/golden-jackal.html"
+    "link": "animals/golden-jackal"
   },
   {
     "name": "Black-backed Jackal",
@@ -2231,7 +2231,7 @@
     "region": "Eastern and Southern Africa",
     "estimated": "Unknown",
     "image": "images/black-backed-jackal.png",
-    "link": "animals/black-backed-jackal.html"
+    "link": "animals/black-backed-jackal"
   },
   {
     "name": "Side-striped Jackal",
@@ -2239,6 +2239,6 @@
     "region": "Central and Southern Africa",
     "estimated": "Unknown",
     "image": "images/side-striped-jackal.png",
-    "link": "animals/side-striped-jackal.html"
+    "link": "animals/side-striped-jackal"
   }
 ]

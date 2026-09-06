@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Keep public URLs extensionless while serving the existing static HTML files.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [END]
+
+# Serve the existing homepage at the site root.
+DirectoryIndex index.html

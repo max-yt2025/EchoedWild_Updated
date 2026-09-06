@@ -1,6 +1,72 @@
 // main.js — dynamic site behavior
 (function() {
   console.log('main.js loading...');
+
+  function addJsonLd(data) {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(data);
+    document.head.appendChild(script);
+  }
+
+  function enhanceAnimalPage() {
+    const match = location.pathname.match(/\/animals\/([^/]+?)(?:\.html)?\/?$/);
+    if (!match) return;
+
+    const slug = match[1];
+    const heading = document.querySelector('h1');
+    const animalName = heading ? heading.textContent.trim() : document.title.split(' — ')[0];
+    const canonicalUrl = `https://echoedwild.com/animals/${slug}`;
+    const description = `${animalName} facts, habitat, threats, and conservation information from EchoedWild's wildlife education resource.`;
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = canonicalUrl;
+
+    if (!document.querySelector('meta[name="description"]')) {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = description;
+      document.head.appendChild(meta);
+    }
+
+    const breadcrumb = document.createElement('nav');
+    breadcrumb.className = 'breadcrumbs container';
+    breadcrumb.setAttribute('aria-label', 'Breadcrumb');
+    breadcrumb.innerHTML = `<a href="../">Home</a> <span aria-hidden="true">→</span> <a href="../animals">Animals</a> <span aria-hidden="true">→</span> <span aria-current="page">${escapeHtml(animalName)}</span>`;
+    const main = document.querySelector('main');
+    if (main) main.insertAdjacentElement('afterbegin', breadcrumb);
+
+    document.querySelectorAll('a[href$="animals.html"]').forEach(link => {
+      link.href = link.href.replace(/\.html$/, '');
+    });
+
+    addJsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: `${animalName} — Facts, Habitat & Conservation`,
+      description,
+      author: { '@type': 'Organization', name: 'EchoedWild' },
+      publisher: { '@type': 'Organization', name: 'EchoedWild' },
+      mainEntityOfPage: canonicalUrl,
+      url: canonicalUrl
+    });
+    addJsonLd({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://echoedwild.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Animals', item: 'https://echoedwild.com/animals' },
+        { '@type': 'ListItem', position: 3, name: animalName, item: canonicalUrl }
+      ]
+    });
+  }
+
+  enhanceAnimalPage();
   
   // Use embedded animal data from animals-data.js
   let animals = window.animalsData || [];
@@ -199,7 +265,7 @@
     }
 
     document.body.addEventListener('click', e => {
-      if (e.target.matches('.bio-btn, .card .link')) {
+      if (e.target.matches('.bio-btn')) {
         e.preventDefault();
         const id = e.target.getAttribute('data-id') || new URL(e.target.href).searchParams.get('id');
         const animal = animals.find(a => a.id === id);
@@ -301,12 +367,16 @@
         </div>
         <p class="muted">${escapeHtml(a.habitat || 'No habitat information available')}</p>
         <div style="margin-top:auto;display:flex;gap:10px;align-items:center">
-          ${a.link ? `<a class="btn small" href="${a.link}">View Page</a>` : ''}
+          ${a.link ? `<a class="btn small" href="${publicAnimalUrl(a.link)}">Learn about ${escapeHtml(a.name)}</a>` : ''}
           <span style="margin-left:auto;color:var(--muted);font-size:.95rem">${escapeHtml(a.estimated || '—')}</span>
         </div>
       </div>
     `;
     return article;
+  }
+
+  function publicAnimalUrl(link) {
+    return link ? link.replace(/\.html$/, '') : '#';
   }
 
   function statusClass(status) {
