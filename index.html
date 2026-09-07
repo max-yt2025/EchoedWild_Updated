@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>EchoedWild — Comprehensive Wildlife Education & Conservation Resource | Endangered Species Database</title>
+
   <link rel="icon" href="favicon.ico" />
+
   <meta name="description" content="EchoedWild is your comprehensive wildlife education platform featuring 100+ animal profiles, endangered species status tracking, conservation resources, and educational content for students, teachers, and wildlife enthusiasts. Learn about biodiversity, ecosystem protection, and how you can help save endangered species." />
   <meta name="keywords" content="wildlife education, endangered species, animal conservation, biodiversity, ecosystem protection, wildlife database, student resources, environmental education, IUCN Red List, habitat conservation, marine life, rainforest animals, wildlife facts" />
   <meta name="author" content="EchoedWild" />
@@ -29,8 +32,8 @@
     "url": "https://echoedwild.com/"
   }
   </script>
-  
-  <!-- Open Graph Tags -->
+
+  <!-- Open Graph -->
   <meta property="og:title" content="EchoedWild — Comprehensive Wildlife Education & Conservation Resource" />
   <meta property="og:description" content="Explore 100+ animal profiles, track endangered species status, and learn about wildlife conservation. Educational resources for students, teachers, and nature enthusiasts." />
   <meta property="og:type" content="website" />
@@ -38,27 +41,29 @@
   <meta property="og:image" content="https://echoedwild.com/images/favicon.png" />
   <meta property="og:site_name" content="EchoedWild" />
   <meta property="og:locale" content="en_US" />
-  
-  <!-- Twitter Card Tags -->
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="EchoedWild — Wildlife Education & Conservation" />
   <meta name="twitter:description" content="Your comprehensive resource for endangered species education, wildlife conservation, and biodiversity protection." />
   <meta name="twitter:image" content="https://echoedwild.com/images/favicon.png" />
-  
-  <!-- Theme Color -->
+
+  <!-- Theme -->
   <meta name="theme-color" content="#1a1a2e" />
   <meta name="msapplication-TileColor" content="#1a1a2e" />
-  
-  <link rel="icon" href="favicon.ico" />
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 
-  <!-- FIX: defer ensures the DOM is parsed before these scripts run -->
+  <!-- Existing EchoedWild scripts -->
   <script src="js/animals-data.js" defer></script>
   <script src="js/main.js" defer></script>
 
+  <!-- Newsletter script - separate from your existing main.js -->
+  <script src="js/newsletter.js" defer></script>
+
 <style>
 /* =========================================================
-   ECHOEDWILD — PREMIUM GLASS UI with rotating hero
+   ECHOEDWILD — PREMIUM GLASS UI
    ========================================================= */
 
 :root {
@@ -76,14 +81,20 @@
     --transition: 0.3s cubic-bezier(.2,.8,.2,1);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
     color: var(--text);
-    background: 
+    background:
         radial-gradient(circle at 10% 20%, rgba(43, 140, 94, 0.10), transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(43, 140, 94, 0.08), transparent 35%),
         linear-gradient(160deg, #f0faf4 0%, #ffffff 50%, #f3f9f5 100%);
@@ -91,7 +102,8 @@ body {
     overflow-x: hidden;
 }
 
-/* ----- GLASS BASE ----- */
+/* ----- GLASS ----- */
+
 .glass {
     background: var(--glass-white);
     backdrop-filter: blur(20px) saturate(160%);
@@ -100,7 +112,8 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* ----- NAVBAR (fixed, glass, compact) ----- */
+/* ----- NAVBAR ----- */
+
 .site-header {
     position: fixed;
     top: 18px;
@@ -144,8 +157,17 @@ body {
     transition: transform var(--transition);
     flex-shrink: 0;
 }
-.logo:hover { transform: scale(1.02); }
-.logo img { width: 36px; height: 36px; border-radius: 12px; object-fit: contain; }
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    object-fit: contain;
+}
 
 .nav-links {
     display: flex;
@@ -155,6 +177,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .nav-links li a {
     position: relative;
     padding: 8px 16px;
@@ -165,6 +188,7 @@ body {
     font-size: 0.9rem;
     transition: all var(--transition);
 }
+
 .nav-links li a::after {
     content: '';
     position: absolute;
@@ -177,17 +201,25 @@ body {
     transform: translateX(-50%);
     transition: width var(--transition);
 }
+
 .nav-links li a:hover {
     background: rgba(43, 140, 94, 0.08);
     color: var(--green-dark);
     transform: translateY(-1px);
 }
-.nav-links li a:hover::after { width: 40%; }
+
+.nav-links li a:hover::after {
+    width: 40%;
+}
+
 .nav-links li a.active {
     background: rgba(43, 140, 94, 0.12);
     color: var(--green-dark);
 }
-.nav-links li a.active::after { width: 40%; }
+
+.nav-links li a.active::after {
+    width: 40%;
+}
 
 .search-wrap input {
     background: rgba(255, 255, 255, 0.50);
@@ -200,6 +232,7 @@ body {
     transition: all var(--transition);
     color: var(--text);
 }
+
 .search-wrap input:focus {
     width: 240px;
     border-color: rgba(43, 140, 94, 0.35);
@@ -207,7 +240,12 @@ body {
     box-shadow: 0 0 0 4px rgba(43, 140, 94, 0.06);
 }
 
-.controls { display: flex; gap: 8px; align-items: center; }
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 .controls button {
     background: transparent;
     border: none;
@@ -218,11 +256,29 @@ body {
     color: var(--text-soft);
     transition: background var(--transition);
 }
-.controls button:hover { background: rgba(43, 140, 94, 0.08); }
-.hamburger { display: none; flex-direction: column; gap: 5px; padding: 6px; }
-.hamburger span { display: block; width: 24px; height: 2.5px; background: var(--green-dark); border-radius: 99px; transition: all 0.2s; }
 
-/* ===== HERO WITH ROTATING BACKGROUND ===== */
+.controls button:hover {
+    background: rgba(43, 140, 94, 0.08);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: var(--green-dark);
+    border-radius: 99px;
+    transition: all 0.2s;
+}
+
+/* ----- HERO ----- */
+
 .hero {
     position: relative;
     min-height: 100vh;
@@ -232,12 +288,12 @@ body {
     overflow: hidden;
 }
 
-/* rotating background images */
 .hero-slides {
     position: absolute;
     inset: 0;
     z-index: 0;
 }
+
 .hero-slides .slide {
     position: absolute;
     inset: 0;
@@ -246,10 +302,11 @@ body {
     opacity: 0;
     transition: opacity 1.8s ease-in-out;
 }
+
 .hero-slides .slide.active {
     opacity: 1;
 }
-/* overlay for readability */
+
 .hero-slides::after {
     content: '';
     position: absolute;
@@ -280,7 +337,11 @@ body {
     color: #ffffff;
     text-shadow: 0 8px 40px rgba(0,0,0,0.25);
 }
-.hero-text h1 span { color: #8fdfb0; }
+
+.hero-text h1 span {
+    color: #8fdfb0;
+}
+
 .hero-text p {
     font-size: 1.15rem;
     line-height: 1.8;
@@ -310,21 +371,25 @@ body {
     transition: all var(--transition);
     font-size: 0.95rem;
 }
+
 .btn-primary {
     background: linear-gradient(135deg, #1f6e4a, #2b8c5e);
     color: white;
     box-shadow: 0 8px 24px rgba(43, 140, 94, 0.25);
 }
+
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 14px 32px rgba(43, 140, 94, 0.30);
 }
+
 .btn-secondary {
     background: rgba(255, 255, 255, 0.70);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255,255,255,0.25);
     color: #1e3d2e;
 }
+
 .btn-secondary:hover {
     background: white;
     transform: translateY(-3px);
@@ -337,6 +402,7 @@ body {
     flex-wrap: wrap;
     margin-top: 28px;
 }
+
 .pill {
     background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(8px);
@@ -350,10 +416,17 @@ body {
     text-shadow: 0 2px 8px rgba(0,0,0,0.10);
     transition: all var(--transition);
 }
-.pill:hover { background: rgba(255,255,255,0.30); transform: translateY(-2px); }
 
-/* Hero media (glass framed image) */
-.hero-media { display: flex; justify-content: center; }
+.pill:hover {
+    background: rgba(255,255,255,0.30);
+    transform: translateY(-2px);
+}
+
+.hero-media {
+    display: flex;
+    justify-content: center;
+}
+
 .hero-collage {
     width: 100%;
     max-width: 560px;
@@ -361,20 +434,30 @@ body {
     object-fit: cover;
     border-radius: 32px;
     border: 1px solid rgba(255,255,255,0.60);
-    box-shadow: 0 30px 70px rgba(0,0,0,0.15), 0 0 0 6px rgba(255,255,255,0.15);
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.15),
+        0 0 0 6px rgba(255,255,255,0.15);
     transition: all 0.5s ease;
     animation: floatImage 7s ease-in-out infinite;
 }
+
 @keyframes floatImage {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-12px) scale(1.01); }
-}
-.hero-collage:hover {
-    transform: scale(1.02) translateY(-6px);
-    box-shadow: 0 40px 80px rgba(0,0,0,0.20), 0 0 0 10px rgba(255,255,255,0.25);
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-12px) scale(1.01);
+    }
 }
 
-/* ===== HERO WAVE (BIGGER) ===== */
+.hero-collage:hover {
+    transform: scale(1.02) translateY(-6px);
+    box-shadow:
+        0 40px 80px rgba(0,0,0,0.20),
+        0 0 0 10px rgba(255,255,255,0.25);
+}
+
 .hero-wave {
     position: absolute;
     bottom: 0;
@@ -391,9 +474,17 @@ body {
     height: 220px;
 }
 
-/* ----- CONTENT CARDS (glass) ----- */
-section { padding: 60px 6%; position: relative; }
-.container { max-width: 1280px; margin: 0 auto; }
+/* ----- CONTENT ----- */
+
+section {
+    padding: 60px 6%;
+    position: relative;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 section:not(.hero) {
     background-color: #ffffff;
@@ -409,57 +500,75 @@ section:not(.hero) {
     box-shadow: 0 20px 50px rgba(26, 79, 58, 0.06);
     transition: all var(--transition);
 }
+
 .content-card:hover {
     background: rgba(255, 255, 255, 0.60);
     box-shadow: 0 28px 60px rgba(26, 79, 58, 0.08);
 }
+
 .content-card h2 {
     font-size: clamp(1.8rem, 3.5vw, 2.8rem);
     color: var(--green-dark);
     letter-spacing: -1.5px;
     margin-bottom: 16px;
 }
+
 .content-card h3 {
     font-size: 1.3rem;
     color: var(--green-dark);
     margin: 28px 0 10px;
 }
+
 .content-card p {
     line-height: 1.8;
     color: var(--text-soft);
     margin-bottom: 12px;
 }
-.content-card ul { padding-left: 24px; margin: 12px 0; }
-.content-card li { line-height: 1.8; color: var(--text-soft); }
 
-/* Sources & References special styling */
+.content-card ul {
+    padding-left: 24px;
+    margin: 12px 0;
+}
+
+.content-card li {
+    line-height: 1.8;
+    color: var(--text-soft);
+}
+
+/* ----- SOURCES ----- */
+
 .sources-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px 32px;
     margin: 16px 0 8px;
 }
+
 .sources-grid .source-item {
     padding: 12px 16px;
     background: rgba(255,255,255,0.30);
     border-radius: 12px;
     border-left: 4px solid var(--green);
 }
+
 .sources-grid .source-item strong {
     color: var(--green-dark);
     display: block;
 }
+
 .sources-grid .source-item span {
     color: var(--text-soft);
     font-size: 0.92rem;
 }
 
-/* ----- ANIMAL GRID (glass cards) ----- */
+/* ----- ANIMAL GRID ----- */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
+
 .animal-card {
     background: rgba(255, 255, 255, 0.40);
     backdrop-filter: blur(14px) saturate(140%);
@@ -470,11 +579,13 @@ section:not(.hero) {
     transition: all var(--transition);
     box-shadow: 0 12px 30px rgba(26, 79, 58, 0.04);
 }
+
 .animal-card:hover {
     transform: translateY(-8px) scale(1.01);
     background: rgba(255, 255, 255, 0.60);
     box-shadow: 0 24px 50px rgba(26, 79, 58, 0.08);
 }
+
 .animal-card img {
     width: 100%;
     aspect-ratio: 16/10;
@@ -483,12 +594,28 @@ section:not(.hero) {
     margin-bottom: 14px;
     transition: transform 0.5s ease;
 }
-.animal-card:hover img { transform: scale(1.03); }
-.animal-card h3 { color: var(--green-dark); font-size: 1.1rem; margin: 0 0 4px; }
-.animal-card p { color: var(--text-soft); font-size: 0.9rem; margin: 0; }
 
-/* ----- FORMS (glass) ----- */
-input, textarea, select {
+.animal-card:hover img {
+    transform: scale(1.03);
+}
+
+.animal-card h3 {
+    color: var(--green-dark);
+    font-size: 1.1rem;
+    margin: 0 0 4px;
+}
+
+.animal-card p {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ----- FORMS ----- */
+
+input,
+textarea,
+select {
     font: inherit;
     width: 100%;
     padding: 12px 18px;
@@ -499,14 +626,45 @@ input, textarea, select {
     transition: all var(--transition);
     color: var(--text);
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
     border-color: rgba(43, 140, 94, 0.30);
     background: rgba(255, 255, 255, 0.80);
     box-shadow: 0 0 0 4px rgba(43, 140, 94, 0.06);
 }
-label { font-weight: 600; color: var(--green-dark); display: block; margin: 16px 0 6px; }
 
-/* ----- FOOTER (dark forest) ----- */
+label {
+    font-weight: 600;
+    color: var(--green-dark);
+    display: block;
+    margin: 16px 0 6px;
+}
+
+/* ----- NEWSLETTER MESSAGE ----- */
+
+#newsletterMessage {
+    min-height: 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#newsletterMessage.success {
+    color: var(--green-dark);
+}
+
+#newsletterMessage.error {
+    color: #9b2c2c;
+}
+
+#newsletterButton:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+}
+
+/* ----- FOOTER ----- */
+
 footer {
     margin-top: 40px;
     padding: 60px 6% 30px;
@@ -515,6 +673,7 @@ footer {
     position: relative;
     overflow: hidden;
 }
+
 footer::before {
     content: '';
     position: absolute;
@@ -522,11 +681,25 @@ footer::before {
     height: 300px;
     right: -80px;
     top: -80px;
-    background: radial-gradient(circle, rgba(107,196,154,0.08), transparent 70%);
+    background: radial-gradient(
+        circle,
+        rgba(107,196,154,0.08),
+        transparent 70%
+    );
     border-radius: 50%;
 }
-footer a { color: rgba(255,255,255,0.65); text-decoration: none; transition: all var(--transition); }
-footer a:hover { color: white; transform: translateX(4px); }
+
+footer a {
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+footer a:hover {
+    color: white;
+    transform: translateX(4px);
+}
+
 .footer-inner {
     display: flex;
     justify-content: space-between;
@@ -535,10 +708,19 @@ footer a:hover { color: white; transform: translateX(4px); }
     position: relative;
     z-index: 2;
 }
-.footer-links { display: flex; flex-wrap: wrap; gap: 20px 32px; }
-.footer-links a { font-size: 0.9rem; }
 
-/* ----- COOKIE (glass) ----- */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+}
+
+/* ----- COOKIE ----- */
+
 .cookie-popup {
     position: fixed;
     bottom: 24px;
@@ -553,13 +735,36 @@ footer a:hover { color: white; transform: translateX(4px); }
     box-shadow: 0 24px 60px rgba(26, 79, 58, 0.12);
     animation: slideUp 0.5s ease;
 }
+
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.cookie-popup h3 { color: var(--green-dark); margin-bottom: 6px; }
-.cookie-popup p { color: var(--text-soft); font-size: 0.9rem; line-height: 1.5; }
-.cookie-actions { display: flex; gap: 12px; margin-top: 16px; }
+
+.cookie-popup h3 {
+    color: var(--green-dark);
+    margin-bottom: 6px;
+}
+
+.cookie-popup p {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
 .cookie-actions button {
     padding: 8px 24px;
     border-radius: 40px;
@@ -568,285 +773,776 @@ footer a:hover { color: white; transform: translateX(4px); }
     cursor: pointer;
     transition: all var(--transition);
 }
-.cookie-actions button:first-child { background: var(--green); color: white; }
-.cookie-actions button:first-child:hover { background: var(--green-dark); }
-.cookie-actions button:last-child { background: rgba(0,0,0,0.04); color: var(--text-soft); }
-.cookie-actions button:last-child:hover { background: rgba(0,0,0,0.08); }
+
+.cookie-actions button:first-child {
+    background: var(--green);
+    color: white;
+}
+
+.cookie-actions button:first-child:hover {
+    background: var(--green-dark);
+}
+
+.cookie-actions button:last-child {
+    background: rgba(0,0,0,0.04);
+    color: var(--text-soft);
+}
+
+.cookie-actions button:last-child:hover {
+    background: rgba(0,0,0,0.08);
+}
 
 /* ----- RESPONSIVE ----- */
+
 @media (max-width: 1024px) {
-    .hero-inner { grid-template-columns: 1fr; text-align: center; }
-    .hero-text p { margin-left: auto; margin-right: auto; }
-    .hero-cta { justify-content: center; }
-    .pills { justify-content: center; }
-    .hero-collage { max-width: 500px; margin: 0 auto; }
-    .grid { grid-template-columns: repeat(2,1fr); }
-    .sources-grid { grid-template-columns: 1fr; }
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .pills {
+        justify-content: center;
+    }
+
+    .hero-collage {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .sources-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 820px) {
-    .site-header { top: 12px; width: calc(100% - 20px); border-radius: 40px; }
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-    .search-wrap input { width: 120px; }
-    .search-wrap input:focus { width: 160px; }
-    .content-card { padding: 32px 24px; }
-    .grid { grid-template-columns: 1fr; }
-    .footer-inner { flex-direction: column; align-items: center; text-align: center; }
-    .footer-links { justify-content: center; }
+    .site-header {
+        top: 12px;
+        width: calc(100% - 20px);
+        border-radius: 40px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .search-wrap input {
+        width: 120px;
+    }
+
+    .search-wrap input:focus {
+        width: 160px;
+    }
+
+    .content-card {
+        padding: 32px 24px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
-    .hero { padding: 100px 5% 60px; }
-    .hero-text h1 { font-size: 2.8rem; }
-    .content-card { padding: 24px 16px; }
-    .cookie-popup { left: 12px; right: 12px; max-width: none; bottom: 12px; }
+    .hero {
+        padding: 100px 5% 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .content-card {
+        padding: 24px 16px;
+    }
+
+    .cookie-popup {
+        left: 12px;
+        right: 12px;
+        max-width: none;
+        bottom: 12px;
+    }
 }
 
-/* reduced motion */
+/* ----- REDUCED MOTION ----- */
+
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    *,
+    *::before {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="index">
-        <img src="images/favicon.png" alt="EchoedWild Logo">
-        <span>EchoedWild</span>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <a class="logo" href="index">
+      <img src="images/favicon.png" alt="EchoedWild Logo">
+      <span>EchoedWild</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/animals">Animals</a></li>
+      <li><a href="/status">Status</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/download">Download</a></li>
+      <li><a href="/guidelines">Guidelines</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <div class="search-wrap">
+      <input
+        id="globalSearch"
+        type="search"
+        placeholder="Search animals, habitats..."
+        aria-label="Search"
+      >
+    </div>
+
+    <div class="controls">
+      <button id="searchToggle" title="Search">🔍</button>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-slides" id="heroSlides">
+      <div
+        class="slide active"
+        style="background-image: url('hero1.png');"
+      ></div>
+
+      <div
+        class="slide"
+        style="background-image: url('hero2.png');"
+      ></div>
+    </div>
+
+    <div class="hero-inner">
+
+      <div class="hero-text">
+
+        <h1>
+          Enjoy The Wonderful<br>
+          <span>Adventure Of The</span><br>
+          Animals
+        </h1>
+
+        <p>
+          You can find all the most popular species.
+          Explore endangered animals, track conservation status,
+          and discover how you can make a difference for our
+          planet's wildlife.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="animals">
+            Explore Animals
+          </a>
+
+          <a class="btn btn-secondary" href="status">
+            Status Tracker
+          </a>
+        </div>
+
+        <div class="pills">
+          <span class="pill">Educational</span>
+          <span class="pill">Data-driven</span>
+          <span class="pill">Mobile-first</span>
+        </div>
+
+      </div>
+
+      <div class="hero-media">
+        <img
+          class="hero-collage"
+          src="https://tse1.mm.bing.net/th/id/OIP.D2bxPXmNjNduu22nb6QL0gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Wild animals collage showcasing diverse endangered species from around the world"
+        >
+      </div>
+
+    </div>
+
+    <div class="hero-wave">
+      <svg
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,80L80,63.3C160,46,320,12,480,21.3C640,30,800,70,960,82.7C1120,95,1280,55,1360,40L1440,25L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+          fill="#ffffff"
+        ></path>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section>
+
+    <div class="container">
+
+      <div class="content-card">
+
+        <h2>Welcome to EchoedWild</h2>
+
+        <p>
+          EchoedWild is a comprehensive wildlife education platform
+          dedicated to raising awareness about endangered species
+          and promoting conservation efforts worldwide. Our mission
+          is to provide students, educators, and wildlife enthusiasts
+          with accurate, engaging, and accessible information about
+          the world's most vulnerable animals.
+        </p>
+
+        <p>
+          At EchoedWild, we believe that knowledge is the first step
+          toward conservation. By understanding the challenges facing
+          endangered species, the importance of biodiversity, and the
+          interconnectedness of all living things, we can all become
+          better stewards of our planet. Our platform features detailed
+          profiles of over 100 animal species, ranging from the
+          majestic African elephant to the elusive vaquita porpoise.
+        </p>
+
+        <p>
+          EchoedWild exists because wildlife education matters more
+          than ever. With habitat loss, climate change, and human
+          activities threatening countless species, there's an urgent
+          need for accessible, reliable information that can inspire
+          action. Whether you're a student working on a research
+          project, a teacher looking for classroom resources, or
+          simply someone who cares about wildlife, EchoedWild provides
+          the tools and knowledge you need to make a difference.
+        </p>
+
+        <h3>Why Wildlife Matters</h3>
+
+        <p>
+          <strong>Ecosystems &amp; Biodiversity:</strong>
+          Every species plays a crucial role in maintaining the balance
+          of ecosystems. Biodiversity is essential for healthy,
+          functioning ecosystems that provide clean air, fresh water,
+          fertile soil, and climate regulation.
+        </p>
+
+        <p>
+          <strong>Pollination &amp; Food Security:</strong>
+          Approximately 75% of the world's food crops depend on
+          pollination. Birds, bees, butterflies, bats, and other
+          pollinators are essential for the reproduction of flowering
+          plants.
+        </p>
+
+        <p>
+          <strong>Food Chains &amp; Food Webs:</strong>
+          All species are interconnected through complex food chains
+          and food webs. The loss of even a single species can create
+          a domino effect, causing cascading impacts throughout
+          entire ecosystems.
+        </p>
+
+        <h3>About Endangered Species</h3>
+
+        <p>
+          An endangered species is a type of organism that is
+          threatened by extinction. Species become endangered for two
+          main reasons: loss of habitat and loss of genetic variation.
+          The current rate of extinction is estimated to be 1,000 to
+          10,000 times higher than the natural background rate.
+        </p>
+
+        <p>
+          The IUCN Red List of Threatened Species is the world's most
+          comprehensive inventory of the global conservation status of
+          biological species. It uses standardized criteria to
+          classify species as Vulnerable, Endangered, Critically
+          Endangered, Extinct in the Wild, or Extinct.
+        </p>
+
+        <h3>How You Can Help</h3>
+
+        <p>
+          <strong>Reduce Plastic Use:</strong>
+          Choose reusable bags, bottles, and containers.
+        </p>
+
+        <p>
+          <strong>Support Conservation Organizations:</strong>
+          Donate to reputable organizations working to protect
+          wildlife and habitats.
+        </p>
+
+        <p>
+          <strong>Learn About Wildlife:</strong>
+          Use resources like EchoedWild to learn about endangered
+          species and share your knowledge.
+        </p>
+
+        <p>
+          <strong>Plant Native Species:</strong>
+          Native plants provide food and habitat for local wildlife.
+        </p>
+
+        <h3>Featured Wildlife Facts</h3>
+
+        <p>
+          <strong>Bee Pollination:</strong>
+          A single bee can visit up to 5,000 flowers in one day.
+        </p>
+
+        <p>
+          <strong>Elephant Intelligence:</strong>
+          Elephants have the largest brains of any land animal and
+          exhibit remarkable intelligence and memory.
+        </p>
+
+        <p>
+          <strong>Sea Turtle Navigation:</strong>
+          Sea turtles can migrate thousands of miles and return to
+          the exact beach where they were born.
+        </p>
+
+        <h3 style="margin-top: 40px;">
+          Sources &amp; References
+        </h3>
+
+        <div class="sources-grid">
+
+          <div class="source-item">
+            <strong>IUCN Red List of Threatened Species</strong>
+            <span>Conservation status and species assessments</span>
+          </div>
+
+          <div class="source-item">
+            <strong>Smithsonian Institution</strong>
+            <span>Wildlife and biodiversity research / education</span>
+          </div>
+
+          <div class="source-item">
+            <strong>NOAA</strong>
+            <span>Marine life, oceans, climate, and environmental science</span>
+          </div>
+
+          <div class="source-item">
+            <strong>National Park Service</strong>
+            <span>Wildlife, habitats, ecosystems, and conservation</span>
+          </div>
+
+          <div
+            class="source-item"
+            style="grid-column: 1 / -1;"
+          >
+            <strong>Peer-reviewed scientific literature</strong>
+            <span>Scientific research and supporting evidence</span>
+          </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:36px;">
+
+          <h2>Start Exploring Wildlife Today</h2>
+
+          <p>
+            The world of wildlife is fascinating, diverse, and more
+            threatened than ever. Take the first step in your
+            conservation journey by exploring our comprehensive
+            animal database.
+          </p>
+
+          <div
+            style="
+              display:flex;
+              flex-wrap:wrap;
+              gap:16px;
+              justify-content:center;
+              margin:24px 0 12px;
+            "
+          >
+
+            <a class="btn btn-primary" href="animals">
+              Explore Animal Database
+            </a>
+
+            <a class="btn btn-secondary" href="status">
+              Check Conservation Status
+            </a>
+
+          </div>
+
+          <p>
+            Together, we can make a difference for wildlife.
+            Start your journey today.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT & NEWSLETTER -->
+  <section>
+
+    <div class="container">
+
+      <!-- CONTACT -->
+      <div
+        class="content-card"
+        style="margin-bottom:30px;"
+      >
+
+        <h2>Contact Us</h2>
+
+        <form
+          action="https://formspree.io/f/movlrqnd"
+          method="POST"
+        >
+
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+          >
+
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            name="_replyto"
+            id="email"
+            required
+          >
+
+          <label for="message">Message</label>
+
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="margin-top:16px;"
+          >
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div
+        class="content-card"
+        style="text-align:center;"
+      >
+
+        <h2>🌿 Stay Wild with EchoedWild</h2>
+
+        <p>
+          Subscribe to our newsletter for the latest animal profiles,
+          conservation updates, and educational resources.
+        </p>
+
+        <form id="newsletterForm">
+
+          <input
+            type="email"
+            id="newsletterEmail"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+            style="max-width:320px; margin:0 auto;"
+          >
+
+          <br><br>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="newsletterButton"
+          >
+            Subscribe
+          </button>
+
+          <p
+            id="newsletterMessage"
+            role="status"
+            aria-live="polite"
+            style="margin-top:16px;"
+          ></p>
+
+        </form>
+
+        <p style="margin-top:20px;">
+          Species loss affects ecosystems, food webs, and human livelihoods.
+          EchoedWild helps students learn and share conservation actions.
+          Every species matters, and every action counts.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+
+      <a
+        class="logo"
+        href="index"
+        style="
+          color:white;
+          font-size:1.2rem;
+          gap:8px;
+        "
+      >
+
+        <img
+          src="images/favicon.png"
+          alt="EchoedWild"
+          style="
+            width:32px;
+            height:32px;
+            filter:brightness(0) invert(1);
+          "
+        >
+
+        EchoedWild
+
       </a>
 
-      <ul class="nav-links">
-        <li><a class="active" href="/">Home</a></li>
-        <li><a href="/animals">Animals</a></li>
-        <li><a href="/status">Status</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/download">Download</a></li>
-        <li><a href="/guidelines">Guidelines</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+      <p
+        style="
+          font-size:0.85rem;
+          opacity:0.7;
+          margin-top:8px;
+        "
+      >
+        © <span id="year"></span> EchoedWild™. All rights reserved.
+      </p>
 
-      <div class="search-wrap">
-        <input id="globalSearch" type="search" placeholder="Search animals, habitats..." aria-label="Search">
-      </div>
-
-      <div class="controls">
-        <button id="searchToggle" title="Search">🔍</button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO with rotating backgrounds -->
-    <section class="hero">
-      <div class="hero-slides" id="heroSlides">
-        <div class="slide active" style="background-image: url('hero1.png');"></div>
-        <div class="slide" style="background-image: url('hero2.png');"></div>
-      </div>
-      <div class="hero-inner">
-        <div class="hero-text">
-          <h1>Enjoy The Wonderful<br><span>Adventure Of The</span><br>Animals</h1>
-          <p>You can find all the most popular species. Explore endangered animals, track conservation status, and discover how you can make a difference for our planet's wildlife.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="animals">Explore Animals</a>
-            <a class="btn btn-secondary" href="status">Status Tracker</a>
-          </div>
-          <div class="pills">
-            <span class="pill">Educational</span>
-            <span class="pill">Data-driven</span>
-            <span class="pill">Mobile-first</span>
-          </div>
-        </div>
-        <div class="hero-media">
-          <img class="hero-collage" src="https://tse1.mm.bing.net/th/id/OIP.D2bxPXmNjNduu22nb6QL0gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wild animals collage showcasing diverse endangered species from around the world">
-        </div>
-      </div>
+    <div class="footer-links">
 
-      <!-- BIGGER HERO WAVE -->
-      <div class="hero-wave">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,80L80,63.3C160,46,320,12,480,21.3C640,30,800,70,960,82.7C1120,95,1280,55,1360,40L1440,25L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#ffffff"></path>
-        </svg>
-      </div>
-    </section>
+      <a href="about">About</a>
+      <a href="tos">Terms</a>
+      <a href="privacy">Privacy</a>
+      <a href="status">Status Tracker</a>
+      <a href="download">Download App</a>
+      <a href="guidelines">Guidelines</a>
+      <a href="contact">Contact</a>
 
-    <!-- CONSOLIDATED CONTENT -->
-    <section>
-      <div class="container">
-        <div class="content-card">
-          <h2>Welcome to EchoedWild</h2>
-          <p>EchoedWild is a comprehensive wildlife education platform dedicated to raising awareness about endangered species and promoting conservation efforts worldwide. Our mission is to provide students, educators, and wildlife enthusiasts with accurate, engaging, and accessible information about the world's most vulnerable animals.</p>
-          <p>At EchoedWild, we believe that knowledge is the first step toward conservation. By understanding the challenges facing endangered species, the importance of biodiversity, and the interconnectedness of all living things, we can all become better stewards of our planet. Our platform features detailed profiles of over 100 animal species, ranging from the majestic African elephant to the elusive vaquita porpoise.</p>
-          <p>EchoedWild exists because wildlife education matters more than ever. With habitat loss, climate change, and human activities threatening countless species, there's an urgent need for accessible, reliable information that can inspire action. Whether you're a student working on a research project, a teacher looking for classroom resources, or simply someone who cares about wildlife, EchoedWild provides the tools and knowledge you need to make a difference.</p>
-
-          <h3>Why Wildlife Matters</h3>
-          <p><strong>Ecosystems &amp; Biodiversity:</strong> Every species plays a crucial role in maintaining the balance of ecosystems. Biodiversity is essential for healthy, functioning ecosystems that provide clean air, fresh water, fertile soil, and climate regulation.</p>
-          <p><strong>Pollination &amp; Food Security:</strong> Approximately 75% of the world's food crops depend on pollination. Birds, bees, butterflies, bats, and other pollinators are essential for the reproduction of flowering plants.</p>
-          <p><strong>Food Chains &amp; Food Webs:</strong> All species are interconnected through complex food chains and food webs. The loss of even a single species can create a domino effect, causing cascading impacts throughout entire ecosystems.</p>
-
-          <h3>About Endangered Species</h3>
-          <p>An endangered species is a type of organism that is threatened by extinction. Species become endangered for two main reasons: loss of habitat and loss of genetic variation. The current rate of extinction is estimated to be 1,000 to 10,000 times higher than the natural background rate.</p>
-          <p>The IUCN Red List of Threatened Species is the world's most comprehensive inventory of the global conservation status of biological species. It uses standardized criteria to classify species as Vulnerable, Endangered, Critically Endangered, Extinct in the Wild, or Extinct.</p>
-
-          <h3>How You Can Help</h3>
-          <p><strong>Reduce Plastic Use:</strong> Choose reusable bags, bottles, and containers.</p>
-          <p><strong>Support Conservation Organizations:</strong> Donate to reputable organizations working to protect wildlife and habitats.</p>
-          <p><strong>Learn About Wildlife:</strong> Use resources like EchoedWild to learn about endangered species and share your knowledge.</p>
-          <p><strong>Plant Native Species:</strong> Native plants provide food and habitat for local wildlife.</p>
-
-          <h3>Featured Wildlife Facts</h3>
-          <p><strong>Bee Pollination:</strong> A single bee can visit up to 5,000 flowers in one day.</p>
-          <p><strong>Elephant Intelligence:</strong> Elephants have the largest brains of any land animal and exhibit remarkable intelligence and memory.</p>
-          <p><strong>Sea Turtle Navigation:</strong> Sea turtles can migrate thousands of miles and return to the exact beach where they were born.</p>
-
-          <!-- ===== SOURCES & REFERENCES ===== -->
-          <h3 style="margin-top: 40px;">Sources &amp; References</h3>
-          <div class="sources-grid">
-            <div class="source-item">
-              <strong>IUCN Red List of Threatened Species</strong>
-              <span>Conservation status and species assessments</span>
-            </div>
-            <div class="source-item">
-              <strong>Smithsonian Institution</strong>
-              <span>Wildlife and biodiversity research / education</span>
-            </div>
-            <div class="source-item">
-              <strong>NOAA</strong>
-              <span>Marine life, oceans, climate, and environmental science</span>
-            </div>
-            <div class="source-item">
-              <strong>National Park Service</strong>
-              <span>Wildlife, habitats, ecosystems, and conservation</span>
-            </div>
-            <div class="source-item" style="grid-column: 1 / -1;">
-              <strong>Peer-reviewed scientific literature</strong>
-              <span>Scientific research and supporting evidence</span>
-            </div>
-          </div>
-
-          <div style="text-align:center; margin-top:36px;">
-            <h2>Start Exploring Wildlife Today</h2>
-            <p>The world of wildlife is fascinating, diverse, and more threatened than ever. Take the first step in your conservation journey by exploring our comprehensive animal database.</p>
-            <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin:24px 0 12px;">
-              <a class="btn btn-primary" href="animals">Explore Animal Database</a>
-              <a class="btn btn-secondary" href="status">Check Conservation Status</a>
-            </div>
-            <p>Together, we can make a difference for wildlife. Start your journey today.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- CONTACT & NEWSLETTER -->
-    <section>
-      <div class="container">
-        <div class="content-card" style="margin-bottom:30px;">
-          <h2>Contact Us</h2>
-          <form action="https://formspree.io/f/movlrqnd" method="POST">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-            <label for="email">Email</label>
-            <input type="email" name="_replyto" id="email" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="5" required></textarea>
-            <button type="submit" class="btn btn-primary" style="margin-top:16px;">Send Message</button>
-          </form>
-        </div>
-
-        <div class="content-card" style="text-align:center;">
-          <h2>🌿 Stay Wild with EchoedWild</h2>
-          <p>Subscribe to our newsletter for the latest animal profiles, conservation updates, and educational resources.</p>
-          <form action="https://buttondown.email/api/emails/embed-subscribe/EchoedWild" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/EchoedWild', 'popupwindow')">
-            <input type="email" name="email" id="bd-email" placeholder="Enter your email" required style="max-width:320px; margin:0 auto;">
-            <br><br>
-            <input type="submit" value="Subscribe" class="btn btn-primary">
-          </form>
-          <p style="margin-top:20px;">Species loss affects ecosystems, food webs, and human livelihoods. EchoedWild helps students learn and share conservation actions. Every species matters, and every action counts.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        <a class="logo" href="index" style="color:white; font-size:1.2rem; gap:8px;">
-          <img src="images/favicon.png" alt="EchoedWild" style="width:32px; height:32px; filter:brightness(0) invert(1);">
-          EchoedWild
-        </a>
-        <p style="font-size:0.85rem; opacity:0.7; margin-top:8px;">© <span id="year"></span> All rights reserved.</p>
-      </div>
-      <div class="footer-links">
-        <a href="about">About</a>
-        <a href="tos">Terms</a>
-        <a href="privacy">Privacy</a>
-        <a href="status">Status Tracker</a>
-        <a href="download">Download App</a>
-        <a href="guidelines">Guidelines</a>
-        <a href="contact">Contact</a>
-      </div>
     </div>
-  </footer>
 
-  <!-- COOKIE POPUP -->
-  <div class="cookie-popup" id="cookiePopup">
-    <h3>🍪 We use cookies</h3>
-    <p>We use cookies to personalize your experience and support conservation efforts. Read our <a href="privacy" style="color:var(--green-dark); font-weight:600;">Privacy Policy</a>.</p>
-    <div class="cookie-actions">
-      <button id="acceptCookies">Accept</button>
-      <button id="declineCookies">Reject</button>
-    </div>
   </div>
 
-  <script>
-    // Rotating hero backgrounds (hero1.png, hero2.png) every 10 seconds
-    (function() {
-      const slides = document.querySelectorAll('#heroSlides .slide');
-      let current = 0;
-      if (!slides.length) return;
-      setInterval(() => {
-        slides.forEach(s => s.classList.remove('active'));
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
-      }, 10000);
-    })();
+</footer>
 
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
+<!-- COOKIE POPUP -->
 
-    // Cookie handlers
-    document.getElementById('acceptCookies')?.addEventListener('click', function() {
-      document.getElementById('cookiePopup').style.display = 'none';
-    });
-    document.getElementById('declineCookies')?.addEventListener('click', function() {
-      document.getElementById('cookiePopup').style.display = 'none';
+<div
+  class="cookie-popup"
+  id="cookiePopup"
+>
+
+  <h3>🍪 We use cookies</h3>
+
+  <p>
+    We use cookies to personalize your experience and support
+    conservation efforts. Read our
+    <a
+      href="privacy"
+      style="
+        color:var(--green-dark);
+        font-weight:600;
+      "
+    >
+      Privacy Policy
+    </a>.
+  </p>
+
+  <div class="cookie-actions">
+
+    <button id="acceptCookies">
+      Accept
+    </button>
+
+    <button id="declineCookies">
+      Reject
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+
+/* =========================================================
+   ROTATING HERO BACKGROUNDS
+   ========================================================= */
+
+(function() {
+
+  const slides = document.querySelectorAll(
+    '#heroSlides .slide'
+  );
+
+  let current = 0;
+
+  if (!slides.length) return;
+
+  setInterval(() => {
+
+    slides.forEach(slide => {
+      slide.classList.remove('active');
     });
 
-    // Hamburger toggle
-    document.getElementById('hamburger')?.addEventListener('click', function() {
-      const nav = document.querySelector('.nav-links');
-      if (nav) {
-        const isOpen = nav.style.display === 'flex';
-        nav.style.display = isOpen ? 'none' : 'flex';
-        nav.style.flexDirection = 'column';
-        nav.style.position = 'absolute';
-        nav.style.top = '100%';
-        nav.style.left = '0';
-        nav.style.right = '0';
-        nav.style.background = 'rgba(255,255,255,0.92)';
-        nav.style.backdropFilter = 'blur(20px)';
-        nav.style.borderRadius = '24px';
-        nav.style.padding = '16px';
-        nav.style.marginTop = '8px';
-        nav.style.boxShadow = '0 20px 40px rgba(0,0,0,0.06)';
-        nav.style.zIndex = '999';
-      }
-    });
-  </script>
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.add('active');
+
+  }, 10000);
+
+})();
+
+
+/* =========================================================
+   FOOTER YEAR
+   ========================================================= */
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+
+/* =========================================================
+   COOKIE HANDLERS
+   ========================================================= */
+
+document
+  .getElementById('acceptCookies')
+  ?.addEventListener('click', function() {
+
+    document.getElementById(
+      'cookiePopup'
+    ).style.display = 'none';
+
+  });
+
+
+document
+  .getElementById('declineCookies')
+  ?.addEventListener('click', function() {
+
+    document.getElementById(
+      'cookiePopup'
+    ).style.display = 'none';
+
+  });
+
+
+/* =========================================================
+   HAMBURGER MENU
+   ========================================================= */
+
+document
+  .getElementById('hamburger')
+  ?.addEventListener('click', function() {
+
+    const nav = document.querySelector('.nav-links');
+
+    if (!nav) return;
+
+    const isOpen =
+      nav.style.display === 'flex';
+
+    nav.style.display =
+      isOpen ? 'none' : 'flex';
+
+    nav.style.flexDirection = 'column';
+    nav.style.position = 'absolute';
+    nav.style.top = '100%';
+    nav.style.left = '0';
+    nav.style.right = '0';
+    nav.style.background = 'rgba(255,255,255,0.92)';
+    nav.style.backdropFilter = 'blur(20px)';
+    nav.style.borderRadius = '24px';
+    nav.style.padding = '16px';
+    nav.style.marginTop = '8px';
+    nav.style.boxShadow =
+      '0 20px 40px rgba(0,0,0,0.06)';
+    nav.style.zIndex = '999';
+
+  });
+
+</script>
+
 </body>
 </html>
