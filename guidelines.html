@@ -8,124 +8,552 @@
   <meta name="keywords" content="Community Guidelines, community rules, EchoedWild guidelines, wildlife community standards" />
   <link rel="canonical" href="https://echoedwild.com/guidelines" />
   <link rel="icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
   <script defer src="js/main.js"></script>
+<style>
+/* =========================================================
+   ECHOEDWILD — PREMIUM GLASS UI (GREEN THEME)
+   ========================================================= */
+
+:root {
+    --green: #2b8c5e;
+    --green-dark: #1a4f3a;
+    --green-light: #6bc49a;
+    --green-soft: #e2f3eb;
+    --glass-white: rgba(255, 255, 255, 0.50);
+    --glass-strong: rgba(255, 255, 255, 0.78);
+    --glass-border: rgba(255, 255, 255, 0.35);
+    --text: #1e3d2e;
+    --text-soft: #3d5a4b;
+    --shadow: 0 25px 60px rgba(26, 79, 58, 0.12);
+    --radius: 24px;
+    --transition: 0.3s cubic-bezier(.2,.8,.2,1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    color: var(--text);
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(43, 140, 94, 0.10), transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(43, 140, 94, 0.08), transparent 35%),
+        linear-gradient(160deg, #f0faf4 0%, #ffffff 50%, #f3f9f5 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ----- GLASS BASE ----- */
+.glass {
+    background: var(--glass-white);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+}
+
+/* ----- NAVBAR ----- */
+.site-header {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1240px, calc(100% - 36px));
+    z-index: 1000;
+    border-radius: 60px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(24px) saturate(170%);
+    -webkit-backdrop-filter: blur(24px) saturate(170%);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 12px 40px rgba(26, 79, 58, 0.08);
+    padding: 6px 12px;
+    transition: all var(--transition);
+}
+
+.site-header:hover {
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 0 16px 48px rgba(26, 79, 58, 0.12);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 62px;
+    padding: 0 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    color: var(--green-dark);
+    transition: transform var(--transition);
+    flex-shrink: 0;
+}
+.logo:hover { transform: scale(1.02); }
+.logo img { width: 36px; height: 36px; border-radius: 12px; object-fit: contain; }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 40px;
+    color: #2d4d3e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all var(--transition);
+}
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    width: 0;
+    height: 2.5px;
+    background: linear-gradient(90deg, var(--green), var(--green-light));
+    border-radius: 99px;
+    transform: translateX(-50%);
+    transition: width var(--transition);
+}
+.nav-links li a:hover {
+    background: rgba(43, 140, 94, 0.08);
+    color: var(--green-dark);
+    transform: translateY(-1px);
+}
+.nav-links li a:hover::after { width: 40%; }
+.nav-links li a.active {
+    background: rgba(43, 140, 94, 0.12);
+    color: var(--green-dark);
+}
+.nav-links li a.active::after { width: 40%; }
+
+.search-wrap input {
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(43, 140, 94, 0.15);
+    border-radius: 40px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    outline: none;
+    width: 180px;
+    transition: all var(--transition);
+    color: var(--text);
+}
+.search-wrap input:focus {
+    width: 240px;
+    border-color: rgba(43, 140, 94, 0.35);
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0 0 0 4px rgba(43, 140, 94, 0.06);
+}
+
+.controls { display: flex; gap: 8px; align-items: center; }
+.controls button {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 40px;
+    color: var(--text-soft);
+    transition: background var(--transition);
+}
+.controls button:hover { background: rgba(43, 140, 94, 0.08); }
+.hamburger { display: none; flex-direction: column; gap: 5px; padding: 6px; }
+.hamburger span { display: block; width: 24px; height: 2.5px; background: var(--green-dark); border-radius: 99px; transition: all 0.2s; }
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    padding: 140px 6% 130px;
+    overflow: hidden;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: clamp(3.2rem, 7vw, 5.8rem);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -4px;
+    color: #ffffff;
+    text-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+.hero-text h1 span { color: #8fdfb0; }
+.hero-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.90);
+    max-width: 520px;
+    margin: 20px 0 30px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition);
+    font-size: 0.95rem;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #1f6e4a, #2b8c5e);
+    color: white;
+    box-shadow: 0 8px 24px rgba(43, 140, 94, 0.25);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(43, 140, 94, 0.30);
+}
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #1e3d2e;
+}
+.btn-secondary:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.hero-media { display: flex; justify-content: center; }
+.hero-collage {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 32px;
+    border: 1px solid rgba(255,255,255,0.60);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.15), 0 0 0 6px rgba(255,255,255,0.15);
+    transition: all 0.5s ease;
+    animation: floatImage 7s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-12px) scale(1.01); }
+}
+.hero-collage:hover {
+    transform: scale(1.02) translateY(-6px);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.20), 0 0 0 10px rgba(255,255,255,0.25);
+}
+
+/* ===== SMALL WAVE ===== */
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* ----- SECTIONS ----- */
+section { padding: 60px 6%; position: relative; }
+.container { max-width: 1280px; margin: 0 auto; }
+
+section:not(.hero) {
+    background-color: #ffffff;
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    border-radius: var(--radius);
+    padding: 48px 52px;
+    box-shadow: 0 20px 50px rgba(26, 79, 58, 0.06);
+    transition: all var(--transition);
+}
+.content-card:hover {
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0 28px 60px rgba(26, 79, 58, 0.08);
+}
+.content-card h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    color: var(--green-dark);
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+.content-card h2:first-of-type {
+    margin-top: 0;
+}
+.content-card p {
+    line-height: 1.8;
+    color: var(--text-soft);
+    margin-bottom: 12px;
+}
+
+/* ----- FOOTER (DARK FOREST - SAME AS INDEX) ----- */
+footer {
+    margin-top: 40px;
+    padding: 60px 6% 30px;
+    background: linear-gradient(145deg, #1a3d2e, #0f2b1f);
+    color: rgba(255,255,255,0.80);
+    position: relative;
+    overflow: hidden;
+}
+footer::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -80px;
+    top: -80px;
+    background: radial-gradient(circle, rgba(107,196,154,0.08), transparent 70%);
+    border-radius: 50%;
+}
+footer a { color: rgba(255,255,255,0.65); text-decoration: none; transition: all var(--transition); }
+footer a:hover { color: white; transform: translateX(4px); }
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+.footer-links { display: flex; flex-wrap: wrap; gap: 20px 32px; }
+.footer-links a { font-size: 0.9rem; }
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .hero-text p { margin-left: auto; margin-right: auto; }
+    .hero-cta { justify-content: center; }
+    .hero-collage { max-width: 500px; margin: 0 auto; }
+}
+
+@media (max-width: 820px) {
+    .site-header { top: 12px; width: calc(100% - 20px); border-radius: 40px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .search-wrap input { width: 120px; }
+    .search-wrap input:focus { width: 160px; }
+    .content-card { padding: 32px 24px; }
+    .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+    .footer-links { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+    .hero { padding: 100px 5% 110px; }
+    .hero-text h1 { font-size: 2.8rem; }
+    .content-card { padding: 24px 16px; }
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
 </head>
 <body>
-<div id="cursor-inner"></div>
-<div id="cursor-outer"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index">
+        <img src="images/favicon.png" alt="EchoedWild Logo">
+        <span>EchoedWild</span>
+      </a>
 
-  <header class="site-header glass">
-    <div class="container header-inner">
-      <div class="logo">
-        <img src="images/favicon.png" alt="EchoedWild Logo" class="logo-img">
-     </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/animals">Animals</a></li>
+        <li><a href="/status">Status</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/download">Download</a></li>
+        <li><a class="active" href="guidelines">Guidelines</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
 
-      <a class="logo" href="index"><span class="echo">Echoed</span><span class="wild">Wild</span></a>
-
-      <div class="search-wrap desktop-only">
-        <input id="globalSearch" class="search" type="search" placeholder="Search animals, habitats, status..." aria-label="Search animals">
+      <div class="search-wrap">
+        <input id="globalSearch" type="search" placeholder="Search animals, habitats..." aria-label="Search">
       </div>
 
-      <nav class="nav" id="mainNav" aria-label="Main navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/animals">Animals</a></li>
-          <li><a href="/status">Status</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/download">Download</a></li>
-          <li><a class="active" href="/guidelines">Guidelines</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-
       <div class="controls">
-        <button class="icon-btn" id="searchToggle" title="Open search (mobile)">🔍</button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu" title="Menu">
+        <button id="searchToggle" title="Search">🔍</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="glass animate-up">
-      <h1>Community Guidelines</h1>
-      <p class="muted">Last updated: <strong>August 13, 2025</strong></p>
+  <main>
+    <!-- HERO WITH WAVE -->
+    <section class="hero" style="padding-bottom: 130px;">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Community<br><span>Guidelines</span></h1>
+          <p>Welcome to the EchoedWild community! These guidelines are designed to create a safe, respectful, and educational environment where wildlife enthusiasts, students, and conservation advocates can connect, learn, and share their passion for protecting endangered species.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="contact">Contact Us</a>
+            <a class="btn btn-secondary" href="index">Return to Home</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img class="hero-collage" src="https://tse1.mm.bing.net/th/id/OIP.D2bxPXmNjNduu22nb6QL0gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wild animals collage">
+        </div>
+      </div>
 
-      <p class="muted">Welcome to the EchoedWild community! These guidelines are designed to create a safe, respectful, and educational environment where wildlife enthusiasts, students, and conservation advocates can connect, learn, and share their passion for protecting endangered species.</p>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,80L80,63.3C160,46,320,12,480,21.3C640,30,800,70,960,82.7C1120,95,1280,55,1360,40L1440,25L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#ffffff"></path>
+        </svg>
+      </div>
+    </section>
 
-      <h2>🐾 Be Kind, Stay Wild</h2>
-      <p class="muted">Respect all community members. We value diverse perspectives and experiences. No hate speech, bullying, harassment, or discrimination of any kind will be tolerated. This includes discrimination based on race, ethnicity, religion, gender, sexual orientation, disability, or any other protected characteristic. Constructive disagreement is welcome, but personal attacks are not.</p>
+    <!-- GUIDELINES CONTENT -->
+    <section>
+      <div class="container">
+        <div class="content-card">
+          <p class="muted">Last updated: <strong>August 13, 2025</strong></p>
 
-      <h2>🧼 Keep It Clean</h2>
-      <p class="muted">Maintain a family-friendly environment appropriate for students and learners of all ages. No spam, NSFW content, excessive profanity, or inappropriate material. Self-promotion should be limited and relevant to wildlife education and conservation. Keep discussions focused, productive, and welcoming to all community members.</p>
+          <h2>🐾 Be Kind, Stay Wild</h2>
+          <p>Respect all community members. We value diverse perspectives and experiences. No hate speech, bullying, harassment, or discrimination of any kind will be tolerated. This includes discrimination based on race, ethnicity, religion, gender, sexual orientation, disability, or any other protected characteristic. Constructive disagreement is welcome, but personal attacks are not.</p>
 
-      <h2>📸 Share Thoughtfully</h2>
-      <p class="muted">Only submit content you own or have explicit permission to share. Always credit creators, photographers, and sources when sharing images, articles, or other content. Respect copyright and intellectual property rights. If you're unsure about permissions, it's better to link to the original source rather than reposting content.</p>
+          <h2>🧼 Keep It Clean</h2>
+          <p>Maintain a family-friendly environment appropriate for students and learners of all ages. No spam, NSFW content, excessive profanity, or inappropriate material. Self-promotion should be limited and relevant to wildlife education and conservation. Keep discussions focused, productive, and welcoming to all community members.</p>
 
-      <h2>🌱 Protect Nature & Each Other</h2>
-      <p class="muted">Do not share personal information about yourself or others. This includes addresses, phone numbers, email addresses, or any sensitive private information. Do not encourage or provide instructions for harmful activities toward wildlife, habitats, or ecosystems. Report any content that suggests harming animals or their environments.</p>
+          <h2>📸 Share Thoughtfully</h2>
+          <p>Only submit content you own or have explicit permission to share. Always credit creators, photographers, and sources when sharing images, articles, or other content. Respect copyright and intellectual property rights. If you're unsure about permissions, it's better to link to the original source rather than reposting content.</p>
 
-      <h2>🎭 Respect the Vibe</h2>
-      <p class="muted">EchoedWild is an expressive, educational, and conservation-focused community. Keep your contributions aligned with our mission of wildlife education and conservation. While we encourage creativity and personality, ensure your content remains relevant to our purpose and values. This is a space for learning and positive action.</p>
+          <h2>🌱 Protect Nature & Each Other</h2>
+          <p>Do not share personal information about yourself or others. This includes addresses, phone numbers, email addresses, or any sensitive private information. Do not encourage or provide instructions for harmful activities toward wildlife, habitats, or ecosystems. Report any content that suggests harming animals or their environments.</p>
 
-      <h2>� Educational Focus</h2>
-      <p class="muted">Prioritize accurate, science-based information when discussing wildlife, conservation, and environmental topics. Cite reputable sources when sharing facts or statistics. Acknowledge when information is uncertain or subject to scientific debate. We're all here to learn, so approach discussions with curiosity and openness to new information.</p>
+          <h2>🎭 Respect the Vibe</h2>
+          <p>EchoedWild is an expressive, educational, and conservation-focused community. Keep your contributions aligned with our mission of wildlife education and conservation. While we encourage creativity and personality, ensure your content remains relevant to our purpose and values. This is a space for learning and positive action.</p>
 
-      <h2>🤝 Constructive Collaboration</h2>
-      <p class="muted">Engage in good faith discussions. Listen to others' perspectives and respond thoughtfully. When correcting misinformation, do so respectfully and provide evidence. Celebrate others' contributions and successes. We're all working toward the same goal of wildlife conservation.</p>
+          <h2>📚 Educational Focus</h2>
+          <p>Prioritize accurate, science-based information when discussing wildlife, conservation, and environmental topics. Cite reputable sources when sharing facts or statistics. Acknowledge when information is uncertain or subject to scientific debate. We're all here to learn, so approach discussions with curiosity and openness to new information.</p>
 
-      <h2>🔒 Privacy and Safety</h2>
-      <p class="muted">Never request or share personal information. Report any suspicious behavior or safety concerns to moderators immediately. Be cautious about clicking on external links and verify sources before sharing. Protect your own privacy and respect others' privacy as well.</p>
+          <h2>🤝 Constructive Collaboration</h2>
+          <p>Engage in good faith discussions. Listen to others' perspectives and respond thoughtfully. When correcting misinformation, do so respectfully and provide evidence. Celebrate others' contributions and successes. We're all working toward the same goal of wildlife conservation.</p>
 
-      <h2>🌍 Global Perspective</h2>
-      <p class="muted">Our community is global, with members from diverse cultures and backgrounds. Be mindful of cultural differences and avoid assumptions. Wildlife conservation challenges vary by region, and local knowledge is valuable. Learn from community members around the world and share your own regional insights.</p>
+          <h2>🔒 Privacy and Safety</h2>
+          <p>Never request or share personal information. Report any suspicious behavior or safety concerns to moderators immediately. Be cautious about clicking on external links and verify sources before sharing. Protect your own privacy and respect others' privacy as well.</p>
 
-      <h2>🛡️ Moderation and Enforcement</h2>
-      <p class="muted">We reserve the right to remove content that violates these guidelines and to take appropriate action against users who repeatedly break the rules. Enforcement actions may include content removal, temporary restrictions, or permanent bans depending on the severity and frequency of violations. Decisions are made at moderator discretion to maintain community safety and integrity.</p>
+          <h2>🌍 Global Perspective</h2>
+          <p>Our community is global, with members from diverse cultures and backgrounds. Be mindful of cultural differences and avoid assumptions. Wildlife conservation challenges vary by region, and local knowledge is valuable. Learn from community members around the world and share your own regional insights.</p>
 
-      <h2>📝 Reporting Guidelines</h2>
-      <p class="muted">If you encounter content or behavior that violates these guidelines, please report it through our contact form or directly to moderators. Provide specific details about the concern, including relevant context. Reports are reviewed promptly, and we take all reports seriously. False or malicious reporting may result in account restrictions.</p>
+          <h2>🛡️ Moderation and Enforcement</h2>
+          <p>We reserve the right to remove content that violates these guidelines and to take appropriate action against users who repeatedly break the rules. Enforcement actions may include content removal, temporary restrictions, or permanent bans depending on the severity and frequency of violations. Decisions are made at moderator discretion to maintain community safety and integrity.</p>
 
-      <h2>🔄 Guidelines Updates</h2>
-      <p class="muted">We may update these community guidelines as our platform evolves. Significant changes will be announced to the community. Your continued participation after changes constitutes acceptance of the updated guidelines. We encourage community feedback on these guidelines and welcome suggestions for improvement.</p>
+          <h2>📝 Reporting Guidelines</h2>
+          <p>If you encounter content or behavior that violates these guidelines, please report it through our contact form or directly to moderators. Provide specific details about the concern, including relevant context. Reports are reviewed promptly, and we take all reports seriously. False or malicious reporting may result in account restrictions.</p>
 
-      <h2>🤝 Partnership and Collaboration</h2>
-      <p class="muted">We welcome partnerships with conservation organizations, educational institutions, and wildlife experts. If you represent an organization interested in collaborating with EchoedWild, please contact us through our official channels. All partnerships must align with our educational mission and community values.</p>
+          <h2>🔄 Guidelines Updates</h2>
+          <p>We may update these community guidelines as our platform evolves. Significant changes will be announced to the community. Your continued participation after changes constitutes acceptance of the updated guidelines. We encourage community feedback on these guidelines and welcome suggestions for improvement.</p>
 
-      <h2>⚡ Emergency Situations</h2>
-      <p class="muted">If you encounter emergency situations involving wildlife (injured animals, illegal activities, immediate threats), contact local wildlife authorities, emergency services, or appropriate conservation organizations. EchoedWild is an educational platform and cannot respond to emergency wildlife situations directly.</p>
+          <h2>🤝 Partnership and Collaboration</h2>
+          <p>We welcome partnerships with conservation organizations, educational institutions, and wildlife experts. If you represent an organization interested in collaborating with EchoedWild, please contact us through our official channels. All partnerships must align with our educational mission and community values.</p>
 
-      <h2>❓ Questions and Support</h2>
-      <p class="muted">If you have questions about these guidelines, need clarification, or want to report a concern, please contact us through our contact form. We're here to help and want to ensure EchoedWild remains a positive, educational community for everyone interested in wildlife conservation.</p>
+          <h2>⚡ Emergency Situations</h2>
+          <p>If you encounter emergency situations involving wildlife (injured animals, illegal activities, immediate threats), contact local wildlife authorities, emergency services, or appropriate conservation organizations. EchoedWild is an educational platform and cannot respond to emergency wildlife situations directly.</p>
 
-      <div class="hero-cta" style="margin-top: 32px;">
-        <a class="btn" href="contact">Contact Us</a>
-        <a class="btn ghost" href="index">Return to Home</a>
+          <h2>❓ Questions and Support</h2>
+          <p>If you have questions about these guidelines, need clarification, or want to report a concern, please contact us through our contact form. We're here to help and want to ensure EchoedWild remains a positive, educational community for everyone interested in wildlife conservation.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer glass">
+  <!-- DARK FOREST FOOTER (SAME AS INDEX) -->
+  <footer>
     <div class="container footer-inner">
-      <div class="footer-left">
-        <a class="logo small" href="index">EchoedWild</a>
-        <p class="muted">© <span id="year"></span> EchoedWild — All rights reserved.</p>
+      <div>
+        <a class="logo" href="index" style="color:white; font-size:1.2rem; gap:8px;">
+          <img src="images/favicon.png" alt="EchoedWild" style="width:32px; height:32px; filter:brightness(0) invert(1);">
+          EchoedWild
+        </a>
+        <p style="font-size:0.85rem; opacity:0.7; margin-top:8px;">© <span id="year"></span> All rights reserved.</p>
       </div>
-      <div class="footer-right">
-        <nav>
-          <ul>
-            <li><a href="about">About</a></li>
-            <li><a href="tos">Terms</a></li>
-            <li><a href="privacy">Privacy</a></li>
-            <li><a href="status">Status Tracker</a></li>
-            <li><a href="download">Download App</a></li>
-          </ul>
-        </nav>
+      <div class="footer-links">
+        <a href="about">About</a>
+        <a href="tos">Terms</a>
+        <a href="privacy">Privacy</a>
+        <a href="status">Status Tracker</a>
+        <a href="download">Download App</a>
+        <a href="guidelines">Guidelines</a>
+        <a href="contact">Contact</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Hamburger toggle
+    document.getElementById('hamburger')?.addEventListener('click', function() {
+      const nav = document.querySelector('.nav-links');
+      if (nav) {
+        const isOpen = nav.style.display === 'flex';
+        nav.style.display = isOpen ? 'none' : 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = '100%';
+        nav.style.left = '0';
+        nav.style.right = '0';
+        nav.style.background = 'rgba(255,255,255,0.92)';
+        nav.style.backdropFilter = 'blur(20px)';
+        nav.style.borderRadius = '24px';
+        nav.style.padding = '16px';
+        nav.style.marginTop = '8px';
+        nav.style.boxShadow = '0 20px 40px rgba(0,0,0,0.06)';
+        nav.style.zIndex = '999';
+      }
+    });
+  </script>
 </body>
 </html>

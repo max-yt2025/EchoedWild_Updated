@@ -3,140 +3,2537 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>Animals — EchoedWild</title>
-  <meta name="description" content="EchoedWild Animal Database - Browse 100+ endangered species profiles with detailed information, conservation status, and habitat data." />
-  <meta name="keywords" content="endangered animals database, wildlife species, animal profiles, conservation status, habitat information" />
+
+  <meta
+    name="description"
+    content="EchoedWild Animal Database - Browse 100+ endangered species profiles with detailed information, conservation status, and habitat data."
+  />
+
+  <meta
+    name="keywords"
+    content="endangered animals database, wildlife species, animal profiles, conservation status, habitat information"
+  />
+
   <link rel="canonical" href="https://echoedwild.com/animals" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Animals — Endangered & Threatened Species",
-    "description": "Browse educational profiles about endangered and threatened animals, their habitats, threats, and conservation efforts.",
-    "url": "https://echoedwild.com/animals"
-  }
-  </script>
   <link rel="icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Animal database -->
   <script src="js/animals-data.js"></script>
-  <script src="js/main.js"></script>
+
+  <style>
+    /* =========================================================
+       ECHOEDWILD — PREMIUM GLASS ANIMAL DATABASE
+       ========================================================= */
+
+    :root {
+      --green: #2b8c5e;
+      --green-dark: #1a4f3a;
+      --green-light: #6bc49a;
+      --green-soft: #e2f3eb;
+
+      --glass-white: rgba(255, 255, 255, 0.50);
+      --glass-strong: rgba(255, 255, 255, 0.78);
+      --glass-border: rgba(255, 255, 255, 0.35);
+
+      --text: #1e3d2e;
+      --text-soft: #3d5a4b;
+
+      --shadow: 0 25px 60px rgba(26, 79, 58, 0.12);
+
+      --radius: 24px;
+
+      --transition: 0.3s cubic-bezier(.2,.8,.2,1);
+    }
+
+    /* =========================================================
+       RESET
+       ========================================================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+      color: var(--text);
+
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(43, 140, 94, 0.10),
+          transparent 40%
+        ),
+        radial-gradient(
+          circle at 90% 80%,
+          rgba(43, 140, 94, 0.08),
+          transparent 35%
+        ),
+        linear-gradient(
+          160deg,
+          #f0faf4 0%,
+          #ffffff 50%,
+          #f3f9f5 100%
+        );
+
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    button,
+    input,
+    select {
+      font-family: inherit;
+    }
+
+    /* =========================================================
+       GLASS
+       ========================================================= */
+
+    .glass {
+      background: var(--glass-white);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+    }
+
+    /* =========================================================
+       NAVBAR
+       ========================================================= */
+
+    .site-header {
+      position: fixed;
+
+      top: 18px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: min(1240px, calc(100% - 36px));
+
+      z-index: 1000;
+
+      border-radius: 60px;
+
+      background: rgba(255, 255, 255, 0.50);
+
+      backdrop-filter: blur(24px) saturate(170%);
+      -webkit-backdrop-filter: blur(24px) saturate(170%);
+
+      border: 1px solid rgba(255, 255, 255, 0.55);
+
+      box-shadow:
+        0 12px 40px rgba(26, 79, 58, 0.08);
+
+      padding: 6px 12px;
+
+      transition: all var(--transition);
+    }
+
+    .site-header:hover {
+      background: rgba(255, 255, 255, 0.68);
+
+      box-shadow:
+        0 16px 48px rgba(26, 79, 58, 0.12);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 12px;
+
+      min-height: 62px;
+
+      padding: 0 10px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      text-decoration: none;
+
+      font-weight: 800;
+      font-size: 1.2rem;
+
+      letter-spacing: -0.5px;
+
+      color: var(--green-dark);
+
+      transition: transform var(--transition);
+
+      flex-shrink: 0;
+    }
+
+    .logo:hover {
+      transform: scale(1.02);
+    }
+
+    .logo img {
+      width: 36px;
+      height: 36px;
+
+      border-radius: 12px;
+
+      object-fit: contain;
+    }
+
+    /* =========================================================
+       NAVIGATION
+       ========================================================= */
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      gap: 4px;
+
+      list-style: none;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      position: relative;
+
+      display: block;
+
+      padding: 8px 16px;
+
+      border-radius: 40px;
+
+      color: #2d4d3e;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+      font-size: 0.9rem;
+
+      transition: all var(--transition);
+    }
+
+    .nav-links li a::after {
+      content: "";
+
+      position: absolute;
+
+      left: 50%;
+      bottom: 4px;
+
+      width: 0;
+      height: 2.5px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--green),
+          var(--green-light)
+        );
+
+      border-radius: 99px;
+
+      transform: translateX(-50%);
+
+      transition: width var(--transition);
+    }
+
+    .nav-links li a:hover {
+      background: rgba(43, 140, 94, 0.08);
+
+      color: var(--green-dark);
+
+      transform: translateY(-1px);
+    }
+
+    .nav-links li a:hover::after {
+      width: 40%;
+    }
+
+    .nav-links li a.active {
+      background: rgba(43, 140, 94, 0.12);
+
+      color: var(--green-dark);
+    }
+
+    .nav-links li a.active::after {
+      width: 40%;
+    }
+
+    /* =========================================================
+       SEARCH
+       ========================================================= */
+
+    .search-wrap {
+      flex-shrink: 0;
+    }
+
+    .search-wrap input {
+      background: rgba(255, 255, 255, 0.50);
+
+      border: 1px solid rgba(43, 140, 94, 0.15);
+
+      border-radius: 40px;
+
+      padding: 8px 18px;
+
+      font-size: 0.85rem;
+
+      outline: none;
+
+      width: 180px;
+
+      transition: all var(--transition);
+
+      color: var(--text);
+    }
+
+    .search-wrap input:focus {
+      width: 240px;
+
+      border-color: rgba(43, 140, 94, 0.35);
+
+      background: rgba(255, 255, 255, 0.80);
+
+      box-shadow:
+        0 0 0 4px rgba(43, 140, 94, 0.06);
+    }
+
+    /* =========================================================
+       CONTROLS
+       ========================================================= */
+
+    .controls {
+      display: flex;
+
+      gap: 8px;
+
+      align-items: center;
+    }
+
+    .controls button {
+      background: transparent;
+
+      border: none;
+
+      font-size: 1.3rem;
+
+      cursor: pointer;
+
+      padding: 4px 8px;
+
+      border-radius: 40px;
+
+      color: var(--text-soft);
+
+      transition: background var(--transition);
+    }
+
+    .controls button:hover {
+      background: rgba(43, 140, 94, 0.08);
+    }
+
+    .hamburger {
+      display: none;
+
+      flex-direction: column;
+
+      gap: 5px;
+
+      padding: 6px !important;
+    }
+
+    .hamburger span {
+      display: block;
+
+      width: 24px;
+      height: 2.5px;
+
+      background: var(--green-dark);
+
+      border-radius: 99px;
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .hero {
+      position: relative;
+
+      min-height: auto;
+
+      display: flex;
+
+      align-items: center;
+
+      padding: 140px 6% 130px;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e8f7ef,
+          #ffffff,
+          #eaf8f0
+        );
+    }
+
+    .hero-inner {
+      position: relative;
+
+      z-index: 2;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 50px;
+
+      align-items: center;
+
+      width: 100%;
+
+      max-width: 1280px;
+
+      margin: 0 auto;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(3.2rem, 7vw, 5.8rem);
+
+      font-weight: 900;
+
+      line-height: 1;
+
+      letter-spacing: -4px;
+
+      color: var(--green-dark);
+    }
+
+    .hero-text h1 span {
+      color: var(--green);
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+
+      line-height: 1.8;
+
+      color: var(--text-soft);
+
+      max-width: 520px;
+
+      margin: 20px 0 30px;
+    }
+
+    /* =========================================================
+       BUTTONS
+       ========================================================= */
+
+    .hero-cta {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 8px;
+
+      padding: 12px 28px;
+
+      border-radius: 60px;
+
+      font-weight: 700;
+
+      text-decoration: none;
+
+      border: none;
+
+      cursor: pointer;
+
+      transition: all var(--transition);
+
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background:
+        linear-gradient(
+          135deg,
+          #1f6e4a,
+          #2b8c5e
+        );
+
+      color: white;
+
+      box-shadow:
+        0 8px 24px rgba(43, 140, 94, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 14px 32px rgba(43, 140, 94, 0.30);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.70);
+
+      backdrop-filter: blur(8px);
+
+      border: 1px solid rgba(43, 140, 94, 0.15);
+
+      color: var(--green-dark);
+    }
+
+    .btn-secondary:hover {
+      background: white;
+
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 10px 28px rgba(0,0,0,0.08);
+    }
+
+    /* =========================================================
+       HERO IMAGE
+       ========================================================= */
+
+    .hero-media {
+      display: flex;
+
+      justify-content: center;
+    }
+
+    .hero-collage {
+      width: 100%;
+
+      max-width: 560px;
+
+      aspect-ratio: 4 / 3;
+
+      object-fit: cover;
+
+      border-radius: 32px;
+
+      border: 1px solid rgba(255,255,255,0.60);
+
+      box-shadow:
+        0 30px 70px rgba(0,0,0,0.15),
+        0 0 0 6px rgba(255,255,255,0.15);
+
+      transition: all 0.5s ease;
+
+      animation: floatImage 7s ease-in-out infinite;
+    }
+
+    @keyframes floatImage {
+
+      0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-12px) scale(1.01);
+      }
+
+    }
+
+    .hero-collage:hover {
+      transform: scale(1.02) translateY(-6px);
+
+      box-shadow:
+        0 40px 80px rgba(0,0,0,0.20),
+        0 0 0 10px rgba(255,255,255,0.25);
+    }
+
+    /* =========================================================
+       WAVE
+       ========================================================= */
+
+    .hero-wave {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+
+      line-height: 0;
+
+      z-index: 3;
+
+      pointer-events: none;
+    }
+
+    .hero-wave svg {
+      display: block;
+
+      width: 100%;
+
+      height: 60px;
+    }
+
+    /* =========================================================
+       SECTIONS
+       ========================================================= */
+
+    section {
+      padding: 60px 6%;
+
+      position: relative;
+    }
+
+    .container {
+      max-width: 1280px;
+
+      margin: 0 auto;
+    }
+
+    section:not(.hero) {
+      background-color: #ffffff;
+    }
+
+    /* =========================================================
+       CONTENT CARD
+       ========================================================= */
+
+    .content-card {
+      background: rgba(255,255,255,0.70);
+
+      backdrop-filter: blur(18px) saturate(150%);
+
+      -webkit-backdrop-filter: blur(18px) saturate(150%);
+
+      border: 1px solid rgba(43,140,94,0.10);
+
+      border-radius: var(--radius);
+
+      padding: 38px 42px;
+
+      box-shadow:
+        0 20px 50px rgba(26,79,58,0.06);
+
+      transition: all var(--transition);
+    }
+
+    .content-card:hover {
+      box-shadow:
+        0 28px 60px rgba(26,79,58,0.08);
+    }
+
+    .content-card h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+
+      color: var(--green-dark);
+
+      letter-spacing: -1.5px;
+
+      margin-bottom: 16px;
+    }
+
+    /* =========================================================
+       FILTERS
+       ========================================================= */
+
+    .controls-row {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      align-items: center;
+    }
+
+    .controls-row input,
+    .controls-row select {
+      width: auto;
+
+      height: 44px;
+    }
+
+    #listSearch {
+      width: 250px;
+    }
+
+    #statusFilter {
+      width: 220px;
+    }
+
+    #regionFilter {
+      width: 170px;
+    }
+
+    .muted {
+      color: #668173;
+    }
+
+    /* =========================================================
+       ⭐ FIXED ANIMAL GRID
+       ========================================================= */
+
+    #animalsGrid.grid {
+
+      display: grid !important;
+
+      /*
+       * THIS is the important fix.
+       * Cards are now controlled by the grid,
+       * rather than JavaScript creating giant columns.
+       */
+
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+      gap: 22px !important;
+
+      width: 100% !important;
+
+      max-width: 1280px !important;
+
+      margin: 0 auto !important;
+
+      align-items: start !important;
+    }
+
+    /* =========================================================
+       ANIMAL CARD
+       ========================================================= */
+
+    #animalsGrid .animal-card {
+
+      /*
+       * Prevent JS from making cards huge.
+       */
+      width: 100% !important;
+
+      max-width: none !important;
+
+      min-width: 0 !important;
+
+      height: auto !important;
+
+      min-height: 0 !important;
+
+      display: flex !important;
+
+      flex-direction: column !important;
+
+      background:
+        rgba(255,255,255,0.72) !important;
+
+      backdrop-filter:
+        blur(14px) saturate(140%) !important;
+
+      -webkit-backdrop-filter:
+        blur(14px) saturate(140%) !important;
+
+      border:
+        1px solid rgba(43,140,94,0.10) !important;
+
+      border-radius:
+        18px !important;
+
+      padding:
+        10px !important;
+
+      margin:
+        0 !important;
+
+      overflow:
+        hidden !important;
+
+      box-shadow:
+        0 8px 24px rgba(26,79,58,0.07) !important;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease !important;
+    }
+
+    #animalsGrid .animal-card:hover {
+
+      transform:
+        translateY(-5px) !important;
+
+      box-shadow:
+        0 18px 38px rgba(26,79,58,0.13) !important;
+    }
+
+    /* =========================================================
+       ⭐ FIXED ANIMAL IMAGE
+       ========================================================= */
+
+    #animalsGrid .animal-card img {
+
+      /*
+       * Small fixed image.
+       * JavaScript cannot make this enormous.
+       */
+
+      display: block !important;
+
+      width: 100% !important;
+
+      max-width: 100% !important;
+
+      height: 175px !important;
+
+      min-height: 175px !important;
+
+      max-height: 175px !important;
+
+      object-fit: cover !important;
+
+      aspect-ratio: 16 / 10 !important;
+
+      border-radius: 12px !important;
+
+      margin:
+        0 0 12px 0 !important;
+
+      padding: 0 !important;
+
+      flex-shrink: 0 !important;
+    }
+
+    /* =========================================================
+       CARD CONTENT
+       ========================================================= */
+
+    #animalsGrid .animal-card h3 {
+
+      font-size:
+        1.05rem !important;
+
+      line-height:
+        1.3 !important;
+
+      font-weight:
+        750 !important;
+
+      color:
+        var(--green-dark) !important;
+
+      margin:
+        0 0 7px 0 !important;
+
+      padding:
+        0 4px !important;
+    }
+
+    #animalsGrid .animal-card p {
+
+      font-size:
+        0.82rem !important;
+
+      line-height:
+        1.5 !important;
+
+      color:
+        var(--text-soft) !important;
+
+      margin:
+        0 4px 7px 4px !important;
+    }
+
+    /* =========================================================
+       CARD BUTTON
+       ========================================================= */
+
+    #animalsGrid .animal-card a,
+    #animalsGrid .animal-card button {
+
+      align-self:
+        flex-start !important;
+
+      margin:
+        5px 4px 2px 4px !important;
+
+      padding:
+        8px 13px !important;
+
+      border-radius:
+        999px !important;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1f6e4a,
+          #2b8c5e
+        ) !important;
+
+      color:
+        white !important;
+
+      border:
+        none !important;
+
+      font-size:
+        0.76rem !important;
+
+      font-weight:
+        700 !important;
+
+      text-decoration:
+        none !important;
+
+      cursor:
+        pointer !important;
+    }
+
+    /* =========================================================
+       STATUS BADGES
+       ========================================================= */
+
+    #animalsGrid .animal-card .status,
+    #animalsGrid .animal-card .badge {
+
+      display:
+        inline-flex !important;
+
+      align-items:
+        center !important;
+
+      width:
+        fit-content !important;
+
+      margin:
+        0 4px 7px 4px !important;
+
+      padding:
+        5px 9px !important;
+
+      border-radius:
+        999px !important;
+
+      font-size:
+        0.70rem !important;
+
+      font-weight:
+        700 !important;
+    }
+
+    /* =========================================================
+       LIST VIEW
+       ========================================================= */
+
+    #animalsGrid.list-view {
+
+      display:
+        flex !important;
+
+      flex-direction:
+        column !important;
+
+      gap:
+        14px !important;
+    }
+
+    #animalsGrid.list-view .animal-card {
+
+      width:
+        100% !important;
+
+      min-height:
+        120px !important;
+
+      display:
+        grid !important;
+
+      grid-template-columns:
+        150px 1fr !important;
+
+      align-items:
+        center !important;
+
+      gap:
+        18px !important;
+
+      padding:
+        10px !important;
+    }
+
+    #animalsGrid.list-view .animal-card img {
+
+      width:
+        150px !important;
+
+      height:
+        100px !important;
+
+      min-height:
+        100px !important;
+
+      max-height:
+        100px !important;
+
+      margin:
+        0 !important;
+
+      border-radius:
+        10px !important;
+    }
+
+    #animalsGrid.list-view .animal-card h3 {
+
+      font-size:
+        1.05rem !important;
+    }
+
+    /* =========================================================
+       FORMS
+       ========================================================= */
+
+    input,
+    textarea,
+    select {
+
+      font: inherit;
+
+      padding:
+        11px 15px;
+
+      border-radius:
+        14px;
+
+      border:
+        1px solid rgba(43,140,94,0.12);
+
+      background:
+        rgba(255,255,255,0.65);
+
+      backdrop-filter:
+        blur(6px);
+
+      transition:
+        all var(--transition);
+
+      color:
+        var(--text);
+
+      outline:
+        none;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+
+      border-color:
+        rgba(43,140,94,0.30);
+
+      background:
+        rgba(255,255,255,0.90);
+
+      box-shadow:
+        0 0 0 4px rgba(43,140,94,0.06);
+    }
+
+    /* =========================================================
+       NO RESULTS
+       ========================================================= */
+
+    #noResults {
+      display: none;
+
+      text-align: center;
+
+      padding: 40px;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+
+      margin-top: 40px;
+
+      padding:
+        60px 6% 30px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #1a3d2e,
+          #0f2b1f
+        );
+
+      color:
+        rgba(255,255,255,0.80);
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+    }
+
+    footer a {
+
+      color:
+        rgba(255,255,255,0.65);
+
+      text-decoration:
+        none;
+
+      transition:
+        all var(--transition);
+    }
+
+    footer a:hover {
+
+      color:
+        white;
+
+      transform:
+        translateX(4px);
+    }
+
+    .footer-inner {
+
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        30px;
+    }
+
+    .footer-links {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        20px 32px;
+    }
+
+    .footer-links a {
+
+      font-size:
+        0.9rem;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 1100px) {
+
+      #animalsGrid.grid {
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+      }
+
+      .nav-links li a {
+
+        padding:
+          8px 10px;
+
+        font-size:
+          0.82rem;
+      }
+
+      .search-wrap input {
+
+        width:
+          150px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+
+      .hero-inner {
+
+        grid-template-columns:
+          1fr;
+
+        text-align:
+          center;
+      }
+
+      .hero-text p {
+
+        margin-left:
+          auto;
+
+        margin-right:
+          auto;
+      }
+
+      .hero-cta {
+
+        justify-content:
+          center;
+      }
+
+      .hero-collage {
+
+        max-width:
+          500px;
+
+        margin:
+          0 auto;
+      }
+
+      #animalsGrid.grid {
+
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+
+    @media (max-width: 820px) {
+
+      .site-header {
+
+        top:
+          12px;
+
+        width:
+          calc(100% - 20px);
+
+        border-radius:
+          40px;
+      }
+
+      .nav-links {
+
+        display:
+          none;
+      }
+
+      .hamburger {
+
+        display:
+          flex;
+      }
+
+      .search-wrap input {
+
+        width:
+          120px;
+      }
+
+      .search-wrap input:focus {
+
+        width:
+          160px;
+      }
+
+      .content-card {
+
+        padding:
+          28px 22px;
+      }
+
+      #animalsGrid.grid {
+
+        grid-template-columns:
+          1fr !important;
+
+        gap:
+          18px !important;
+      }
+
+      #animalsGrid .animal-card img {
+
+        height:
+          200px !important;
+
+        min-height:
+          200px !important;
+
+        max-height:
+          200px !important;
+      }
+
+      #animalsGrid.list-view .animal-card {
+
+        display:
+          flex !important;
+
+        flex-direction:
+          column !important;
+
+        text-align:
+          center !important;
+      }
+
+      #animalsGrid.list-view .animal-card img {
+
+        width:
+          100% !important;
+
+        height:
+          180px !important;
+
+        min-height:
+          180px !important;
+
+        max-height:
+          180px !important;
+      }
+
+      .footer-inner {
+
+        flex-direction:
+          column;
+
+        align-items:
+          center;
+
+        text-align:
+          center;
+      }
+
+      .footer-links {
+
+        justify-content:
+          center;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .hero {
+
+        padding:
+          100px 5% 110px;
+      }
+
+      .hero-text h1 {
+
+        font-size:
+          2.8rem;
+
+        letter-spacing:
+          -2px;
+      }
+
+      .content-card {
+
+        padding:
+          24px 16px;
+      }
+
+      .controls-row {
+
+        align-items:
+          stretch;
+
+        flex-direction:
+          column;
+      }
+
+      #listSearch,
+      #statusFilter,
+      #regionFilter {
+
+        width:
+          100%;
+      }
+    }
+
+    /* =========================================================
+       REDUCED MOTION
+       ========================================================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+
+        animation-duration:
+          0.01ms !important;
+
+        transition-duration:
+          0.01ms !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div id="cursor-inner"></div>
-<div id="cursor-outer"></div>
-  <header class="site-header glass">
-    <div class="container header-inner">
 
-      <div class="logo">
-        <img src="images/favicon.png" alt="EchoedWild Logo" class="logo-img">
-     </div>
+  <!-- =======================================================
+       HEADER
+       ======================================================= -->
 
-      <a class="logo" href="index"><span class="echo">Echoed</span><span class="wild">Wild</span></a>
+  <header class="site-header">
 
-      <div class="search-wrap desktop-only">
-        <input id="globalSearch" class="search" type="search" placeholder="Search animals, habitats, status..." aria-label="Search animals">
+    <div class="header-inner">
+
+      <a class="logo" href="index">
+
+        <img
+          src="images/favicon.png"
+          alt="EchoedWild Logo"
+        >
+
+        <span>EchoedWild</span>
+
+      </a>
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a class="active" href="/animals">Animals</a>
+        </li>
+
+        <li>
+          <a href="/status">Status</a>
+        </li>
+
+        <li>
+          <a href="/about">About</a>
+        </li>
+
+        <li>
+          <a href="/download">Download</a>
+        </li>
+
+        <li>
+          <a href="/guidelines">Guidelines</a>
+        </li>
+
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+
+      </ul>
+
+      <div class="search-wrap">
+
+        <input
+          id="globalSearch"
+          type="search"
+          placeholder="Search animals, habitats..."
+          aria-label="Search"
+        >
+
       </div>
-
-      <nav class="nav" id="mainNav" aria-label="Main navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a class="active" href="/animals">Animals</a></li>
-          <li><a href="/status">Status</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/download">Download</a></li>
-          <li><a href="/guidelines">Guidelines</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
 
       <div class="controls">
-        <button class="icon-btn" id="searchToggle" title="Open search (mobile)">🔍</button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu" title="Menu">
-          <span></span><span></span><span></span>
+
+        <button
+          id="searchToggle"
+          title="Search"
+          type="button"
+        >
+          🔍
         </button>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
       </div>
+
     </div>
+
   </header>
 
-  <main class="container">
-    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">→</span> <span aria-current="page">Animals</span></nav>
-    <section class="glass animate-up">
-      <h1>Animal Database</h1>
-      <p class="muted">Explore our comprehensive database of endangered species. Browse through 100+ animal profiles with detailed information about their habitat, conservation status, threats, and ongoing conservation efforts.</p>
-      
-      <div class="hero-cta" style="margin-top: 20px;">
-        <a class="btn" href="status">View Status Tracker</a>
-        <a class="btn ghost" href="index">Return Home</a>
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div class="hero-text">
+
+          <h1>
+            Animal<br>
+            <span>Database</span>
+          </h1>
+
+          <p>
+            Explore our comprehensive database of endangered species.
+            Browse through 100+ animal profiles with detailed information
+            about their habitat, conservation status, threats, and ongoing
+            conservation efforts.
+          </p>
+
+          <div class="hero-cta">
+
+            <a
+              class="btn btn-primary"
+              href="status"
+            >
+              View Status Tracker
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="index"
+            >
+              Return Home
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-media">
+
+          <img
+            class="hero-collage"
+            src="https://tse1.mm.bing.net/th/id/OIP.D2bxPXmNjNduu22nb6QL0gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Wild animals collage"
+          >
+
+        </div>
+
       </div>
-    </section>
 
-    <section class="controls-row animate-up">
-      <div class="filters">
-        <input id="listSearch" class="search" type="search" placeholder="Search animals..." aria-label="Search animals list" style="width: 250px;">
-        
-        <label>
-          <select id="statusFilter" aria-label="Filter by status">
-            <option value="">All statuses</option>
-            <option value="Critically Endangered">Critically Endangered</option>
-            <option value="Endangered">Endangered</option>
-            <option value="Vulnerable">Vulnerable</option>
-            <option value="Near Threatened">Near Threatened</option>
-            <option value="Least Concern">Least Concern</option>
-          </select>
-        </label>
-        
-        <label>
-          <select id="regionFilter" aria-label="Filter by region">
-            <option value="">All regions</option>
-            <option value="Asia">Asia</option>
-            <option value="Africa">Africa</option>
-            <option value="Americas">Americas</option>
-            <option value="Oceania">Oceania</option>
-            <option value="Europe">Europe</option>
-            <option value="Arctic">Arctic</option>
-            <option value="Antarctica">Antarctica</option>
-            <option value="Global">Global</option>
-          </select>
-        </label>
-        
-        <button id="clearFilters" class="btn ghost small">Clear</button>
+      <div class="hero-wave">
+
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+
+          <path
+            d="M0,80L80,63.3C160,46,320,12,480,21.3C640,30,800,70,960,82.7C1120,95,1280,55,1360,40L1440,25L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+            fill="#ffffff"
+          />
+
+        </svg>
+
       </div>
 
-      <div class="stats">
-        <span id="resultsCount" class="muted">Loading species...</span>
+    </section>
+
+
+    <!-- =====================================================
+         SEARCH & FILTERS
+         ===================================================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div
+          class="content-card"
+          style="margin-bottom: 10px;"
+        >
+
+          <h2>
+            Search & Filter
+          </h2>
+
+          <div class="controls-row">
+
+            <input
+              id="listSearch"
+              type="search"
+              placeholder="Search animals..."
+            >
+
+            <select
+              id="statusFilter"
+              aria-label="Filter by status"
+            >
+
+              <option value="">
+                All statuses
+              </option>
+
+              <option value="Critically Endangered">
+                Critically Endangered
+              </option>
+
+              <option value="Endangered">
+                Endangered
+              </option>
+
+              <option value="Vulnerable">
+                Vulnerable
+              </option>
+
+              <option value="Near Threatened">
+                Near Threatened
+              </option>
+
+              <option value="Least Concern">
+                Least Concern
+              </option>
+
+            </select>
+
+            <select
+              id="regionFilter"
+              aria-label="Filter by region"
+            >
+
+              <option value="">
+                All regions
+              </option>
+
+              <option value="Asia">
+                Asia
+              </option>
+
+              <option value="Africa">
+                Africa
+              </option>
+
+              <option value="Americas">
+                Americas
+              </option>
+
+              <option value="Oceania">
+                Oceania
+              </option>
+
+              <option value="Europe">
+                Europe
+              </option>
+
+              <option value="Arctic">
+                Arctic
+              </option>
+
+              <option value="Antarctica">
+                Antarctica
+              </option>
+
+              <option value="Global">
+                Global
+              </option>
+
+            </select>
+
+            <button
+              id="clearFilters"
+              class="btn btn-secondary"
+              style="padding: 10px 20px;"
+              type="button"
+            >
+              Clear
+            </button>
+
+            <div
+              style="
+                display:flex;
+                gap:8px;
+                margin-left:auto;
+              "
+            >
+
+              <button
+                id="gridViewBtn"
+                class="btn btn-primary"
+                style="padding:8px 14px;"
+                type="button"
+              >
+                Grid
+              </button>
+
+              <button
+                id="listViewBtn"
+                class="btn btn-secondary"
+                style="padding:8px 14px;"
+                type="button"
+              >
+                List
+              </button>
+
+            </div>
+
+          </div>
+
+          <p
+            class="muted"
+            style="margin-top:16px;"
+          >
+            <span id="resultsCount">
+              Loading species...
+            </span>
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="grid animate-up" id="animalsGrid" aria-live="polite">
-      <div class="muted">Loading animals...</div>
+
+    <!-- =====================================================
+         ANIMALS
+         ===================================================== -->
+
+    <section style="padding-top:20px;">
+
+      <div class="container">
+
+        <div
+          class="grid"
+          id="animalsGrid"
+          aria-live="polite"
+        >
+
+          <div class="muted">
+            Loading animals...
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section class="glass animate-up" id="noResults" style="display: none; text-align: center; padding: 40px;">
-      <h2>No Results Found</h2>
-      <p class="muted">Try adjusting your search terms or filters to find what you're looking for.</p>
-      <button id="resetSearch" class="btn" style="margin-top: 20px;">Reset Search</button>
+
+    <!-- =====================================================
+         NO RESULTS
+         ===================================================== -->
+
+    <section
+      id="noResults"
+      style="
+        display:none;
+        text-align:center;
+        padding:40px;
+      "
+    >
+
+      <div class="container">
+
+        <div class="content-card">
+
+          <h2>
+            No Results Found
+          </h2>
+
+          <p class="muted">
+            Try adjusting your search terms or filters
+            to find what you're looking for.
+          </p>
+
+          <button
+            id="resetSearch"
+            class="btn btn-primary"
+            style="margin-top:20px;"
+            type="button"
+          >
+            Reset Search
+          </button>
+
+        </div>
+
+      </div>
+
     </section>
+
   </main>
 
-  <footer class="site-footer glass">
+
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+
+  <footer>
+
     <div class="container footer-inner">
-      <div class="footer-left">
-        <a class="logo small" href="index">EchoedWild</a>
-        <p class="muted">© <span id="year"></span> EchoedWild — All rights reserved.</p>
+
+      <div>
+
+        <a
+          class="logo"
+          href="index"
+          style="
+            color:white;
+            font-size:1.2rem;
+            gap:8px;
+          "
+        >
+
+          <img
+            src="images/favicon.png"
+            alt="EchoedWild"
+            style="
+              width:32px;
+              height:32px;
+              filter:brightness(0) invert(1);
+            "
+          >
+
+          EchoedWild
+
+        </a>
+
+        <p
+          style="
+            font-size:0.85rem;
+            opacity:0.7;
+            margin-top:8px;
+          "
+        >
+          ©
+          <span id="year"></span>
+          All rights reserved.
+        </p>
+
       </div>
-      <div class="footer-right">
-        <nav>
-          <ul>
-            <li><a href="about">About</a></li>
-            <li><a href="tos">Terms</a></li>
-            <li><a href="privacy">Privacy</a></li>
-            <li><a href="status">Status Tracker</a></li>
-            <li><a href="download">Download App</a></li>
-          </ul>
-        </nav>
+
+      <div class="footer-links">
+
+        <a href="about">About</a>
+
+        <a href="tos">Terms</a>
+
+        <a href="privacy">Privacy</a>
+
+        <a href="status">Status Tracker</a>
+
+        <a href="download">Download App</a>
+
+        <a href="guidelines">Guidelines</a>
+
+        <a href="contact">Contact</a>
+
       </div>
+
     </div>
+
   </footer>
+
+
+  <!-- =======================================================
+       JAVASCRIPT
+       ======================================================= -->
+
+  <script>
+
+    /* =======================================================
+       FOOTER YEAR
+       ======================================================= */
+
+    const yearElement =
+      document.getElementById("year");
+
+    if (yearElement) {
+      yearElement.textContent =
+        new Date().getFullYear();
+    }
+
+
+    /* =======================================================
+       MOBILE MENU
+       ======================================================= */
+
+    const hamburger =
+      document.getElementById("hamburger");
+
+    const nav =
+      document.querySelector(".nav-links");
+
+    if (hamburger && nav) {
+
+      hamburger.addEventListener("click", () => {
+
+        const open =
+          nav.classList.toggle("mobile-open");
+
+        if (open) {
+
+          nav.style.display = "flex";
+          nav.style.flexDirection = "column";
+          nav.style.position = "absolute";
+          nav.style.top = "100%";
+          nav.style.left = "0";
+          nav.style.right = "0";
+          nav.style.background =
+            "rgba(255,255,255,0.94)";
+          nav.style.backdropFilter =
+            "blur(20px)";
+          nav.style.borderRadius =
+            "24px";
+          nav.style.padding =
+            "16px";
+          nav.style.marginTop =
+            "8px";
+          nav.style.boxShadow =
+            "0 20px 40px rgba(0,0,0,0.08)";
+
+        } else {
+
+          nav.style.display = "";
+
+        }
+
+      });
+
+    }
+
+
+    /* =======================================================
+       ANIMAL DATA
+       ======================================================= */
+
+    let allAnimals = [];
+
+    /*
+     * Support several common variable names from
+     * animals-data.js.
+     */
+
+    if (Array.isArray(window.animals)) {
+
+      allAnimals = window.animals;
+
+    } else if (Array.isArray(window.animalsData)) {
+
+      allAnimals = window.animalsData;
+
+    } else if (Array.isArray(window.ANIMALS)) {
+
+      allAnimals = window.ANIMALS;
+
+    } else if (Array.isArray(window.species)) {
+
+      allAnimals = window.species;
+
+    }
+
+
+    /* =======================================================
+       SAFE VALUE HELPER
+       ======================================================= */
+
+    function getValue(obj, keys, fallback = "") {
+
+      for (const key of keys) {
+
+        if (
+          obj &&
+          obj[key] !== undefined &&
+          obj[key] !== null &&
+          obj[key] !== ""
+        ) {
+
+          return obj[key];
+
+        }
+
+      }
+
+      return fallback;
+
+    }
+
+
+    /* =======================================================
+       HTML ESCAPE
+       ======================================================= */
+
+    function escapeHTML(value) {
+
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    }
+
+
+    /* =======================================================
+       CREATE ANIMAL CARD
+       ======================================================= */
+
+    function createAnimalCard(animal) {
+
+      const name =
+        getValue(
+          animal,
+          [
+            "name",
+            "commonName",
+            "common_name",
+            "title"
+          ],
+          "Unknown Animal"
+        );
+
+      const image =
+        getValue(
+          animal,
+          [
+            "image",
+            "imageUrl",
+            "imageURL",
+            "img",
+            "photo",
+            "thumbnail"
+          ],
+          "images/placeholder-animal.jpg"
+        );
+
+      const status =
+        getValue(
+          animal,
+          [
+            "status",
+            "conservationStatus",
+            "conservation_status"
+          ],
+          "Unknown Status"
+        );
+
+      const region =
+        getValue(
+          animal,
+          [
+            "region",
+            "continent",
+            "location"
+          ],
+          "Global"
+        );
+
+      const habitat =
+        getValue(
+          animal,
+          [
+            "habitat",
+            "description",
+            "summary"
+          ],
+          "Learn more about this species and its habitat."
+        );
+
+      const population =
+        getValue(
+          animal,
+          [
+            "population",
+            "estimatedPopulation",
+            "estimated_population"
+          ],
+          ""
+        );
+
+      const link =
+        getValue(
+          animal,
+          [
+            "link",
+            "url",
+            "page",
+            "href"
+          ],
+          "#"
+        );
+
+
+      const card =
+        document.createElement("article");
+
+      card.className =
+        "animal-card";
+
+
+      /*
+       * IMPORTANT:
+       * No giant inline image dimensions.
+       * CSS controls the entire card.
+       */
+
+      card.innerHTML = `
+
+        <img
+          src="${escapeHTML(image)}"
+          alt="${escapeHTML(name)}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='images/placeholder-animal.jpg';"
+        >
+
+        <h3>
+          ${escapeHTML(name)}
+        </h3>
+
+        <span
+          class="badge"
+          style="
+            background:rgba(43,140,94,0.10);
+            color:var(--green-dark);
+          "
+        >
+          ${escapeHTML(status)}
+        </span>
+
+        <p>
+          <strong>${escapeHTML(region)}</strong>
+        </p>
+
+        <p>
+          ${escapeHTML(habitat)}
+        </p>
+
+        ${
+          population
+            ? `<p>
+                <strong>Population:</strong>
+                ${escapeHTML(population)}
+              </p>`
+            : ""
+        }
+
+        ${
+          link !== "#"
+            ? `<a href="${escapeHTML(link)}">
+                Learn about ${escapeHTML(name)}
+              </a>`
+            : ""
+        }
+
+      `;
+
+
+      return card;
+
+    }
+
+
+    /* =======================================================
+       RENDER ANIMALS
+       ======================================================= */
+
+    function renderAnimals() {
+
+      const grid =
+        document.getElementById("animalsGrid");
+
+      const noResults =
+        document.getElementById("noResults");
+
+      const count =
+        document.getElementById("resultsCount");
+
+      if (!grid) return;
+
+
+      const search =
+        (
+          document.getElementById("listSearch")?.value ||
+          ""
+        )
+        .trim()
+        .toLowerCase();
+
+
+      const status =
+        document.getElementById("statusFilter")?.value ||
+        "";
+
+
+      const region =
+        document.getElementById("regionFilter")?.value ||
+        "";
+
+
+      const filtered =
+        allAnimals.filter(animal => {
+
+          const name =
+            getValue(
+              animal,
+              ["name","commonName","common_name","title"],
+              ""
+            ).toLowerCase();
+
+          const habitat =
+            getValue(
+              animal,
+              ["habitat","description","summary"],
+              ""
+            ).toLowerCase();
+
+          const animalStatus =
+            getValue(
+              animal,
+              ["status","conservationStatus","conservation_status"],
+              ""
+            );
+
+          const animalRegion =
+            getValue(
+              animal,
+              ["region","continent","location"],
+              ""
+            );
+
+
+          const matchesSearch =
+            !search ||
+            name.includes(search) ||
+            habitat.includes(search);
+
+
+          const matchesStatus =
+            !status ||
+            animalStatus === status;
+
+
+          const matchesRegion =
+            !region ||
+            animalRegion === region;
+
+
+          return (
+            matchesSearch &&
+            matchesStatus &&
+            matchesRegion
+          );
+
+        });
+
+
+      grid.innerHTML = "";
+
+
+      if (filtered.length === 0) {
+
+        grid.style.display = "none";
+
+        if (noResults) {
+          noResults.style.display = "block";
+        }
+
+      } else {
+
+        grid.style.display = "";
+
+        if (noResults) {
+          noResults.style.display = "none";
+        }
+
+        const fragment =
+          document.createDocumentFragment();
+
+
+        filtered.forEach(animal => {
+
+          fragment.appendChild(
+            createAnimalCard(animal)
+          );
+
+        });
+
+
+        grid.appendChild(fragment);
+
+      }
+
+
+      if (count) {
+
+        count.textContent =
+          `${filtered.length} species`;
+
+      }
+
+    }
+
+
+    /* =======================================================
+       FILTER EVENTS
+       ======================================================= */
+
+    document
+      .getElementById("listSearch")
+      ?.addEventListener(
+        "input",
+        renderAnimals
+      );
+
+
+    document
+      .getElementById("statusFilter")
+      ?.addEventListener(
+        "change",
+        renderAnimals
+      );
+
+
+    document
+      .getElementById("regionFilter")
+      ?.addEventListener(
+        "change",
+        renderAnimals
+      );
+
+
+    /* =======================================================
+       CLEAR FILTERS
+       ======================================================= */
+
+    document
+      .getElementById("clearFilters")
+      ?.addEventListener(
+        "click",
+        () => {
+
+          document.getElementById(
+            "listSearch"
+          ).value = "";
+
+          document.getElementById(
+            "statusFilter"
+          ).value = "";
+
+          document.getElementById(
+            "regionFilter"
+          ).value = "";
+
+          renderAnimals();
+
+        }
+      );
+
+
+    /* =======================================================
+       RESET SEARCH
+       ======================================================= */
+
+    document
+      .getElementById("resetSearch")
+      ?.addEventListener(
+        "click",
+        () => {
+
+          document.getElementById(
+            "listSearch"
+          ).value = "";
+
+          document.getElementById(
+            "statusFilter"
+          ).value = "";
+
+          document.getElementById(
+            "regionFilter"
+          ).value = "";
+
+          renderAnimals();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        }
+      );
+
+
+    /* =======================================================
+       GRID / LIST VIEW
+       ======================================================= */
+
+    const grid =
+      document.getElementById("animalsGrid");
+
+    const gridBtn =
+      document.getElementById("gridViewBtn");
+
+    const listBtn =
+      document.getElementById("listViewBtn");
+
+
+    gridBtn?.addEventListener(
+      "click",
+      () => {
+
+        grid.classList.remove(
+          "list-view"
+        );
+
+        gridBtn.classList.remove(
+          "btn-secondary"
+        );
+
+        gridBtn.classList.add(
+          "btn-primary"
+        );
+
+        listBtn.classList.remove(
+          "btn-primary"
+        );
+
+        listBtn.classList.add(
+          "btn-secondary"
+        );
+
+      }
+    );
+
+
+    listBtn?.addEventListener(
+      "click",
+      () => {
+
+        grid.classList.add(
+          "list-view"
+        );
+
+        listBtn.classList.remove(
+          "btn-secondary"
+        );
+
+        listBtn.classList.add(
+          "btn-primary"
+        );
+
+        gridBtn.classList.remove(
+          "btn-primary"
+        );
+
+        gridBtn.classList.add(
+          "btn-secondary"
+        );
+
+      }
+    );
+
+
+    /* =======================================================
+       GLOBAL SEARCH
+       ======================================================= */
+
+    document
+      .getElementById("globalSearch")
+      ?.addEventListener(
+        "input",
+        function() {
+
+          const listSearch =
+            document.getElementById(
+              "listSearch"
+            );
+
+          if (listSearch) {
+
+            listSearch.value =
+              this.value;
+
+            renderAnimals();
+
+          }
+
+        }
+      );
+
+
+    /* =======================================================
+       SEARCH BUTTON
+       ======================================================= */
+
+    document
+      .getElementById("searchToggle")
+      ?.addEventListener(
+        "click",
+        () => {
+
+          const input =
+            document.getElementById(
+              "globalSearch"
+            );
+
+          input?.focus();
+
+        }
+      );
+
+
+    /* =======================================================
+       START
+       ======================================================= */
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
+
+        /*
+         * Give animals-data.js a moment to
+         * populate its global variable.
+         */
+
+        setTimeout(
+          renderAnimals,
+          50
+        );
+
+      }
+    );
+
+  </script>
+
 </body>
 </html>

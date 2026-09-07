@@ -90,8 +90,15 @@ body{
 .hamburger span{display:block;width:18px;height:2px;background:var(--text-primary);margin:3px 0;border-radius:2px;transition:all .25s ease}
 
 /* hero */
-.hero{padding:50px 0;min-height: 60vh;display:flex;align-items:center}
-.hero-inner{display:grid;grid-template-columns:1fr 500px;gap:32px;align-items:center}
+.hero{
+  position: relative;
+  padding:50px 0;
+  min-height: 60vh;
+  display:flex;
+  align-items:center;
+  overflow: hidden;
+}
+.hero-inner{display:grid;grid-template-columns:1fr 500px;gap:32px;align-items:center;position: relative;z-index: 2;}
 .hero-text h1{font-size:3rem;margin:0;background:linear-gradient(90deg,var(--accent),var(--accent-2),var(--accent-3));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:0.2px;line-height:1.2}
 .muted{color:var(--text-secondary);font-size:1.1rem}
 .hero-cta{margin-top:24px;display:flex;gap:12px;flex-wrap: wrap}
@@ -112,6 +119,28 @@ body{
   border-radius: 20px;
   box-shadow: var(--shadow), var(--shadow-glow);
   border: 1px solid var(--glass-border);
+}
+
+/* ===== HERO WAVE ===== */
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.hero-wave svg {
+    display: block;
+    width: 100%;
+    height: 220px;
+}
+
+/* ===== MATCHING BACKGROUND ===== */
+section:not(.hero) {
+    background: linear-gradient(180deg, var(--bg2), var(--bg3));
 }
 
 /* pills */
